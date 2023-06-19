@@ -1,3 +1,11 @@
+---
+title: About Me
+header-includes:
+- \usepackage[whole]{bxcjkjatype}
+	<meta charset="utf-8"/>
+	<title>Taiki M</title>
+
+---
 taiki. Taiki Matsumura. 松村 太貴
 
 ### 所属
