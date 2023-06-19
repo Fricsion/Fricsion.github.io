@@ -1,3 +1,5 @@
+# Use this if you are extremely lazy.
+
 files="index newhome sk"
 for file in $files; do
     pandoc --standalone src/$file.md -o $file.html
