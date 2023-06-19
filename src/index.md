@@ -46,7 +46,8 @@ taiki. Taiki Matsumura. 松村 太貴
 - <tiz@sfc.wide.ad.jp> / 村井研究室WIDE
 
 ### 仮想通貨
-- Monero: 454f8KdCLFLFLP6EDjWKXbRrfacVca1kdinU5Z4KE7wdbwb7974aWtwG9QLJ9PNwLa4yVre3sS87ARrnbGky75TFEvGkfhy
+#### Monero
+`454f8KdCLFLFLP6EDjWKXbRrfacVca1kdinU5Z4KE7wdbwb7974aWtwG9QLJ9PNwLa4yVre3sS87ARrnbGky75TFEvGkfhy`
 
 ### 担当SA
 | | |
@@ -55,5 +56,9 @@ taiki. Taiki Matsumura. 松村 太貴
 | 情報基礎１ | 水  2  2023 春 |
 | 看護情報リテラシー | 水 3-4 2023 春 |
 
+### 実績＆黒歴史
+- [情報処理学会第82回全国大会中高生情報学研究コンテスト 入賞](https://www.milive.jp/live/200301/10/)
+
 ### Blogs
 - [New Home](newhome.html)
+
