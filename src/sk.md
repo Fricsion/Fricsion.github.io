@@ -6,4 +6,4 @@ header-includes:
 	<title>大切な人へ</title>
 
 ---
-いつも俺のことを大切にしてくれてありがとう
+<p style="text-align: center; font-family: 'Tsukushi A Round Gothic';">いつも俺のことを大切にしてくれてありがとう</p>
