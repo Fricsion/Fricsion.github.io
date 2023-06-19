@@ -6,5 +6,5 @@ for file in $files; do
 done
 
 git add -A
-git commit -m 'a few update'
+git commit -m 'a small update'
 git push origin main
