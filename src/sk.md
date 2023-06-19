@@ -1,5 +1,5 @@
 ---
-title: 大切な人へ
+title: 🥂
 mainfont: 'Tsukushi A Round Gothic'
 header-includes:
 - \usepackage[whole]{bxcjkjatype}

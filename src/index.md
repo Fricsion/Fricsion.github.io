@@ -7,6 +7,7 @@ header-includes:
 
 ---
 taiki. Taiki Matsumura. 松村 太貴
+[A picture of myself](me.jpg "Me")
 
 ### 所属
 - 慶應義塾大学 環境情報学部 2021年度入学（2025年卒業予定）
@@ -42,6 +43,9 @@ taiki. Taiki Matsumura. 松村 太貴
 ### 連絡先
 - <tizberius@keio.jp>
 - <tiz@sfc.wide.ad.jp> / 村井研究室WIDE
+
+### 仮想通貨
+- Monero: 454f8KdCLFLFLP6EDjWKXbRrfacVca1kdinU5Z4KE7wdbwb7974aWtwG9QLJ9PNwLa4yVre3sS87ARrnbGky75TFEvGkfhy
 
 ### 担当SA
 | | |
