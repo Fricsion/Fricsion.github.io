@@ -6,10 +6,11 @@ header-includes:
 	<title>Taiki M</title>
 
 ---
+ [🌐日本語](index.html)
 
 ***Notice!! English version of this website may not contain the latest content. ***
 
-taiki. Taiki Matsumura. 松村 太貴 [🌐日本語](index.html)
+taiki. Taiki Matsumura. 松村 太貴
 
 
 <img src="img/me.jpg" alt="A picture of myself" title="my pic" height="100"/>

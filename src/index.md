@@ -6,7 +6,9 @@ header-includes:
 	<title>Taiki M</title>
 
 ---
-taiki. Taiki Matsumura. 松村 太貴 [🌐English](index_en.html)
+ [🌐English](index_en.html)
+ 
+taiki. Taiki Matsumura. 松村 太貴
 
 <img src="img/me.jpg" alt="A picture of myself" title="my pic" height="100"/>
 
