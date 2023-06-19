@@ -2,7 +2,7 @@
 # Edit this file every time you add a new page in src/
 # ./builder.sh
 
-files="index newhome sk"
+files="index newhome sk index_en"
 for file in $files; do
     pandoc --standalone src/$file.md -o $file.html
 done
