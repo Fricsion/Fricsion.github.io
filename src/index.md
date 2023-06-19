@@ -39,7 +39,7 @@ taiki. Taiki Matsumura. 松村 太貴
 - [大切な人](sk.html)
 
 ### GPG
-[```$ gpg --import 🔑🔒```](https://web.sfc.wide.ad.jp/~tiz/tiz.gpg)
+[```$ gpg --import 🔑🔒```](tiz.gpg)
 
 ### 連絡先
 - <tizberius@keio.jp>
@@ -50,11 +50,11 @@ taiki. Taiki Matsumura. 松村 太貴
 `454f8KdCLFLFLP6EDjWKXbRrfacVca1kdinU5Z4KE7wdbwb7974aWtwG9QLJ9PNwLa4yVre3sS87ARrnbGky75TFEvGkfhy`
 
 ### 担当SA
-| | |
-|-|-|
-| デジタルトラスト | 火 2-3 2022 秋 |
-| 情報基礎１ | 水  2  2023 春 |
-| 看護情報リテラシー | 水 3-4 2023 春 |
+| | | | | |
+|-|-|-|-|-|
+| デジタルトラスト | 火 | 2-3 | 2022 | 秋 |
+| 情報基礎１ | 水 | 2 | 2023 | 春 |
+| 看護情報リテラシー | 水 | 3-4 | 2023 | 春 |
 
 ### 実績＆黒歴史
 - [情報処理学会第82回全国大会中高生情報学研究コンテスト 入賞](https://www.milive.jp/live/200301/10/)
