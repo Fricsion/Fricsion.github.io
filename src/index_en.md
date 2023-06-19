@@ -7,9 +7,10 @@ header-includes:
 
 ---
 
-**Notice English version of this website may not contain the latest content. **
+***Notice!! English version of this website may not contain the latest content. ***
 
-taiki. Taiki Matsumura. 松村 太貴
+taiki. Taiki Matsumura. 松村 太貴 [🌐日本語](index.html)
+
 
 <img src="img/me.jpg" alt="A picture of myself" title="my pic" height="100"/>
 
