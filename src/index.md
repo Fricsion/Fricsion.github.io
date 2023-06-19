@@ -26,7 +26,7 @@ taiki. Taiki Matsumura. 松村 太貴
 ### 尊敬している人
 - 父母
 - Linus Torvalds
-- [大切な人](ai.html)
+- [大切な人](sk.html)
 
 ### GPG
 [```$ gpg --import 🔑🔒```](https://web.sfc.wide.ad.jp/~tiz/tiz.gpg)
