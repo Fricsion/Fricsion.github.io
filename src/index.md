@@ -1,6 +1,6 @@
 ---
 title: About Me
-date: today
+date: "`r format(Sys.time(), '%d %B, %Y)`"
 header-includes:
 - \usepackage[whole]{bxcjkjatype}
 	<meta charset="utf-8"/>
