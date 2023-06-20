@@ -1,6 +1,5 @@
 ---
 title: About Me
-date: today
 header-includes:
 - \usepackage[whole]{bxcjkjatype}
 	<meta charset="utf-8"/>
