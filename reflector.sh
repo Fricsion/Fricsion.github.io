@@ -6,5 +6,12 @@ for file in $files; do
 done
 
 git add -A
-git commit -m 'a small update'
+
+if [$1];
+then
+    git commit -m $1
+else
+    git commit -m 'a small update'
+fi
+
 git push origin main
