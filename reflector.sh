@@ -1,10 +1,13 @@
 # Use this if you are extremely lazy.
 
-
-
-for file in src/*; do
-    pandoc --standalone src/$file.md -o $file.html
+cat build_files.txt | while read line 
+do
+   pandoc --standalone src/$line.md -o $line.html
 done
+
+# for file in src/*; do
+#     pandoc --standalone src/$file.md -o $file.html
+# done
 
 git add -A
 
