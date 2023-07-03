@@ -49,7 +49,7 @@ taiki. Taiki Matsumura. 松村 太貴
 
 ### 仮想通貨
 #### Monero
-`454f8KdCLFLFLP6EDjWKXbRrfacVca1kdinU5Z4KE7wdbwb7974aWtwG9QLJ9PNwLa4yVre3sS87ARrnbGky75TFEvGkfhy`
+`42N92aBP3aL1zqWdYNyd1FjiVXDcghQsDWHkM9ZCv5Zae6WB6kjzDZDZ8kC7mNbiwKaE83Z9KYpQ7EfU1VdF8nmsFb1c4MB`
 
 ### 担当SA
 | | | | | |
