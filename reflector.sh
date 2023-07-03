@@ -1,10 +1,14 @@
 # Use this if you are extremely lazy.
 
-files="index newhome sk index_en"
-for file in $files; do
-    pandoc --standalone src/$file.md -o $file.html
+
+
+
+cat peptides.txt | while read line 
+do
+   pandoc --standalone src/$line.md -o $line.html
 done
 
+
 git add -A
-git commit -m 'a small update'
+git commit -m 'Small updates'
 git push origin main

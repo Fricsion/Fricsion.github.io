@@ -1,0 +1,5 @@
+index
+index_en
+newhome
+sk
+privacy 

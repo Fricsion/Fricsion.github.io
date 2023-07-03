@@ -63,4 +63,4 @@ taiki. Taiki Matsumura. 松村 太貴
 
 ### Blogs
 - [New Home](newhome.html)
-
+- [Privacy Research] (privacy.html)
