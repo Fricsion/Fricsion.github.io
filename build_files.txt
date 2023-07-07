@@ -3,3 +3,4 @@ index_en
 newhome
 sk
 privacy 
+learn_git
