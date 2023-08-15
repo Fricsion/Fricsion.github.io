@@ -42,6 +42,19 @@ taiki. Taiki Matsumura. 松村 太貴
 
 ### GPG
 [```$ gpg --import 🔑🔒```](tiz.gpg)
+```
++--[ RandomArt ]--+
+|  **   o.     . .|
+|  oo= B.+..    o.|
+|.+ o %.=o*    o .|
+|*o. = B.=.. .o...|
+|*.   + =So.o. .+.|
+| o. o  o=+o= E. +|
+|.o...= oo*= o o+.|
+| +++=oo +++o.o..+|
+|.=*+*o ..o+..ooo.|
++-----------------+
+```
 
 ### 連絡先
 - <tizberius@keio.jp>
