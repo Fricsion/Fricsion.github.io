@@ -12,6 +12,7 @@ taiki. Taiki Matsumura. 松村 太貴
 
 <img src="img/me_01.jpg" alt="A picture of myself" title="my pic" height="100"/>
 <img src="img/me_02.jpg" alt="A picture of myself" title="my pic" height="100"/>
+<img src='img/shimpo.jpg', alt='A group picture of Shinpo Kenkyukai' height='100>
 
 ### 所属
 - 慶應義塾大学 環境情報学部 2021年度入学（2025年卒業予定）
@@ -62,7 +63,7 @@ taiki. Taiki Matsumura. 松村 太貴
 - <tiz@sfc.wide.ad.jp> / 村井研究室WIDE
 
 ### 仮想通貨
-#### Monero <img src='https://web.getmonero.org/press-kit/symbols/monero-symbol-480.png' alt='Monero Symbool' height='10'>
+#### Monero <img src='https://web.getmonero.org/press-kit/symbols/monero-symbol-480.png' alt='Monero Symbool' height='15'>
 `42N92aBP3aL1zqWdYNyd1FjiVXDcghQsDWHkM9ZCv5Zae6WB6kjzDZDZ8kC7mNbiwKaE83Z9KYpQ7EfU1VdF8nmsFb1c4MB`
 
 ### 担当SA
