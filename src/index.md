@@ -62,8 +62,7 @@ taiki. Taiki Matsumura. 松村 太貴
 - <tiz@sfc.wide.ad.jp> / 村井研究室WIDE
 
 ### 仮想通貨
-#### Monero
-<img src='https://web.getmonero.org/press-kit/symbols/monero-symbol-480.png' alt='Monero Symbool' >
+#### Monero <img src='https://web.getmonero.org/press-kit/symbols/monero-symbol-480.png' alt='Monero Symbool' height='10'>
 `42N92aBP3aL1zqWdYNyd1FjiVXDcghQsDWHkM9ZCv5Zae6WB6kjzDZDZ8kC7mNbiwKaE83Z9KYpQ7EfU1VdF8nmsFb1c4MB`
 
 ### 担当SA
