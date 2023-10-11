@@ -11,11 +11,11 @@ done
 
 git add -A
 
-if [ "$#" -ne 1 ];
+if [ $# -eq 0 ];
 then
-    git commit -m $1
-else
     git commit -m 'Small Updates'
+else
+    git commit -m $1
 fi
 
 git push origin main
