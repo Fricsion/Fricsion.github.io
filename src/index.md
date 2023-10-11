@@ -12,7 +12,7 @@ taiki. Taiki Matsumura. 松村 太貴
 
 <img src="img/me_01.jpg" alt="A picture of myself" title="my pic" height="100"/>
 <img src="img/me_02.jpg" alt="A picture of myself" title="my pic" height="100"/>
-<img src='img/shimpo.jpg', alt='A group picture of Shinpo Kenkyukai' height='100>
+<img src='img/shimpo.jpg' alt='A group picture of Shinpo Kenkyukai' height='100>
 
 ### 所属
 - 慶應義塾大学 環境情報学部 2021年度入学（2025年卒業予定）
