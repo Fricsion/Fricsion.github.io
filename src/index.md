@@ -75,7 +75,8 @@ taiki. Taiki Matsumura. 松村 太貴
 | データセキュリティ | 火 | 2 | 2023 | 秋 |
 
 ### 実績＆黒歴史
-- [情報処理学会第82回全国大会中高生情報学研究コンテスト 入賞](https://www.milive.jp/live/200301/10/)
+* [CTC CTF 2023 参加](https://c2c-ctf-2023.cysec-lab.keio.ac.jp/)
+* [情報処理学会第82回全国大会中高生情報学研究コンテスト 入賞](https://www.milive.jp/live/200301/10/)
 
 ### Blogs
 - [New Home](newhome.html)
