@@ -79,6 +79,7 @@ taiki. Taiki Matsumura. 松村 太貴
 * [情報処理学会第82回全国大会中高生情報学研究コンテスト 入賞](https://www.milive.jp/live/200301/10/)
 
 ### Blogs
-- [New Home](newhome.html)
-- [Privacy Research](privacy.html)
-- [Learning GitHub](learn_git.html)
+* [New Home](newhome.html)
+* [Privacy Research](privacy.html)
+* [Learning GitHub](learn_git.html)
+* [New M1 MacBook Air](m1macbook.html)
