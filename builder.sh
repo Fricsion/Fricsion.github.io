@@ -6,3 +6,4 @@ cat build_files.txt | while read line
 do
    pandoc --standalone src/$line.md -o $line.html
 done
+
