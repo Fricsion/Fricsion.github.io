@@ -82,4 +82,4 @@ Taiki Matsumura. 松村 太貴
 * [New Home](newhome.html)
 * [Privacy Research](privacy.html)
 * [Learning GitHub](learn_git.html)
-* [New M1 MacBook Air](m1macbook.html)
+* [New M1 MacBook Air](m1mba.html)

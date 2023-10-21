@@ -4,4 +4,4 @@ newhome
 sk
 privacy 
 learn_git
-m1macbookair
+m1mba
