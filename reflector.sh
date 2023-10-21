@@ -19,3 +19,5 @@ else
 fi
 
 git push origin main
+
+"If building files doesn't seem to work, check build_files.txt ends with empty line!"
