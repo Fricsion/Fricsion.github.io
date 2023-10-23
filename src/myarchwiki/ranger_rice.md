@@ -8,9 +8,10 @@ header-includes:
 ---
 # Ranger Rice
 Most of the configurations are done inside `~/config/ranger` directory
+
 ## show borders
 - search for `set draw_borders none` in `rc.conf`
-- Set `none` to `both` or something else
+- Set `none` to `both` or something like 'true'
 
 ## colorscheme
 - search for `set colorscheme default` in `rc.conf`
@@ -30,20 +31,21 @@ Most of the configurations are done inside `~/config/ranger` directory
 - search for`set preview_script ~/.config/ranger/scope.sh` in `rc.conf` which should be commented out
 - remove the comment
 - search for `video` in `scope.sh`
-- ```
+```
 156         ## Video
 157          video/*)
 158              # Thumbnail
 159              ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
 160              exit 1;;
-``` These lines should be commented out. So remove those comments
+``` 
+These lines should be commented out. So remove those comments
 - restart ranger and done.
 
 ## PDF thumbnail preview (requires Image preview working)
 - search for`set preview_script ~/.config/ranger/scope.sh` in `rc.conf` which should be commented out
 - remove the comment
 - search for `application/pdf` in `scope.sh`
-- ```
+```
 162         ## PDF
 163          application/pdf)
 164              pdftoppm -f 1 -l 1 \

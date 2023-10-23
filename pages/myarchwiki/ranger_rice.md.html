@@ -182,9 +182,14 @@
 </header>
 <h1 id="ranger-rice">Ranger Rice</h1>
 <p>Most of the configurations are done inside
-<code>~/config/ranger</code> directory ## show borders - search for
-<code>set draw_borders none</code> in <code>rc.conf</code> - Set
-<code>none</code> to <code>both</code> or something else</p>
+<code>~/config/ranger</code> directory</p>
+<h2 id="show-borders">show borders</h2>
+<ul>
+<li>search for <code>set draw_borders none</code> in
+<code>rc.conf</code></li>
+<li>Set <code>none</code> to <code>both</code> or something like
+‘true’</li>
+</ul>
 <h2 id="colorscheme">colorscheme</h2>
 <ul>
 <li>search for <code>set colorscheme default</code> in
@@ -210,19 +215,22 @@ thumbnail preview (requires Image preview working)</h2>
 in <code>rc.conf</code> which should be commented out</li>
 <li>remove the comment</li>
 <li>search for <code>video</code> in <code>scope.sh</code></li>
-<li><code>156         ## Video 157          video/*) 158              # Thumbnail 159              ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 &amp;&amp; exit 6 160              exit 1;;</code>
-These lines should be commented out. So remove those comments</li>
-<li>restart ranger and done.</li>
 </ul>
+<pre><code>156         ## Video
+157          video/*)
+158              # Thumbnail
+159              ffmpegthumbnailer -i &quot;${FILE_PATH}&quot; -o &quot;${IMAGE_CACHE_PATH}&quot; -s 0 &amp;&amp; exit 6
+160              exit 1;;</code></pre>
+<p>These lines should be commented out. So remove those comments -
+restart ranger and done.</p>
 <h2 id="pdf-thumbnail-preview-requires-image-preview-working">PDF
 thumbnail preview (requires Image preview working)</h2>
 <ul>
 <li>search for<code>set preview_script ~/.config/ranger/scope.sh</code>
 in <code>rc.conf</code> which should be commented out</li>
 <li>remove the comment</li>
-<li>search for <code>application/pdf</code> in
-<code>scope.sh</code></li>
-<li><code>162         ## PDF 163          application/pdf) 164              pdftoppm -f 1 -l 1 \ 165                       -scale-to-x "${DEFAULT_SIZE%x*}" \ 166                       -scale-to-y -1 \ 167                       -singlefile \ 168                       -jpeg -tiffcompression jpeg \ 169                       -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \ 170                  &amp;&amp; exit 6 || exit 1;;</code>These
+<li>search for <code>application/pdf</code> in <code>scope.sh</code>
+<code>162         ## PDF 163          application/pdf) 164              pdftoppm -f 1 -l 1 \ 165                       -scale-to-x "${DEFAULT_SIZE%x*}" \ 166                       -scale-to-y -1 \ 167                       -singlefile \ 168                       -jpeg -tiffcompression jpeg \ 169                       -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \ 170                  &amp;&amp; exit 6 || exit 1;;</code>These
 lines should be commented out. So remove those comments</li>
 <li>restart ranger and done</li>
 </ul>
