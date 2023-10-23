@@ -65,8 +65,12 @@ Linuxはいじくり回すのは楽しいのだが、それが目的になって
 
 	`brew install ranger`
 
+	do\
+	`ranger --copy-config=all`
+
 	In ranger, I'd recommend doing:\
 	`set colorscheme solarized`\
+	set the line below in `rc.conf`\
 	`set draw_borders true`\
 	so it will look prettier.
 
