@@ -48,31 +48,37 @@ Linuxはいじくり回すのは楽しいのだが、それが目的になって
 	1. Install Account Containers
 1. Install Xcode
 1. Install Homebrew
-[homebrew](https://docs.brew.sh/Installation)
+	[homebrew](https://docs.brew.sh/Installation)
 1. Install Kitty
-`brew install --cask kitty`
+	`brew install --cask kitty`
 1. SSH鍵生成
-`ssh key-gen`
+	`ssh key-gen`
 
-とりあえず、これはやらなくちゃ始まらない。
-作成できたら、忘れずにGitHub等に公開鍵を登録する。
+	とりあえず、これはやらなくちゃ始まらない。
+	作成できたら、忘れずにGitHub等に公開鍵を登録する。
 
 1. Install 'vim'
-`brew install vim`
+
+	`brew install vim`
+
 1. Install 'ranger'
-`brew install ranger`
-In ranger, I'd recommend doing:
- `set colorscheme solarized`
- `set draw_borders true`
- so it will look prettier.
+
+	`brew install ranger`
+
+	In ranger, I'd recommend doing:
+	`set colorscheme solarized`
+	`set draw_borders true`
+	so it will look prettier.
 
 1. Register git email address 
-`git config --global user.email "youremail@yourdomain.com"`
-So whenever you commit to GitHub, they will count as your contributes.
+	`git config --global user.email "youremail@yourdomain.com"`
+	So whenever you commit to GitHub, they will count as your contributes.
 
 1. Install CyberDuck for easier fiile transfer over sftp
 
 1. Install Google 日本語入力
 
-[Google IME](https://www.google.co.jp/ime/)
+	[Google IME](https://www.google.co.jp/ime/)
+
+1. Mail.app に使用するメアドを追加
 
