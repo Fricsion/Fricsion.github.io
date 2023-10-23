@@ -56,6 +56,7 @@ Linuxはいじくり回すのは楽しいのだが、それが目的になって
 
 とりあえず、これはやらなくちゃ始まらない。
 作成できたら、忘れずにGitHub等に公開鍵を登録する。
+
 1. Install 'vim'
 `brew install vim`
 1. Install 'ranger'
@@ -70,4 +71,8 @@ In ranger, I'd recommend doing:
 So whenever you commit to GitHub, they will count as your contributes.
 
 1. Install CyberDuck for easier fiile transfer over sftp
+
+1. Install Google 日本語入力
+
+[Google IME](https://www.google.co.jp/ime/)
 
