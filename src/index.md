@@ -81,6 +81,7 @@ Taiki Matsumura. 松村 太貴
 * [情報処理学会第82回全国大会中高生情報学研究コンテスト 入賞](https://www.milive.jp/live/200301/10/)
 
 ### Blogs
+* [Arch Wiki by Tiz](pages/myarchwiki.html)
 * [New Home](pages/newhome.html)
 * [Privacy Research](pages/privacy.html)
 * [Learning GitHub](pages/learn_git.html)
