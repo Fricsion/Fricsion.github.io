@@ -6,14 +6,13 @@ header-includes:
 	<title>Racing Ranger</title>
 
 ---
-# Ranger Rice
 Most of the configurations are done inside `~/config/ranger` directory
 
-## show borders
+## Showing borders
 - search for `set draw_borders none` in `rc.conf`
-- Set `none` to `both` or something like 'true'
+- Set `none` to `both` or something like `true`
 
-## colorscheme
+## Colorschemes
 - search for `set colorscheme default` in `rc.conf`
 - Change `default` to something like `solarized`
 
@@ -22,7 +21,7 @@ Most of the configurations are done inside `~/config/ranger` directory
 - search for `set preview_images false` in `rc conf`
 - change `false` to `true`
 - scroll down and spot ` set preview_images_method w3m`
-- change `w3m` to `ueberzug
+- change `w3m` to `ueberzug``
 - restart ranger and it should be working
 
 
