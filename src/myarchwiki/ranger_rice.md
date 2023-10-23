@@ -31,7 +31,7 @@ Most of the configurations are done inside `~/config/ranger` directory
 - remove the comment
 - search for `video` in `scope.sh`
 
-```
+```py
 156         ## Video
 157          video/*)
 158              # Thumbnail
@@ -48,7 +48,7 @@ Most of the configurations are done inside `~/config/ranger` directory
 - remove the comment
 - search for `application/pdf` in `scope.sh`
 
-```
+```py
 162         ## PDF
 163          application/pdf)
 164              pdftoppm -f 1 -l 1 \
