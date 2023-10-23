@@ -220,17 +220,30 @@ in <code>rc.conf</code> which should be commented out</li>
 158              # Thumbnail
 159              ffmpegthumbnailer -i &quot;${FILE_PATH}&quot; -o &quot;${IMAGE_CACHE_PATH}&quot; -s 0 &amp;&amp; exit 6
 160              exit 1;;</code></pre>
-<p>These lines should be commented out. So remove those comments -
-restart ranger and done.</p>
+<p>These lines should be commented out. So remove those comments</p>
+<ul>
+<li>restart ranger and done.</li>
+</ul>
 <h2 id="pdf-thumbnail-preview-requires-image-preview-working">PDF
 thumbnail preview (requires Image preview working)</h2>
 <ul>
 <li>search for<code>set preview_script ~/.config/ranger/scope.sh</code>
 in <code>rc.conf</code> which should be commented out</li>
 <li>remove the comment</li>
-<li>search for <code>application/pdf</code> in <code>scope.sh</code>
-<code>162         ## PDF 163          application/pdf) 164              pdftoppm -f 1 -l 1 \ 165                       -scale-to-x "${DEFAULT_SIZE%x*}" \ 166                       -scale-to-y -1 \ 167                       -singlefile \ 168                       -jpeg -tiffcompression jpeg \ 169                       -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \ 170                  &amp;&amp; exit 6 || exit 1;;</code>These
-lines should be commented out. So remove those comments</li>
+<li>search for <code>application/pdf</code> in
+<code>scope.sh</code></li>
+</ul>
+<pre><code>162         ## PDF
+163          application/pdf)
+164              pdftoppm -f 1 -l 1 \
+165                       -scale-to-x &quot;${DEFAULT_SIZE%x*}&quot; \
+166                       -scale-to-y -1 \
+167                       -singlefile \
+168                       -jpeg -tiffcompression jpeg \
+169                       -- &quot;${FILE_PATH}&quot; &quot;${IMAGE_CACHE_PATH%.*}&quot; \
+170                  &amp;&amp; exit 6 || exit 1;;</code></pre>
+<p>These lines should be commented out. So remove those comments</p>
+<ul>
 <li>restart ranger and done</li>
 </ul>
 </body>

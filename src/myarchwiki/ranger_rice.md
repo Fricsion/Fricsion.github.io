@@ -30,6 +30,7 @@ Most of the configurations are done inside `~/config/ranger` directory
 - search for`set preview_script ~/.config/ranger/scope.sh` in `rc.conf` which should be commented out
 - remove the comment
 - search for `video` in `scope.sh`
+
 ```
 156         ## Video
 157          video/*)
@@ -37,13 +38,16 @@ Most of the configurations are done inside `~/config/ranger` directory
 159              ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
 160              exit 1;;
 ``` 
+
 These lines should be commented out. So remove those comments
+
 - restart ranger and done.
 
 ## PDF thumbnail preview (requires Image preview working)
 - search for`set preview_script ~/.config/ranger/scope.sh` in `rc.conf` which should be commented out
 - remove the comment
 - search for `application/pdf` in `scope.sh`
+
 ```
 162         ## PDF
 163          application/pdf)
@@ -54,6 +58,9 @@ These lines should be commented out. So remove those comments
 168                       -jpeg -tiffcompression jpeg \
 169                       -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \
 170                  && exit 6 || exit 1;;
-```These lines should be commented out. So remove those comments
+```
+
+These lines should be commented out. So remove those comments
+
 - restart ranger and done
 
