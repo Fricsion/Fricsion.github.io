@@ -6,7 +6,7 @@ header-includes:
 	<title>Taiki M</title>
 
 ---
- [🌐English](index_en.html)
+ [🌐English](pages/index_en.html)
 
 Taiki Matsumura. 松村 太貴
 
@@ -40,7 +40,7 @@ Taiki Matsumura. 松村 太貴
 ### 尊敬している人
 - 父母
 - Linus Torvalds
-- [大切な人](sk.html)
+- [大切な人](pages/sk.html)
 
 ### GPG
 [```$ gpg --import 🔑🔒```](tiz.gpg)
@@ -81,7 +81,7 @@ Taiki Matsumura. 松村 太貴
 * [情報処理学会第82回全国大会中高生情報学研究コンテスト 入賞](https://www.milive.jp/live/200301/10/)
 
 ### Blogs
-* [New Home](newhome.html)
-* [Privacy Research](privacy.html)
-* [Learning GitHub](learn_git.html)
-* [New M1 MacBook Air](m1mba.html)
+* [New Home](pages/newhome.html)
+* [Privacy Research](pages/privacy.html)
+* [Learning GitHub](pages/learn_git.html)
+* [New M1 MacBook Air](pages/m1mba.html)

@@ -1,7 +1,0 @@
-index
-index_en
-newhome
-sk
-privacy 
-learn_git
-m1mba

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>About Me</title>
+  <title>Arch Settings</title>
   <style>
     html {
       color: #1a1a1a;
@@ -58,6 +58,10 @@
       color: #1a1a1a;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -152,8 +156,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -163,7 +170,7 @@
   <br />
   <meta charset="utf-8"/><br />
   <title><br />
-  Taiki M<br />
+  Arch Settings<br />
   </title>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -171,105 +178,53 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">About Me</h1>
+<h1 class="title">Arch Settings</h1>
 </header>
-<p><a href="index.html">🌐日本語</a></p>
-<p><strong><em>Notice!! English version of this website may not contain
-the latest content. </em></strong></p>
-<p>taiki. Taiki Matsumura. 松村 太貴</p>
-<p><img src="img/me.jpg" alt="A picture of myself" title="my pic" height="100"/></p>
-<h3 id="affiliation">Affiliation</h3>
-<ul>
-<li>Keio Faculty of Environment and Information SFC`21
-<ul>
-<li><a href="https://rg.sfc.keio.ac.jp">Murai Research Lab.</a>（Keio
-SFC）
-<ul>
-<li><a href="https://d-trust.sfc.wide.ad.jp/">Tezuka Lab./ Digital
-Trust</a></li>
-</ul></li>
-<li><a
-href="https://www.sfc.keio.ac.jp/faculty_profile/list/PM/fumio-shimpo.html">Shimpo
-Fumio Lab.</a></li>
-</ul></li>
-</ul>
-<h3 id="research-topic">Research Topic</h3>
-<ul>
-<li>Online Privacy
-<ul>
-<li>PETs (Privacy Enhancing Technologies)</li>
-<li>Privacy-related regulation</li>
-</ul></li>
-<li>Cryptography
-<ul>
-<li>QKD (Quantum Key Distribution)</li>
-</ul></li>
-<li>Internet</li>
-</ul>
-<h3 id="what-i-like">What I like</h3>
-<ul>
-<li>English 🇬🇧</li>
-<li>Sleeping 🛌</li>
-<li>Themeparks 🎡</li>
-<li>GNU/Linux 🐧</li>
-</ul>
-<h3 id="goals">Goals</h3>
-<ul>
-<li>NTT 社会情報研究所</li>
-</ul>
-<h3 id="people-i-respect">People I respect</h3>
-<ul>
-<li>Mom and Dad</li>
-<li>Linus Torvalds</li>
-<li><a href="sk.html">My lover</a></li>
-</ul>
-<h3 id="gpg">GPG</h3>
-<p><a href="tiz.gpg"><code>$ gpg --import 🔑🔒</code></a></p>
-<h3 id="contacts">Contacts</h3>
-<ul>
-<li><a href="mailto:tizberius@keio.jp"
-class="email">tizberius@keio.jp</a></li>
-<li><a href="mailto:tiz@sfc.wide.ad.jp"
-class="email">tiz@sfc.wide.ad.jp</a> / Murai Lab. WIDE</li>
-</ul>
-<h3 id="cryptocurrency">Cryptocurrency</h3>
-<h4 id="monero">Monero</h4>
-<p><code>42N92aBP3aL1zqWdYNyd1FjiVXDcghQsDWHkM9ZCv5Zae6WB6kjzDZDZ8kC7mNbiwKaE83Z9KYpQ7EfU1VdF8nmsFb1c4MB</code></p>
-<h3 id="student-assistant-courses">Student Assistant Courses</h3>
-<table>
-<tbody>
-<tr class="odd">
-<td>デジタルトラスト</td>
-<td>火</td>
-<td>2-3</td>
-<td>2022</td>
-<td>秋</td>
-</tr>
-<tr class="even">
-<td>情報基礎１</td>
-<td>水</td>
-<td>2</td>
-<td>2023</td>
-<td>春</td>
-</tr>
-<tr class="odd">
-<td>看護情報リテラシー</td>
-<td>水</td>
-<td>3-4</td>
-<td>2023</td>
-<td>春</td>
-</tr>
-</tbody>
-</table>
-<h3 id="history">History</h3>
-<ul>
-<li><a
-href="https://www.milive.jp/live/200301/10/">情報処理学会第82回全国大会中高生情報学研究コンテスト
-入賞</a></li>
-</ul>
-<h3 id="blogs">Blogs</h3>
-<ul>
-<li><a href="newhome.html">New Home</a></li>
-</ul>
+<h1 id="arch-settings">Arch settings</h1>
+<h2 id="installing-fonts-using-otf-ttf">installing fonts (using otf,
+ttf)</h2>
+<p>just move those files to ~/.local/share/fonts/</p>
+<h2 id="listing-fonts">listing fonts</h2>
+<p><code>fc-list</code> ## show font priority (the higher the more top
+in the priority) <code>fc-match</code></p>
+<h2
+id="changing-built-in-laptop-keyboard-layout-at-kernel-level">changing
+built-in laptop keyboard layout (at kernel level)</h2>
+<p>https://wiki.archlinux.org/title/Map_scancodes_to_keycodes</p>
+<p>create &amp; edit file <code>/etc/udev/hwdb.d/whatever.hwdb</code> to
+be like below
+<code>evdev:atkbd:dmi:*  KEYBOARD_KEY_2b=enter   KEYBOARD_KEY_1c=backslash    KEYBOARD_KEY_7d=backspace     KEYBOARD_KEY_70=leftalt      KEYBOARD_KEY_73=rightshift</code>
+as you can see these lines will tell the kernel “when the key recognized
+as scancode(e.g. 0x2b, 0x1c…), it will send keycode of right side of =”
+Be aware that if you leave out a space (no more than 1 space) in the
+line where it contains KEYBOARD_KEY_… Also, scancodes can be aquired by
+runing this command below in console not in GUI
+<code>showkey --scancodes</code> You have to use it without 0x
+(e.g. 0x2b -&gt; 2, 0x1c -&gt; 1c) it might output two or more codes for
+one key. You might just get the first one (maybe it’s the pressed down)
+and ignore the second one (maybe it’s the pressed up ig) and about
+modifier keys, they will likely output 4 codes. So use the most unique
+one compared to other ones.</p>
+<pre><code> and run
+ `sudo systemd-hwdb update`
+ `sudo udevadm trigger`  </code></pre>
+<h2 id="natural-scrolling">Natural Scrolling</h2>
+<p>https://wiki.archlinux.org/title/Libinput this wiki page literally
+says everything. 1. <code>xinput list</code> to get devices and their
+ids 2. <code>xinput list-props &lt;id&gt;</code> without &lt;&gt; and
+check which number in parenthesis is assigned to the Natural Scrolling
+Enabled 3. <code>xinput set-props &lt;id&gt; &lt;number&gt; 1</code>
+this time, we want the natural scrolling to be enabled which is 1.</p>
+<h2 id="keychron-keyboard-function-keys-not-working">Keychron keyboard
+function keys not working</h2>
+<p>Keychron is used like Apple keyboard in ubuntu: Reference:
+https://help.ubuntu.com/community/AppleKeyboard</p>
+<p>0 = disabled : Disable the ‘fn’ key. Pressing ‘fn’+‘F8’ will behave
+like you only press ‘F8’ 1 = fkeyslast : Function keys are used as last
+key. Pressing ‘F8’ key will act as a special key. Pressing ‘fn’+‘F8’
+will behave like a F8. 2 = fkeysfirst : Function keys are used as first
+key. Pressing ‘F8’ key will behave like a F8. Pressing ‘fn’+‘F8’ will
+act as special key (play/pause).
+<code>echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode</code></p>
 </body>
 </html>

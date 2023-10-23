@@ -1,3 +1,10 @@
+---
+title: 日本語入力Mozc+Fcitx
+header-includes:
+- \usepackage[whole]{bxcjkjatype}
+	<meta charset="utf-8"/>
+    <title>日本語入力Mozc+Fcitx</title>
+---
 # Linux Japanese Input Method Guide
 
 ## Just doesn't work in certain application. 

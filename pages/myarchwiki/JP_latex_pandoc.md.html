@@ -4,10 +4,9 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>🥂</title>
+  <title>LaTeX日本語</title>
   <style>
     html {
-      font-family: Tsukushi A Round Gothic;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -59,6 +58,10 @@
       color: #1a1a1a;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -153,8 +156,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -164,7 +170,7 @@
   <br />
   <meta charset="utf-8"/><br />
   <title><br />
-  大切な人へ<br />
+  LaTeX日本語<br />
   </title>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -172,10 +178,21 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">🥂</h1>
+<h1 class="title">LaTeX日本語</h1>
 </header>
-<p style="text-align: center; font-family: &#39;Tsukushi A Round Gothic&#39;;">
-いつも俺のことを大切にしてくれてありがとう
-</p>
+<h1 id="using-jp-characters-in-latex-or-pandoc">Using JP characters in
+Latex or Pandoc</h1>
+<h2 id="in-latex">In Latex</h2>
+<p>Put this line</p>
+<pre><code>\usepackage[whole]{bxcjkjatype}</code></pre>
+<p>on top of anything else.</p>
+<h2 id="in-pandoc-markdown">In Pandoc (Markdown)</h2>
+<p>Put these lines</p>
+<pre><code>---
+header-includes:
+- \usepackage[whole]{bxcjkjatype}
+---</code></pre>
+<p>on top of anything else. the part between <code>---</code> is meant
+to be the meta data.</p>
 </body>
 </html>

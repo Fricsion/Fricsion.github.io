@@ -6,9 +6,9 @@ header-includes:
 	<title>Taiki M</title>
 
 ---
- [🌐日本語](index.html)
+ [🌐日本語](../index.html)
 
-***Notice!! English version of this website may not contain the latest content. ***
+**Note that this page does not include all the information present in the Japanese version.**
 
 taiki. Taiki Matsumura. 松村 太貴
 
@@ -35,9 +35,6 @@ taiki. Taiki Matsumura. 松村 太貴
 - Themeparks 🎡
 - GNU/Linux 🐧
 
-### Goals
-- NTT 社会情報研究所
-
 ### People I respect
 - Mom and Dad
 - Linus Torvalds
@@ -53,17 +50,4 @@ taiki. Taiki Matsumura. 松村 太貴
 ### Cryptocurrency 
 #### Monero
 `42N92aBP3aL1zqWdYNyd1FjiVXDcghQsDWHkM9ZCv5Zae6WB6kjzDZDZ8kC7mNbiwKaE83Z9KYpQ7EfU1VdF8nmsFb1c4MB`
-
-### Student Assistant Courses
-| | | | | |
-|-|-|-|-|-|
-| デジタルトラスト | 火 | 2-3 | 2022 | 秋 |
-| 情報基礎１ | 水 | 2 | 2023 | 春 |
-| 看護情報リテラシー | 水 | 3-4 | 2023 | 春 |
-
-### History
-- [情報処理学会第82回全国大会中高生情報学研究コンテスト 入賞](https://www.milive.jp/live/200301/10/)
-
-### Blogs
-- [New Home](newhome.html)
 

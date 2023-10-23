@@ -1,4 +1,13 @@
-# Shell techuniques
+---
+title: Shell Technique
+header-includes:
+- \usepackage[whole]{bxcjkjatype}
+	<meta charset="utf-8"/>
+	<title>Shell Technique</title>
+
+---
+
+# Shell techniques
 
 # Counting up to n
 ```

@@ -1,3 +1,10 @@
+---
+title: Arch Settings
+header-includes:
+- \usepackage[whole]{bxcjkjatype}
+	<meta charset="utf-8"/>
+	<title>Arch Settings</title>
+---
 # Arch settings
 
 ## installing fonts (using otf, ttf)

@@ -1,3 +1,11 @@
+---
+title: How to Rice Ranger
+header-includes:
+- \usepackage[whole]{bxcjkjatype}
+	<meta charset="utf-8"/>
+	<title>Racing Ranger</title>
+
+---
 # Ranger Rice
 Most of the configurations are done inside `~/config/ranger` directory
 ## show borders

@@ -1,3 +1,10 @@
+---
+title: Libreoffice日本語
+header-includes:
+- \usepackage[whole]{bxcjkjatype}
+	<meta charset="utf-8"/>
+    <title>Libreoffice日本語</title>
+---
 # Libreoffice Japanese setting
 
 kanji may be shown in simplified chinese form. 

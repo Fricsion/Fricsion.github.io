@@ -1,13 +1,34 @@
-# Use this if you are extremely lazy.
 
-cat build_files.txt | while read line 
-do
-   pandoc --standalone src/$line.md -o $line.html
+directories=$(ls -d src/*/ | xargs -n 1 basename)
+
+mkdir pages
+for d in $directories; do
+	
+	mkdir pages/$d
+
+	echo "---\ntitle: $d\nheader-includes:\n- \usepackage[whole]{bxcjkjatype}\n	<meta charset="utf-8"/>\n	<title>$d</title>\n---\n" > src/$d.md
+	
+	files=$(ls "src/$d")
+	
+	for f in $files; do
+	   	pandoc --standalone src/$d/$f -o pages/$d/$f.html
+
+		echo "* [$f]($d/$f)\n" >> src/$d.md
+
+	done
 done
 
-# for file in src/*; do
-#     pandoc --standalone src/$file.md -o $file.html
-# done
+
+md_files=$(ls src/*.md | xargs -n 1 basename)
+for f in $md_files; do
+	base_name=$(basename "$f" .md)
+
+  # Convert the Markdown file to HTML and save it with the same name
+	
+	pandoc --standalone "src/$f" -o "pages/$base_name.html"
+done
+
+mv pages/index.html index.html
 
 git add -A
 
@@ -20,4 +41,3 @@ fi
 
 git push origin main
 
-"If building files doesn't seem to work, check build_files.txt ends with empty line!"

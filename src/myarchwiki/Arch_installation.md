@@ -1,3 +1,10 @@
+---
+title: Arch Installation
+header-includes:
+- \usepackage[whole]{bxcjkjatype}
+	<meta charset="utf-8"/>
+    <title>Arch Installation</title>
+---
 # Arch installation
 
 # During installation
