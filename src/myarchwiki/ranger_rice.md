@@ -39,7 +39,7 @@ Most of the configurations are done inside `~/config/ranger` directory
 160              exit 1;;
 ``` 
 
-These lines should be commented out. So remove those comments
+	These lines should be commented out. So remove those comments
 
 - restart ranger and done.
 
@@ -60,7 +60,7 @@ These lines should be commented out. So remove those comments
 170                  && exit 6 || exit 1;;
 ```
 
-These lines should be commented out. So remove those comments
+	These lines should be commented out. So remove those comments
 
 - restart ranger and done
 
