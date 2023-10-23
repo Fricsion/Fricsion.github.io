@@ -11,9 +11,11 @@ for d in $directories; do
 	files=$(ls "src/$d")
 	
 	for f in $files; do
-	   	pandoc --standalone src/$d/$f -o pages/$d/$f.html
 
-		echo "* [$f]($d/$f)\n" >> src/$d.md
+		base_name=$(basename "$f" .md)
+	   	pandoc --standalone src/$d/$f -o pages/$d/$base_name.html
+
+		echo "* [$f]($d/$base_name.html)\n" >> src/$d.md
 
 	done
 done

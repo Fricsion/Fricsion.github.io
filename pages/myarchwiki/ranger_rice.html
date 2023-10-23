@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>myarchwiki</title>
+  <title>How to Rice Ranger</title>
   <style>
     html {
       color: #1a1a1a;
@@ -168,9 +168,9 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <br />
-  <meta charset=utf-8/><br />
+  <meta charset="utf-8"/><br />
   <title><br />
-  myarchwiki<br />
+  Racing Ranger<br />
   </title>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -178,22 +178,61 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">myarchwiki</h1>
+<h1 class="title">How to Rice Ranger</h1>
 </header>
+<h1 id="ranger-rice">Ranger Rice</h1>
+<p>Most of the configurations are done inside
+<code>~/config/ranger</code> directory</p>
+<h2 id="show-borders">show borders</h2>
 <ul>
-<li><p><a
-href="myarchwiki/Arch_installation.html">Arch_installation.md</a></p></li>
-<li><p><a
-href="myarchwiki/Arch_settings.html">Arch_settings.md</a></p></li>
-<li><p><a
-href="myarchwiki/JP_input_method.html">JP_input_method.md</a></p></li>
-<li><p><a
-href="myarchwiki/JP_latex_pandoc.html">JP_latex_pandoc.md</a></p></li>
-<li><p><a
-href="myarchwiki/Libreoffice_Japanese.html">Libreoffice_Japanese.md</a></p></li>
-<li><p><a href="myarchwiki/ranger_rice.html">ranger_rice.md</a></p></li>
-<li><p><a
-href="myarchwiki/shell_techniques.html">shell_techniques.md</a></p></li>
+<li>search for <code>set draw_borders none</code> in
+<code>rc.conf</code></li>
+<li>Set <code>none</code> to <code>both</code> or something like
+‘true’</li>
+</ul>
+<h2 id="colorscheme">colorscheme</h2>
+<ul>
+<li>search for <code>set colorscheme default</code> in
+<code>rc.conf</code></li>
+<li>Change <code>default</code> to something like
+<code>solarized</code></li>
+</ul>
+<h2 id="image-preview">Image preview</h2>
+<ul>
+<li>Install ueberzug with <code>yay -S ueberzug</code></li>
+<li>search for <code>set preview_images false</code> in
+<code>rc conf</code></li>
+<li>change <code>false</code> to <code>true</code></li>
+<li>scroll down and spot <code>set preview_images_method w3m</code></li>
+<li>change <code>w3m</code> to `ueberzug</li>
+<li>restart ranger and it should be working</li>
+</ul>
+<h2 id="video-thumbnail-preview-requires-image-preview-working">Video
+thumbnail preview (requires Image preview working)</h2>
+<ul>
+<li><code>sudo pacman -S ffmpegthumbnailer</code></li>
+<li>search for<code>set preview_script ~/.config/ranger/scope.sh</code>
+in <code>rc.conf</code> which should be commented out</li>
+<li>remove the comment</li>
+<li>search for <code>video</code> in <code>scope.sh</code></li>
+</ul>
+<pre><code>156         ## Video
+157          video/*)
+158              # Thumbnail
+159              ffmpegthumbnailer -i &quot;${FILE_PATH}&quot; -o &quot;${IMAGE_CACHE_PATH}&quot; -s 0 &amp;&amp; exit 6
+160              exit 1;;</code></pre>
+<p>These lines should be commented out. So remove those comments -
+restart ranger and done.</p>
+<h2 id="pdf-thumbnail-preview-requires-image-preview-working">PDF
+thumbnail preview (requires Image preview working)</h2>
+<ul>
+<li>search for<code>set preview_script ~/.config/ranger/scope.sh</code>
+in <code>rc.conf</code> which should be commented out</li>
+<li>remove the comment</li>
+<li>search for <code>application/pdf</code> in <code>scope.sh</code>
+<code>162         ## PDF 163          application/pdf) 164              pdftoppm -f 1 -l 1 \ 165                       -scale-to-x "${DEFAULT_SIZE%x*}" \ 166                       -scale-to-y -1 \ 167                       -singlefile \ 168                       -jpeg -tiffcompression jpeg \ 169                       -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \ 170                  &amp;&amp; exit 6 || exit 1;;</code>These
+lines should be commented out. So remove those comments</li>
+<li>restart ranger and done</li>
 </ul>
 </body>
 </html>

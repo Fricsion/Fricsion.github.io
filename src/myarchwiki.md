@@ -6,17 +6,17 @@ header-includes:
 	<title>myarchwiki</title>
 ---
 
-* [Arch_installation.md](myarchwiki/Arch_installation.md)
+* [Arch_installation.md](myarchwiki/Arch_installation.html)
 
-* [Arch_settings.md](myarchwiki/Arch_settings.md)
+* [Arch_settings.md](myarchwiki/Arch_settings.html)
 
-* [JP_input_method.md](myarchwiki/JP_input_method.md)
+* [JP_input_method.md](myarchwiki/JP_input_method.html)
 
-* [JP_latex_pandoc.md](myarchwiki/JP_latex_pandoc.md)
+* [JP_latex_pandoc.md](myarchwiki/JP_latex_pandoc.html)
 
-* [Libreoffice_Japanese.md](myarchwiki/Libreoffice_Japanese.md)
+* [Libreoffice_Japanese.md](myarchwiki/Libreoffice_Japanese.html)
 
-* [ranger_rice.md](myarchwiki/ranger_rice.md)
+* [ranger_rice.md](myarchwiki/ranger_rice.html)
 
-* [shell_techniques.md](myarchwiki/shell_techniques.md)
+* [shell_techniques.md](myarchwiki/shell_techniques.html)
 

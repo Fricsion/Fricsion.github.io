@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>myarchwiki</title>
+  <title>LaTeX日本語</title>
   <style>
     html {
       color: #1a1a1a;
@@ -168,9 +168,9 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <br />
-  <meta charset=utf-8/><br />
+  <meta charset="utf-8"/><br />
   <title><br />
-  myarchwiki<br />
+  LaTeX日本語<br />
   </title>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -178,22 +178,21 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">myarchwiki</h1>
+<h1 class="title">LaTeX日本語</h1>
 </header>
-<ul>
-<li><p><a
-href="myarchwiki/Arch_installation.html">Arch_installation.md</a></p></li>
-<li><p><a
-href="myarchwiki/Arch_settings.html">Arch_settings.md</a></p></li>
-<li><p><a
-href="myarchwiki/JP_input_method.html">JP_input_method.md</a></p></li>
-<li><p><a
-href="myarchwiki/JP_latex_pandoc.html">JP_latex_pandoc.md</a></p></li>
-<li><p><a
-href="myarchwiki/Libreoffice_Japanese.html">Libreoffice_Japanese.md</a></p></li>
-<li><p><a href="myarchwiki/ranger_rice.html">ranger_rice.md</a></p></li>
-<li><p><a
-href="myarchwiki/shell_techniques.html">shell_techniques.md</a></p></li>
-</ul>
+<h1 id="using-jp-characters-in-latex-or-pandoc">Using JP characters in
+Latex or Pandoc</h1>
+<h2 id="in-latex">In Latex</h2>
+<p>Put this line</p>
+<pre><code>\usepackage[whole]{bxcjkjatype}</code></pre>
+<p>on top of anything else.</p>
+<h2 id="in-pandoc-markdown">In Pandoc (Markdown)</h2>
+<p>Put these lines</p>
+<pre><code>---
+header-includes:
+- \usepackage[whole]{bxcjkjatype}
+---</code></pre>
+<p>on top of anything else. the part between <code>---</code> is meant
+to be the meta data.</p>
 </body>
 </html>

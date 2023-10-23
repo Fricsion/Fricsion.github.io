@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>myarchwiki</title>
+  <title>日本語入力Mozc+Fcitx</title>
   <style>
     html {
       color: #1a1a1a;
@@ -168,9 +168,9 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <br />
-  <meta charset=utf-8/><br />
+  <meta charset="utf-8"/><br />
   <title><br />
-  myarchwiki<br />
+  日本語入力Mozc+Fcitx<br />
   </title>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -178,22 +178,39 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">myarchwiki</h1>
+<h1 class="title">日本語入力Mozc+Fcitx</h1>
 </header>
-<ul>
-<li><p><a
-href="myarchwiki/Arch_installation.html">Arch_installation.md</a></p></li>
-<li><p><a
-href="myarchwiki/Arch_settings.html">Arch_settings.md</a></p></li>
-<li><p><a
-href="myarchwiki/JP_input_method.html">JP_input_method.md</a></p></li>
-<li><p><a
-href="myarchwiki/JP_latex_pandoc.html">JP_latex_pandoc.md</a></p></li>
-<li><p><a
-href="myarchwiki/Libreoffice_Japanese.html">Libreoffice_Japanese.md</a></p></li>
-<li><p><a href="myarchwiki/ranger_rice.html">ranger_rice.md</a></p></li>
-<li><p><a
-href="myarchwiki/shell_techniques.html">shell_techniques.md</a></p></li>
-</ul>
+<h1 id="linux-japanese-input-method-guide">Linux Japanese Input Method
+Guide</h1>
+<h2 id="just-doesnt-work-in-certain-application.">Just doesn’t work in
+certain application.</h2>
+<ol type="1">
+<li>Run <code>fcitx5-diagnose</code></li>
+<li>Spot some errors (in red characters) about environment
+variables.</li>
+<li>Set them in a file e.g. Add these lines below to
+<code>~/.xinitrc</code></li>
+</ol>
+<pre><code>export QT_IM_MODULE=fcitx
+export GTK_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx</code></pre>
+<h2 id="libreoffice-japanese-setting">Libreoffice Japanese setting</h2>
+<p>kanji may be shown in simplified chinese form. In order to change
+that and default to japanese kanji, you have to follow the instruction
+below: Tools -&gt; Options -&gt; Language -&gt; Tick ‘Asian’ box and
+select Japanese from pull down menu.</p>
+<h2 id="user-dictionary-setting-fcitx5">User dictionary setting
+(fcitx5)</h2>
+<ol type="1">
+<li>Launch <code>fcitx5-configtool</code></li>
+<li>Open ‘Addons’ tab</li>
+<li>You can spot ‘Mozc’ under ‘Input Method’</li>
+<li>Click ‘Configure’</li>
+<li>Spot ‘Dictionary Tool’</li>
+<li>Click ‘Confugure’ There you have it.</li>
+</ol>
+<h2 id="miscellaneous-configurations">Miscellaneous configurations</h2>
+<p>Some fcitx5 settings can be accessed in plain text format in
+<code>~/.config/fcitx5/config</code> How amazing is that</p>
 </body>
 </html>
