@@ -54,7 +54,7 @@ Linuxはいじくり回すのは楽しいのだが、それが目的になって
 1. SSH鍵生成
 	`ssh key-gen`
 
-	とりあえず、これはやらなくちゃ始まらない。
+	とりあえず、これはやらなくちゃ始まらない。\
 	作成できたら、忘れずにGitHub等に公開鍵を登録する。
 
 1. Install 'vim'
@@ -65,13 +65,13 @@ Linuxはいじくり回すのは楽しいのだが、それが目的になって
 
 	`brew install ranger`
 
-	In ranger, I'd recommend doing:
-	`set colorscheme solarized`
-	`set draw_borders true`
+	In ranger, I'd recommend doing:\
+	`set colorscheme solarized`\
+	`set draw_borders true`\
 	so it will look prettier.
 
 1. Register git email address 
-	`git config --global user.email "youremail@yourdomain.com"`
+	`git config --global user.email "youremail@yourdomain.com"`\
 	So whenever you commit to GitHub, they will count as your contributes.
 
 1. Install CyberDuck for easier fiile transfer over sftp
