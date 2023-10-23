@@ -6,6 +6,12 @@ header-includes:
 	<title>Racing Ranger</title>
 
 ---
+
+## Pre-requisite
+Run
+
+`ranger --copy-config=all`
+
 Most of the configurations are done inside `~/config/ranger` directory
 
 ## Showing borders
@@ -21,7 +27,7 @@ Most of the configurations are done inside `~/config/ranger` directory
 - search for `set preview_images false` in `rc conf`
 - change `false` to `true`
 - scroll down and spot ` set preview_images_method w3m`
-- change `w3m` to `ueberzug``
+- change `w3m` to `ueberzug`
 - restart ranger and it should be working
 
 
