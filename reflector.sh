@@ -15,7 +15,7 @@ for d in $directories; do
 		base_name=$(basename "$f" .md)
 	   	pandoc --standalone src/$d/$f -o pages/$d/$base_name.html
 
-		echo "* [$f]($d/$base_name.html)\n" >> src/$d.md
+		echo "* [$base_name]($d/$base_name.html)\n" >> src/$d.md
 
 	done
 done
