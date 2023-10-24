@@ -43,7 +43,7 @@ Taiki Matsumura. 松村 太貴
 - [大切な人](pages/sk.html)
 
 ### GPG
-[```$ gpg --import 🔑🔒```](tiz.gpg)
+[```$ gpg --import 🔑🔒```](files/tiz.gpg)
 ```
 +--[ RandomArt ]--+
 |  **   o.     . .|
