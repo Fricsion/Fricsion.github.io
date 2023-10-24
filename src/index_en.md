@@ -10,7 +10,7 @@ header-includes:
 
 **Note that this page does not include all the information present in the Japanese version.**
 
-taiki. Taiki Matsumura. 松村 太貴
+tiz. Taiki Matsumura. 松村 太貴
 
 
 <img src="img/me.jpg" alt="A picture of myself" title="my pic" height="100"/>
@@ -41,7 +41,7 @@ taiki. Taiki Matsumura. 松村 太貴
 - [My lover](sk.html)
 
 ### GPG
-[```$ gpg --import 🔑🔒```](tiz.gpg)
+[```$ gpg --import 🔑🔒```](../files/tiz.gpg)
 
 ### Contacts
 - <tizberius@keio.jp>
