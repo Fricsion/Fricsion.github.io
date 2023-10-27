@@ -102,6 +102,7 @@ change loader.conf content to
     ```
 
 add two files (arch.conf, arch-fallback.conf) under `/boot/loader/entries/`
+
 - arch.conf
 
     ```sh
@@ -110,6 +111,7 @@ add two files (arch.conf, arch-fallback.conf) under `/boot/loader/entries/`
         initrd /initramfs-linux.img
         options root="UUID={UUID}" rw
     ```
+
 - arch-fallback.conf (*optional)
 
     ```sh
