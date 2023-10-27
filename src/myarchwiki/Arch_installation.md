@@ -15,12 +15,11 @@ Make sure if you have installed efibootmgr
 `grub-install --efi-directory=/boot/efi --target=x86_64-efi /dev/sdX`
 
 ## When you cannot see the entire screen
-Install fbset
-Use
+* Install fbset
+* Use
+    `fbset -xres 2000 -yres 1200`
 
-`fbset -xres 2000 -yres 1200`
-
-Or something like that
+    Or something like that
 
 
 # Post Installation
