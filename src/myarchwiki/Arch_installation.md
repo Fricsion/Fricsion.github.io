@@ -17,19 +17,19 @@ Make sure if you have installed efibootmgr
 ## When you cannot see the entire screen
 Install fbset
 Use
+
 `fbset -xres 2000 -yres 1200`
+
 Or something like that
 
 
 # Post Installation
 ## Fix WiFi adapter not recognized issue
-Use
-`lspci -k`
-to show drivers in use. 
+Use `lspci -k` to show drivers in use. 
 
 Find the Wi-Fi adapter (most likely the Broadcom one)
 
-If the kernel driver in use is either bcma-pci-bridge or b43-pci-bridge, I need 
+If the kernel driver in use is either `bcma-pci-bridge` or `b43-pci-bridge`, I need 
 this process
 
 ### procedure

@@ -188,15 +188,16 @@ efibootmgr</p>
 <p><code>grub-install --efi-directory=/boot/efi --target=x86_64-efi /dev/sdX</code></p>
 <h2 id="when-you-cannot-see-the-entire-screen">When you cannot see the
 entire screen</h2>
-<p>Install fbset Use <code>fbset -xres 2000 -yres 1200</code> Or
-something like that</p>
+<p>Install fbset Use</p>
+<p><code>fbset -xres 2000 -yres 1200</code></p>
+<p>Or something like that</p>
 <h1 id="post-installation">Post Installation</h1>
 <h2 id="fix-wifi-adapter-not-recognized-issue">Fix WiFi adapter not
 recognized issue</h2>
 <p>Use <code>lspci -k</code> to show drivers in use.</p>
 <p>Find the Wi-Fi adapter (most likely the Broadcom one)</p>
-<p>If the kernel driver in use is either bcma-pci-bridge or
-b43-pci-bridge, I need this process</p>
+<p>If the kernel driver in use is either <code>bcma-pci-bridge</code> or
+<code>b43-pci-bridge</code>, I need this process</p>
 <h3 id="procedure">procedure</h3>
 <ul>
 <li><code>sudo pacman-mirrors -f 5 &amp;&amp; sudo pacman -Syyu</code>
