@@ -9,7 +9,7 @@ header-includes:
 
 ## In Latex
 Put this line
-```
+```latex
 \usepackage[whole]{bxcjkjatype}
 ```
 on top of anything else.
@@ -17,7 +17,7 @@ on top of anything else.
 ## In Pandoc (Markdown)
 
 Put these lines
-```
+```md
 ---
 header-includes:
 - \usepackage[whole]{bxcjkjatype}

@@ -12,7 +12,7 @@ header-includes:
 2. Spot some errors (in red characters) about environment variables. 
 3. Set them in a file 
 e.g. Add these lines below to `~/.xinitrc`
-```
+```sh
 export QT_IM_MODULE=fcitx
 export GTK_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx

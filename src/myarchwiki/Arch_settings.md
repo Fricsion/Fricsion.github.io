@@ -20,7 +20,7 @@ https://wiki.archlinux.org/title/Map_scancodes_to_keycodes
 
 create & edit file `/etc/udev/hwdb.d/whatever.hwdb`
 to be like below
-```
+```sh
 evdev:atkbd:dmi:*
  KEYBOARD_KEY_2b=enter
   KEYBOARD_KEY_1c=backslash
