@@ -94,12 +94,12 @@ First, inside chrooted environment, run
 We'll modify files in /boot/loader/
 change loader.conf content to
 
-    ```sh
-        default arch.conf
-        timeout 4
-        console-mode max
-        editor no
-    ```
+```sh
+    default arch.conf
+    timeout 4
+    console-mode max
+    editor no
+```
 
 add two files (arch.conf, arch-fallback.conf) under `/boot/loader/entries/`
 
