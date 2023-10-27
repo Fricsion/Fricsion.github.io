@@ -5,13 +5,13 @@ header-includes:
 	<meta charset="utf-8"/>
 	<title>Arch Settings</title>
 ---
-# Arch settings
 
 ## installing fonts (using otf, ttf)
 just move those files to ~/.local/share/fonts/
 
 ## listing fonts
 `fc-list`
+
 ## show font priority (the higher the more top in the priority)
 `fc-match`
 
@@ -27,7 +27,7 @@ evdev:atkbd:dmi:*
    KEYBOARD_KEY_7d=backspace
     KEYBOARD_KEY_70=leftalt
 	 KEYBOARD_KEY_73=rightshift
-	 ```
+```
 	 as you can see these lines will tell the kernel "when the key recognized as scancode(e.g. 0x2b, 0x1c...), it will send keycode of right side of ="
 	 Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_...
 	 Also, scancodes can be aquired by runing this command below in console not in GUI
@@ -37,25 +37,28 @@ evdev:atkbd:dmi:*
 	 and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones. 
 
 	 and run
-	 `sudo systemd-hwdb update`
-	 `sudo udevadm trigger`  
+`sudo systemd-hwdb update`
+`sudo udevadm trigger`  
 
 ## Natural Scrolling
 https://wiki.archlinux.org/title/Libinput
 this wiki page literally says everything.
 1. `xinput list`
-to get devices and their ids
+	to get devices and their ids
 2. `xinput list-props <id>`
-without <> and check which number in parenthesis is assigned to the Natural Scrolling Enabled
+	without <> and check which number in parenthesis is assigned to the Natural Scrolling Enabled
 3. `xinput set-props <id> <number> 1`
-this time, we want the natural scrolling to be enabled which is 1.
+	this time, we want the natural scrolling to be enabled which is 1.
 
 ## Keychron keyboard function keys not working 
 
  Keychron is used like Apple keyboard in ubuntu:
   Reference: https://help.ubuntu.com/community/AppleKeyboard
 
-   0 = disabled : Disable the 'fn' key. Pressing 'fn'+'F8' will behave like you only press 'F8'
-    1 = fkeyslast : Function keys are used as last key. Pressing 'F8' key will act as a special key. Pressing 'fn'+'F8' will behave like a F8.
-	 2 = fkeysfirst : Function keys are used as first key. Pressing 'F8' key will behave like a F8. Pressing 'fn'+'F8' will act as special key (play/pause).
-	 `echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode`
+* 0 = disabled : Disable the 'fn' key. Pressing 'fn'+'F8' will behave like you only press 'F8'
+* 1 = fkeyslast : Function keys are used as last key. Pressing 'F8' key will act as a special key. Pressing 'fn'+'F8' will behave like a F8.
+* 2 = fkeysfirst : Function keys are used as first key. Pressing 'F8' key will behave like a F8. Pressing 'fn'+'F8' will act as special key (play/pause).
+
+example: 
+
+`echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode`

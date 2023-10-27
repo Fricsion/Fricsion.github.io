@@ -180,7 +180,6 @@
 <header id="title-block-header">
 <h1 class="title">Arch Installation</h1>
 </header>
-<h1 id="arch-installation">Arch installation</h1>
 <h1 id="during-installation">During installation</h1>
 <h2 id="when-efi-directory-not-found-when-grub-install">When EFI
 directory not found when grub-install,</h2>
@@ -189,8 +188,8 @@ efibootmgr</p>
 <p><code>grub-install --efi-directory=/boot/efi --target=x86_64-efi /dev/sdX</code></p>
 <h2 id="when-you-cannot-see-the-entire-screen">When you cannot see the
 entire screen</h2>
-<p>Install fbset Use fbset -xres 2000 -yres 1200 Or something like
-that</p>
+<p>Install fbset Use <code>fbset -xres 2000 -yres 1200</code> Or
+something like that</p>
 <h1 id="post-installation">Post Installation</h1>
 <h2 id="fix-wifi-adapter-not-recognized-issue">Fix WiFi adapter not
 recognized issue</h2>
@@ -202,15 +201,14 @@ b43-pci-bridge, I need this process</p>
 <ul>
 <li><code>sudo pacman-mirrors -f 5 &amp;&amp; sudo pacman -Syyu</code>
 to update system</li>
-<li><code>sudo pacman -S $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{pr int $1"-headers"}' ORS=' ')</code>
+<li><code>sudo pacman -S $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print $1"-headers"}' ORS=' ')</code>
 to install Linux headers packages</li>
 <li><code>sudo pacman -S dkms</code></li>
 <li><code>sudo pacman -S broadcom-wl-dkms</code></li>
 <li>reboot!</li>
 </ul>
 <p>ref:
-https://archived.forum.manjaro.org/t/broadcom-wifi-driver-fails-to-install-
-properly/46316/2</p>
+https://archived.forum.manjaro.org/t/broadcom-wifi-driver-fails-to-install-properly/46316/2</p>
 <h2 id="connect-to-wifi">Connect to WiFi</h2>
 <h2 id="fix-wifi-adapter-not-recognized-issue-1">Fix WiFi adapter not
 recognized issue</h2>
@@ -256,14 +254,18 @@ NetworkManager)</h1>
 <p>Always check this ref: https://wiki.archlinux.org/title/Mac First,
 inside chrooted environment, run
 <code>bootctl --path=/boot install</code></p>
-<p>We’ll modify files in /boot/loader/ change loader.conf content to
-<code>default arch.conf timeout 4 console-mode max editor no</code> add
-two files (arch.conf, arch-fallback.conf) under /boot/loader/entries/ -
-arch.conf
-<code>title Arch Linux linux /vmlinuz-linux initrd /initramfs-linux.img options root="UUID={UUID}" rw</code>
-- arch-fallback.conf (*optional) ` title Arch Linux (fallback initramfs)
-linux /vmlinuz-linux initrd /initramfs-linuz-fallback.img options
-root=“UUID={UUID}” rw</p>
+<p>We’ll modify files in /boot/loader/ change loader.conf content to</p>
+<pre><code>```
+    default arch.conf
+    timeout 4
+    console-mode max
+    editor no
+```</code></pre>
+<p>add two files (arch.conf, arch-fallback.conf) under
+<code>/boot/loader/entries/</code> - arch.conf
+<code>title Arch Linux         linux /vmlinuz-linux         initrd /initramfs-linux.img         options root="UUID={UUID}" rw</code>
+- arch-fallback.conf (*optional)
+<code>title Arch Linux (fallback initramfs)         linux /vmlinuz-linux         initrd /initramfs-linuz-fallback.img         options root="UUID={UUID}" rw</code></p>
 <h1 id="for-amd-video-cards">For AMD video cards</h1>
 <p>pacman -S xf86-video-amdgpu # For ATI video cards pacman -S
 xf86-video-ati # For Intel video cards pacman -S xf86-video-intel # For

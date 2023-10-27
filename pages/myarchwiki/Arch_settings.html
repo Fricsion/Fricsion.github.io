@@ -180,34 +180,37 @@
 <header id="title-block-header">
 <h1 class="title">Arch Settings</h1>
 </header>
-<h1 id="arch-settings">Arch settings</h1>
 <h2 id="installing-fonts-using-otf-ttf">installing fonts (using otf,
 ttf)</h2>
 <p>just move those files to ~/.local/share/fonts/</p>
 <h2 id="listing-fonts">listing fonts</h2>
-<p><code>fc-list</code> ## show font priority (the higher the more top
-in the priority) <code>fc-match</code></p>
+<p><code>fc-list</code></p>
+<h2 id="show-font-priority-the-higher-the-more-top-in-the-priority">show
+font priority (the higher the more top in the priority)</h2>
+<p><code>fc-match</code></p>
 <h2
 id="changing-built-in-laptop-keyboard-layout-at-kernel-level">changing
 built-in laptop keyboard layout (at kernel level)</h2>
 <p>https://wiki.archlinux.org/title/Map_scancodes_to_keycodes</p>
 <p>create &amp; edit file <code>/etc/udev/hwdb.d/whatever.hwdb</code> to
-be like below
-<code>evdev:atkbd:dmi:*  KEYBOARD_KEY_2b=enter   KEYBOARD_KEY_1c=backslash    KEYBOARD_KEY_7d=backspace     KEYBOARD_KEY_70=leftalt      KEYBOARD_KEY_73=rightshift</code>
-as you can see these lines will tell the kernel “when the key recognized
-as scancode(e.g. 0x2b, 0x1c…), it will send keycode of right side of =”
-Be aware that if you leave out a space (no more than 1 space) in the
-line where it contains KEYBOARD_KEY_… Also, scancodes can be aquired by
-runing this command below in console not in GUI
-<code>showkey --scancodes</code> You have to use it without 0x
-(e.g. 0x2b -&gt; 2, 0x1c -&gt; 1c) it might output two or more codes for
-one key. You might just get the first one (maybe it’s the pressed down)
-and ignore the second one (maybe it’s the pressed up ig) and about
-modifier keys, they will likely output 4 codes. So use the most unique
-one compared to other ones.</p>
-<pre><code> and run
- `sudo systemd-hwdb update`
- `sudo udevadm trigger`  </code></pre>
+be like below</p>
+<pre><code>evdev:atkbd:dmi:*
+ KEYBOARD_KEY_2b=enter
+  KEYBOARD_KEY_1c=backslash
+   KEYBOARD_KEY_7d=backspace
+    KEYBOARD_KEY_70=leftalt
+     KEYBOARD_KEY_73=rightshift</code></pre>
+<pre><code> as you can see these lines will tell the kernel &quot;when the key recognized as scancode(e.g. 0x2b, 0x1c...), it will send keycode of right side of =&quot;
+ Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_...
+ Also, scancodes can be aquired by runing this command below in console not in GUI
+ `showkey --scancodes`
+ You have to use it without 0x (e.g. 0x2b -&gt; 2, 0x1c -&gt; 1c)
+ it might output two or more codes for one key. You might just get the first one (maybe it&#39;s the pressed down) and ignore the second one (maybe it&#39;s the pressed up ig)
+ and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones. 
+
+ and run</code></pre>
+<p><code>sudo systemd-hwdb update</code>
+<code>sudo udevadm trigger</code></p>
 <h2 id="natural-scrolling">Natural Scrolling</h2>
 <p>https://wiki.archlinux.org/title/Libinput this wiki page literally
 says everything. 1. <code>xinput list</code> to get devices and their
@@ -219,12 +222,17 @@ this time, we want the natural scrolling to be enabled which is 1.</p>
 function keys not working</h2>
 <p>Keychron is used like Apple keyboard in ubuntu: Reference:
 https://help.ubuntu.com/community/AppleKeyboard</p>
-<p>0 = disabled : Disable the ‘fn’ key. Pressing ‘fn’+‘F8’ will behave
-like you only press ‘F8’ 1 = fkeyslast : Function keys are used as last
-key. Pressing ‘F8’ key will act as a special key. Pressing ‘fn’+‘F8’
-will behave like a F8. 2 = fkeysfirst : Function keys are used as first
-key. Pressing ‘F8’ key will behave like a F8. Pressing ‘fn’+‘F8’ will
-act as special key (play/pause).
-<code>echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode</code></p>
+<ul>
+<li>0 = disabled : Disable the ‘fn’ key. Pressing ‘fn’+‘F8’ will behave
+like you only press ‘F8’</li>
+<li>1 = fkeyslast : Function keys are used as last key. Pressing ‘F8’
+key will act as a special key. Pressing ‘fn’+‘F8’ will behave like a
+F8.</li>
+<li>2 = fkeysfirst : Function keys are used as first key. Pressing ‘F8’
+key will behave like a F8. Pressing ‘fn’+‘F8’ will act as special key
+(play/pause).</li>
+</ul>
+<p>example:</p>
+<p><code>echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode</code></p>
 </body>
 </html>
