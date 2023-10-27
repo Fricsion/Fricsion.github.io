@@ -94,7 +94,7 @@ First, inside chrooted environment, run
 We'll modify files in /boot/loader/
 change loader.conf content to
 
-    ```conf
+    ```sh
         default arch.conf
         timeout 4
         console-mode max
@@ -104,7 +104,7 @@ change loader.conf content to
 add two files (arch.conf, arch-fallback.conf) under `/boot/loader/entries/`
 - arch.conf
 
-    ```conf
+    ```sh
         title Arch Linux
         linux /vmlinuz-linux
         initrd /initramfs-linux.img
