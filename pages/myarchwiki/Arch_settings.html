@@ -264,16 +264,18 @@ be like below</p>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>   <span class="va">KEYBOARD_KEY_7d</span><span class="op">=</span>backspace</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="va">KEYBOARD_KEY_70</span><span class="op">=</span>leftalt</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>     <span class="va">KEYBOARD_KEY_73</span><span class="op">=</span>rightshift</span></code></pre></div>
-<pre><code> as you can see these lines will tell the kernel &quot;when the key recognized as scancode(e.g. 0x2b, 0x1c...), it will send keycode of right side of =&quot;
- Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_...
- Also, scancodes can be aquired by runing this command below in console not in GUI
- `showkey --scancodes`
- You have to use it without 0x (e.g. 0x2b -&gt; 2, 0x1c -&gt; 1c)
- it might output two or more codes for one key. You might just get the first one (maybe it&#39;s the pressed down) and ignore the second one (maybe it&#39;s the pressed up ig)
- and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones. 
-
- and run</code></pre>
-<p><code>sudo systemd-hwdb update</code>
+<p>as you can see these lines will tell the kernel “when the key
+recognized as scancode(e.g. 0x2b, 0x1c…), it will send keycode of right
+side of =” Be aware that if you leave out a space (no more than 1 space)
+in the line where it contains KEYBOARD_KEY_… Also, scancodes can be
+aquired by runing this command below in console not in GUI
+<code>showkey --scancodes</code> You have to use it without 0x
+(e.g. 0x2b -&gt; 2, 0x1c -&gt; 1c) it might output two or more codes for
+one key. You might just get the first one (maybe it’s the pressed down)
+and ignore the second one (maybe it’s the pressed up ig) and about
+modifier keys, they will likely output 4 codes. So use the most unique
+one compared to other ones.</p>
+<p>and run <code>sudo systemd-hwdb update</code>
 <code>sudo udevadm trigger</code></p>
 <h2 id="natural-scrolling">Natural Scrolling</h2>
 <p>https://wiki.archlinux.org/title/Libinput this wiki page literally

@@ -28,15 +28,15 @@ evdev:atkbd:dmi:*
     KEYBOARD_KEY_70=leftalt
 	 KEYBOARD_KEY_73=rightshift
 ```
-	 as you can see these lines will tell the kernel "when the key recognized as scancode(e.g. 0x2b, 0x1c...), it will send keycode of right side of ="
-	 Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_...
-	 Also, scancodes can be aquired by runing this command below in console not in GUI
-	 `showkey --scancodes`
-	 You have to use it without 0x (e.g. 0x2b -> 2, 0x1c -> 1c)
-	 it might output two or more codes for one key. You might just get the first one (maybe it's the pressed down) and ignore the second one (maybe it's the pressed up ig)
-	 and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones. 
+as you can see these lines will tell the kernel "when the key recognized as scancode(e.g. 0x2b, 0x1c...), it will send keycode of right side of ="
+Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_...
+Also, scancodes can be aquired by runing this command below in console not in GUI
+`showkey --scancodes`
+You have to use it without 0x (e.g. 0x2b -> 2, 0x1c -> 1c)
+it might output two or more codes for one key. You might just get the first one (maybe it's the pressed down) and ignore the second one (maybe it's the pressed up ig)
+and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones. 
 
-	 and run
+and run
 `sudo systemd-hwdb update`
 `sudo udevadm trigger`  
 
