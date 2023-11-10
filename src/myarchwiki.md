@@ -16,6 +16,8 @@ header-includes:
 
 * [Libreoffice_Japanese](myarchwiki/Libreoffice_Japanese.html)
 
+* [ff_vertical_tabs](myarchwiki/ff_vertical_tabs.html)
+
 * [ranger_rice](myarchwiki/ranger_rice.html)
 
 * [shell_techniques](myarchwiki/shell_techniques.html)
