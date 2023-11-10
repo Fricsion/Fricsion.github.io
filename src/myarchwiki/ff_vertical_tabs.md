@@ -7,19 +7,29 @@ header-includes:
 ---
 
 # Procedure
-1. Install `Sideberry` from extension store.
-1. Click 'Cog' ⚙️ icon in the top right of the sidebar.
-1. Choose 'Style Editor' from side menu.
-    1. Add these lines to set properties for fonts and background colors;
-        ```css
-        #root.root {--tabs-indent: 15px;}
-        #root.root {--tabs-activated-bg: #BC8F8F;}
-        #root.root {--tabs-font: 0.77rem sans-serif;}
-        #root.root {--frame-bg: #f3b1a6;}
-        #root.root {--toolbar-el-overlay-active-bg: rgba(255,255,255,0.133);}
-        #root.root {--toolbar-bg: #f3b1a6;}
+1. Set up 'Sideberry'
+    1. Install `Sideberry` from extension store.
+    1. Click 'Cog' ⚙️ icon in the top right of the sidebar.
+    1. Choose 'Style Editor' from side menu.
+        1. Add these lines to set properties for fonts and background colors;
+        
+            ```css
+            #root.root {--tabs-indent: 15px;}
+            #root.root {--tabs-activated-bg: #BC8F8F;}
+            #root.root {--tabs-font: 0.77rem sans-serif;}
+            #root.root {--frame-bg: #f3b1a6;}
+            #root.root {--toolbar-el-overlay-active-bg: rgba(255,255,255,0.133);}
+            #root.root {--toolbar-bg: #f3b1a6;}
 
 
 
-        #root.root {--toolbar-el-overlay-selected-border: #146fd9;}
-        ```
+            #root.root {--toolbar-el-overlay-selected-border: #146fd9;}
+            ```
+
+1. Next, in order to hide horizontal(normal) tabs
+    1. Enter about:config in the address bar and select “Accept the Risk and Continue.”
+    1. Under “Search preference name,” paste the following text: toolkit.legacyUserProfileCustomizations.stylesheets
+    1. Tap the toggle button on the right so the preference says “true.”
+
+    1. Enter about:support in the address bar.
+    1. Scroll down to the section that says “Profile Folder,” and click the “Open Folder” ("Show in Finder" on macOS) button.
