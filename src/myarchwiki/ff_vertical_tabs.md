@@ -37,6 +37,8 @@ header-includes:
     1. In the new “chrome” folder, create a new file named `userChrome.css`.
 
         ```css
+
+        /* ----- For macOS  ----- */
         .tabbrowser-tab {
         visibility: collapse;
         }
