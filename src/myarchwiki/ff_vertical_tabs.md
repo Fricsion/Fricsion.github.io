@@ -12,7 +12,7 @@ header-includes:
     1. Click 'Cog' ⚙️ icon in the top right of the sidebar.
     1. Choose 'Style Editor' from side menu.
         1. Add these lines to set properties for fonts and background colors;
-        
+
             ```css
             #root.root {--tabs-indent: 15px;}
             #root.root {--tabs-activated-bg: #BC8F8F;}
@@ -33,3 +33,6 @@ header-includes:
 
     1. Enter about:support in the address bar.
     1. Scroll down to the section that says “Profile Folder,” and click the “Open Folder” ("Show in Finder" on macOS) button.
+    1. Create a new subfolder called “chrome” within the folder you just opened.
+    1. In the new “chrome” folder, create a new text file.
+    1. Rename the text file to userChrome.css (with .css instead of .txt as the file extension).
