@@ -11,7 +11,7 @@ header-includes:
 1. Click 'Cog' ⚙️ icon in the top right of the sidebar.
 1. Choose 'Style Editor' from side menu.
     1. Add these lines to set properties for fonts and background colors;
-        ```
+        ```css
         #root.root {--tabs-indent: 15px;}
         #root.root {--tabs-activated-bg: #BC8F8F;}
         #root.root {--tabs-font: 0.77rem sans-serif;}
