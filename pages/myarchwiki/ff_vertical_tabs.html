@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Bring vertical tabs to Firefox</title>
+  <title>Bring vertical tabs to Firefox + Other useful stuff</title>
   <style>
     html {
       color: #1a1a1a;
@@ -178,8 +178,24 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Bring vertical tabs to Firefox</h1>
+<h1 class="title">Bring vertical tabs to Firefox + Other useful
+stuff</h1>
 </header>
-
+<h1 id="procedure">Procedure</h1>
+<ol type="1">
+<li>Install <code>Sideberry</code> from extension store.</li>
+<li>Click ‘Cog’ ⚙️ icon in the top right of the sidebar.</li>
+<li>Choose ‘Style Editor’ from side menu.
+<ol type="1">
+<li><p>Add these lines to set properties for fonts and background
+colors; ``` #root.root {–tabs-indent: 15px;} #root.root
+{–tabs-activated-bg: #BC8F8F;} #root.root {–tabs-font: 0.77rem
+sans-serif;} #root.root {–frame-bg: #f3b1a6;} #root.root
+{–toolbar-el-overlay-active-bg: rgba(255,255,255,0.133);} #root.root
+{–toolbar-bg: #f3b1a6;}</p>
+<p>#root.root {–toolbar-el-overlay-selected-border: #146fd9;}
+```</p></li>
+</ol></li>
+</ol>
 </body>
 </html>
