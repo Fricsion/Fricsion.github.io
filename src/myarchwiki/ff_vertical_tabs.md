@@ -35,6 +35,7 @@ header-includes:
     1. Scroll down to the section that says “Profile Folder,” and click the “Open Folder” ("Show in Finder" on macOS) button.
     1. Create a new subfolder called “chrome” within the folder you just opened.
     1. In the new “chrome” folder, create a new file named `userChrome.css`.
+
         ```css
         .tabbrowser-tab {
         visibility: collapse;
@@ -76,3 +77,5 @@ header-includes:
         display: none !important;
         }
         ```
+
+    1. Restart Firefox to take effect. 
