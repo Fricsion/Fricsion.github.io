@@ -83,7 +83,7 @@ Taiki Matsumura. 松村 太貴
 ### Blogs
 * Linux + FOSS
 	* <img src='img/archlinux_logo.png' alt='Arch' height='15'>[Arch Wiki by Tiz](pages/myarchwiki.html)
-	* <img src='img/github_mark.png' alt='Github' height='15'>[Learning GitHub](pages/learn_git.html)
+	* <img src='img/github-mark.png' alt='Github' height='15'>[Learning GitHub](pages/learn_git.html)
 * Misc.
 	* [New Home](pages/newhome.html)
 	* [Privacy Research](pages/privacy.html)
