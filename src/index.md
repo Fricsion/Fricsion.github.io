@@ -11,7 +11,7 @@ header-includes:
 Taiki Matsumura. 松村 太貴
 
 
-<img src="img/me_02.jpg" alt="A picture of myself" title="my pic" height="100"/>
+<img src="img/me.jpg" alt="A picture of myself" title="my pic" height="100"/>
 
 
 ### 所属
