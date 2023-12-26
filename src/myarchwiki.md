@@ -1,5 +1,5 @@
 ---\ntitle: myarchwiki\nheader-includes:\n- \usepackage[whole]{bxcjkjatype}\n	<meta charset=utf-8/>\n	<title>myarchwiki</title>\n---\n
-* [Arch_installation](myarchwiki/Arch_installation.html)\n
+* [ArchlinuxInstallation](myarchwiki/ArchlinuxInstallation.html)\n
 * [Arch_settings](myarchwiki/Arch_settings.html)\n
 * [ff_vertical_tabs](myarchwiki/ff_vertical_tabs.html)\n
 * [JP_input_method](myarchwiki/JP_input_method.html)\n
