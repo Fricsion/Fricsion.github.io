@@ -74,6 +74,9 @@ Taiki Matsumura. 松村 太貴
 | 情報基礎１ | 水 | 2 | 2023 | 春 |
 | 看護情報リテラシー | 水 | 3-4 | 2023 | 春 |
 | データセキュリティ | 火 | 2 | 2023 | 秋 |
+| 国際法 | 月 | 2-3 | 2024 | 春 |
+| 企業法 | 金 | 4 | 2024 | 春 |
+
 
 ### 実績＆黒歴史
 * [CTC CTF 2023 参加](https://c2c-ctf-2023.cysec-lab.keio.ac.jp/)
@@ -83,7 +86,7 @@ Taiki Matsumura. 松村 太貴
 
 ### Blogs
 * Linux + FOSS
-	* <img src='img/archlinux_logo.png' alt='Arch' height='15'>[Arch Wiki by Tiz](pages/myarchwiki.html)
+	* <img src='img/archlinux_logo.png' alt='Arch' height='15'>[Arch Wiki by Tiz](https://tidytie.notion.site/ArchWiki-by-Tiz-64074fc5713d4300a28f84dfa7e0be0a?pvs=4)
 	* <img src='img/github-mark.png' alt='Github' height='15'>[Learning GitHub](pages/learn_git.html)
 * Misc.
 	* [New Home](pages/newhome.html)
