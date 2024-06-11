@@ -37,6 +37,7 @@ Taiki Matsumura. 松村 太貴
 ### 行ってみたい場所
 - IIJ ビジネスリスクコンサルティング本部 
 - NTT 社会情報研究所
+- Disney World
 
 ### 尊敬している人
 - 父母
