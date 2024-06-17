@@ -13,7 +13,7 @@ header-includes:
 tiz. Taiki Matsumura. 松村 太貴
 
 
-<img src="img/me.jpg" alt="A picture of myself" title="my pic" height="100"/>
+<img src="../img/me.jpg" alt="A picture of myself" title="my pic" height="100"/>
 
 ### Affiliation
 - Keio Faculty of Environment and Information SFC`21
