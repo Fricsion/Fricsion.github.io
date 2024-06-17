@@ -48,7 +48,7 @@ tiz. Taiki Matsumura. 松村 太貴
 - <tizberius@keio.jp>
 - <tiz@sfc.wide.ad.jp> / Murai Lab. WIDE
 
-### Cryptocurrency 
+### Crypto 
 #### Monero
 `42N92aBP3aL1zqWdYNyd1FjiVXDcghQsDWHkM9ZCv5Zae6WB6kjzDZDZ8kC7mNbiwKaE83Z9KYpQ7EfU1VdF8nmsFb1c4MB`
 
