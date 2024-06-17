@@ -29,11 +29,12 @@ tiz. Taiki Matsumura. 松村 太貴
 	- QKD (Quantum Key Distribution)
 - Internet
 
-### What I like
+### I love
 - English 🇬🇧
 - Sleeping 🛌 
 - Themeparks 🎡
 - GNU/Linux 🐧
+- Selfhosting/HomeLab 🏠
 
 ### People I respect
 - Mom and Dad
