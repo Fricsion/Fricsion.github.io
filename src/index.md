@@ -62,8 +62,8 @@ Taiki Matsumura. 松村 太貴
 ```
 
 ### 連絡先
-- <tizberius@keio.jp>
-- <tiz@sfc.wide.ad.jp> / 村井研究室WIDE
+- <tizberius⇓keio.jp>
+- <tiz⇓sfc.wide.ad.jp> / 村井研究室WIDE
 
 ### 仮想通貨
 #### Monero <img src='https://web.getmonero.org/press-kit/symbols/monero-symbol-480.png' alt='Monero Symbool' height='15'>
