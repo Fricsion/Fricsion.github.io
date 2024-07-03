@@ -45,8 +45,8 @@ tiz. Taiki Matsumura. 松村 太貴
 [```$ gpg --import 🔑🔒```](../files/tiz.gpg)
 
 ### Contacts
-- <tizberius@keio.jp>
-- <tiz@sfc.wide.ad.jp> / Murai Lab. WIDE
+- <tizberius⇓keio.jp>
+- <tiz⇓sfc.wide.ad.jp> / Murai Lab. WIDE
 
 ### Crypto 
 #### Monero
