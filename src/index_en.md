@@ -16,7 +16,7 @@ tiz. Taiki Matsumura. 松村 太貴
 <img src="../img/me.jpg" alt="A picture of myself" title="my pic" height="100"/>
 
 ### Affiliation
-- Keio Faculty of Environment and Information SFC`21
+- Keio Faculty of Environment and Information
 	- [Murai Research Lab.](https://rg.sfc.keio.ac.jp)（Keio SFC）
 		- [Tezuka Lab./ Digital Trust](https://d-trust.sfc.wide.ad.jp/)
 	- [Shimpo Fumio Lab.](https://www.sfc.keio.ac.jp/faculty_profile/list/PM/fumio-shimpo.html)

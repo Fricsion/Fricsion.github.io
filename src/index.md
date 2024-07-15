@@ -15,7 +15,7 @@ Taiki Matsumura. 松村 太貴
 
 
 ### 所属
-- 慶應義塾大学 環境情報学部 2021年度入学（2025年卒業予定）
+- 慶應義塾大学 環境情報学部
 	- [村井研](https://rg.sfc.keio.ac.jp)（慶應SFC）
 		- [手塚悟研究会・デジタルトラスト](https://d-trust.sfc.wide.ad.jp/)
 	- [新保史生](https://www.sfc.keio.ac.jp/faculty_profile/list/PM/fumio-shimpo.html)研究会
