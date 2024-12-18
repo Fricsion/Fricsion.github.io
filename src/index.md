@@ -89,9 +89,8 @@ Taiki Matsumura. 松村 太貴
 ### Blogs
 * Linux + FOSS
 	* <img src='img/archlinux_logo.png' alt='Archlinux logo' height='15'>[Arch Wiki by Tiz](https://tidytie.notion.site/ArchWiki-by-Tiz-64074fc5713d4300a28f84dfa7e0be0a?pvs=4)
-	* <img src='img/github-mark.png' alt='Github' height='15'>[Learning GitHub](pages/learn_git.html)
 	* [セルフホスト](pages/selfhosted.html)
+	* [メモアプリ困窮問題](pages/note-taking-app.html)
 * Misc.
 	* [New Home](pages/newhome.html)
-	* [Privacy Research](pages/privacy.html)
 	* [New M1 MacBook Air](pages/m1mba.html)
