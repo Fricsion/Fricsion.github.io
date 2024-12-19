@@ -3,6 +3,7 @@ title: セルフホストしているサービス
 header-includes:
 - \usepackage[whole]{bxcjkjatype}
 	<meta charset="utf-8"/>
+	<meta name="fediverse:creator" content="@mazm@mastodon.social">
 	<title>Tセルフホスト</title>
 
 ---

@@ -3,6 +3,7 @@ title: メモアプリ困窮問題
 header-includes:
 - \usepackage[whole]{bxcjkjatype}
 	<meta charset="utf-8"/>
+	<meta name="fediverse:creator" content="@mazm@mastodon.social">
 	<title>メモアプリ困窮問題</title>
 
 ---
