@@ -81,6 +81,7 @@ Taiki Matsumura. 松村 太貴
 
 
 ### 実績＆黒歴史
+* [Ente Photos 日本語化](https://ente.io)
 * [CTC CTF 2023 参加](https://c2c-ctf-2023.cysec-lab.keio.ac.jp/)
 	* [NHK](https://www3.nhk.or.jp/nhkworld/en/news/videos/20230802204704128/)
 	* [PRTimes](https://prtimes.jp/story/detail/AxM08Ah0JjB)
