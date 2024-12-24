@@ -55,6 +55,7 @@ Notionはオンラインでしか使えないというのと、データオー�
 
 * Logseq
 	* 同期がWebdav依存だとすると遅さによるコンフリクトが心配
+		* セルフホスト可能な同期サーバーはなさそう+計画も乏しそう(https://discuss.logseq.com/t/will-logseq-remain-fully-open-source-in-the-future-and-will-the-synchronization-feature-be-self-hostable/11951/5)
 	* 結構、使用感が独特
 
 ## 感想

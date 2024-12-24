@@ -96,4 +96,5 @@ Taiki Matsumura. 松村 太貴
 	* [New Home](pages/newhome.html)
 	* [New M1 MacBook Air](pages/m1mba.html)
 
+
 <a rel="me" href="https://mastodon.social/@mazm">Mastodon</a>
