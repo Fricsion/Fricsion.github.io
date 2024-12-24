@@ -13,7 +13,7 @@ for d in $directories; do
 	for f in $files; do
 
 		base_name=$(basename "$f" .md)
-	   	pandoc --standalone src/$d/$f -o pages/$d/$base_name.html
+	   	pandoc --standalone --template=my-template.html src/$d/$f -o pages/$d/$base_name.html
 
 		echo "* [$base_name]($d/$base_name.html)\n" >> src/$d.md
 
