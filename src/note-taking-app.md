@@ -1,5 +1,7 @@
 ---
 title: メモアプリ困窮問題
+updated: 2024-12-18 10:25:00Z
+created: 2024-12-18 09:59:00Z
 header-includes:
 - \usepackage[whole]{bxcjkjatype}
 	<meta charset="utf-8"/>
