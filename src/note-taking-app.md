@@ -1,7 +1,7 @@
 ---
 title: メモアプリ困窮問題
-updated: 2024-12-18 10:25:00Z
-created: 2024-12-18 09:59:00Z
+updated: 2024-12-18
+created: 2024-12-24
 header-includes:
 - \usepackage[whole]{bxcjkjatype}
 	<meta charset="utf-8"/>
@@ -9,11 +9,6 @@ header-includes:
 	<title>メモアプリ困窮問題</title>
 
 ---
-掲載日: 
-2024-12-18
-
-最終更新日:
-2024-12-24
 
 2024年も終わりかけている。思っているように進歩しないのが、私のメモアプリ問題である。
 
