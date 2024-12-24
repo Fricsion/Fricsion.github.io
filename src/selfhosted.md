@@ -1,5 +1,8 @@
 ---
 title: セルフホストしているサービス
+author: 松村太貴
+updated: 2024-11-23
+created: 2024-12-23
 header-includes:
 - \usepackage[whole]{bxcjkjatype}
 	<meta charset="utf-8"/>

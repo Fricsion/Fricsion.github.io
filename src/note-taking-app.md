@@ -1,5 +1,6 @@
 ---
 title: メモアプリ困窮問題
+author: 松村太貴
 updated: 2024-12-18
 created: 2024-12-24
 header-includes:
