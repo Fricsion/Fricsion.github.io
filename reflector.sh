@@ -27,7 +27,7 @@ for f in $md_files; do
 
   # Convert the Markdown file to HTML and save it with the same name
 	
-	pandoc --standalone --template=custom-template.html "src/$f" -o "pages/$base_name.html"
+	pandoc --standalone --template=my-template.html "src/$f" -o "pages/$base_name.html"
 done
 
 mv pages/index.html index.html
