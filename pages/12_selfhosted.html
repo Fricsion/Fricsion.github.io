@@ -1,0 +1,242 @@
+<!--  ページの見た目を変えたかったら、このファイルを編集すること -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="松村太貴" />
+  <title>セルフホストしているサービス</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <br />
+  <meta charset="utf-8"/><br />
+  <meta name="fediverse:creator" content="@mazm@mastodon.social"><br />
+  <title><br />
+  Tセルフホスト<br />
+  </title>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">セルフホストしているサービス</h1>
+<p class="author">松村太貴</p>
+<p class="created">掲載日: 2024-12-23</p>
+<p class="updated">最終更新日: 2024-11-23</p>
+</header>
+<p>あくまで、参考程度に参照していただきたい。
+そのため、ときとともに変わる傾向にあるURI等は記載しないので検索して情報収集していただきたい。</p>
+<h2 id="docker">docker</h2>
+<p>docker-composeがあるおかげで、大抵のことはコピペとちょこっとの変更で行える。Persistentなストレージと、配布される（Immutableな）イメージの利用、など棲み分けが明確でデータの保全も明快。もし追加のソフトウェアなどのインストールが必要であれば、いつでも自分でDockerfileを書けばいいだけ。
+これ以上何を望もうか？</p>
+<h3 id="wireguard">Wireguard</h3>
+<p>スピード、シンプルさ文句なしのVPN。
+クライアントアプリはそこそこに使いにくさや、カスタマイズ不足があるが、それでもセットアップ等が気楽なのでOpenVPNよりも圧倒的におすすめ。</p>
+<p>使う頻度: 毎日</p>
+<h3 id="nginx-proxy-manager">nginx proxy manager</h3>
+<p>なぜか、Caddyに苦手意識を感じてしまい、GUIのWebインターフェースがあるNginx
+Proxy Managerは手放せない。 DNS
+Challengeを使えば、サービスを外部に晒さなくても、LetsEncrypt証明書を手に入れることができる。</p>
+<p>使う頻度: 毎日</p>
+<h3 id="joplin-server">Joplin server</h3>
+<p>Joplin自体はただのマークダウンのメモアプリ。その同期サーバーである。
+同期時間はかなり高速で、非常に快適。
+クライアントはかなり粗が目立つ(比較的にね、私は悪くないと思う)。
+ただ、正直に言おう。選択肢がない。FOSSでセルフホストできるまともなメモアプリは意外と存在しない。
+Obsidianは同期サーバーがかなり面倒そうだ。 Notesnookもちょっと面倒そう。
+Joplinはセルフホストしてもそこまで苦痛ではない。それが一番重要である。
+クライアントサイドエンクリプションにも対応しているのが嬉しい。安いVPSとかで動かしても、データが守られている安心感がある。</p>
+<p>使う頻度: 毎日</p>
+<h3 id="immich">Immich</h3>
+<p>写真のバックアップに使える。２０２４年現在、かなり急成長中のソフトウェア。
+モバイルアプリを含めかなり使いやすい。サーバーにバックアップされたデータを暗号化等はしないため、家族に使うことを勧めにくい。俺が管理者だから、バックアップされた写真がすべて見れるということになってしまうから。</p>
+<p>使う頻度: ほぼ毎日</p>
+<h3 id="ente-photos">ente photos</h3>
+<p>写真のバックアップに使える。モバイルアプリは正直、必要十分といった感じだ。特徴として、写真動画等のすべてのデータは利用者それぞれのデバイス上で暗号化されてくれる。なので、家族にとても使用を促しやすい。管理者の私ですら、みんなのデータを閲覧することはできない。その反面、みんながパスワード（暗号化の鍵）を忘れてしまったら、私は復旧を助けることができないのが、ちょっと不安感がある。</p>
+<p>使う頻度: ほぼ毎日</p>
+<h3 id="nextcloud">Nextcloud</h3>
+<p>セルフホストといえばNextcloud、っていうイメージが私にはあるが、正直あまり活用していない。CalDAV,
+CardDAVサーバーとしてほぼ運用されている。カレンダーを家族で共有できるのは便利だ。カレンダーはかなりプライベートなことを書き込むツールなので、個人的にGoogleやAppleに頼らずに自分がデータを管理できるのは心理的に健やか。連絡先情報も、友達や関係者のプライバシーをできる限り尊重したいので、やはり自分で管理したいものだ。</p>
+<p>使う頻度: カレンダーなどはほぼ毎日、ストレージとしては1ヶ月に数回</p>
+<h3 id="librechat">LibreChat</h3>
+<p>ChatGPT、Google Geminiをはじめとする、LLMのフロントエンド。
+かなり使い心地がいい。おすすめ。</p>
+<p>使う頻度: 2日に1回</p>
+<h3 id="navidrome">Navidrome</h3>
+<p>Spotifyのようなサービスをセルフホストできる。
+私はゲーム音楽のようなニッチな音楽ジャンルが好きなので、重宝している。
+Webインターフェースがあるほか、iOSにはAmperfyというアプリも存在していて、結構好き。</p>
+<p>使う頻度: ほぼ毎日、お出かけの時は特に</p>
+<h3 id="it-tools">IT-tools</h3>
+<p>いろいろな機能があるが、文字数カウントする機能があるのだけを特に重宝している。だって、インターネット上の適当なサイトを信用して、自分の文章をペーストするのはOPSEC的に気分がよろしくないから。</p>
+<p>使う頻度: あまり使っていない</p>
+<h3 id="grist">grist</h3>
+<p>スプレッドシートをWebから管理編集できる。いろいろな使い方ができるので便利。
+API関連が充実していて、ドキュメンテーションが割と組み込まれているので、Nextcloudのアプリで苦労した私にとってはかなり助かった。</p>
+<p>使う頻度: 最近はほとんど使っていない</p>
+<h2 id="proxmox">Proxmox</h2>
+</body>
+</html>
