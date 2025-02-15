@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Taiki M.</title>
-    <link>https://mazmr.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Taiki M.</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <atom:link href="https://mazmr.com/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/atom.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
