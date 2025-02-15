@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://mazmr.com/">
+    <title>How to Rice Ranger | Taiki M.</title>
+    <meta name="description" content="A minimal hugo theme focus on content">
+    <meta property="og:url" content="https://mazmr.com/posts/myarchwiki/ranger_rice/">
+  <meta property="og:site_name" content="Taiki M.">
+  <meta property="og:title" content="How to Rice Ranger">
+  <meta property="og:description" content="Pre-requisite Run
+ranger --copy-config=all
+Most of the configurations are done inside ~/config/ranger directory
+Showing borders search for set draw_borders none in rc.conf Set none to both or something like true Colorschemes search for set colorscheme default in rc.conf Change default to something like solarized Image preview Install ueberzug with yay -S ueberzug search for set preview_images false in rc conf change false to true scroll down and spot set preview_images_method w3m change w3m to ueberzug restart ranger and it should be working Video thumbnail preview (requires Image preview working) sudo pacman -S ffmpegthumbnailer search forset preview_script ~/.config/ranger/scope.sh in rc.conf which should be commented out remove the comment search for video in scope.sh 156 ## Video 157 video/*) 158 # Thumbnail 159 ffmpegthumbnailer -i &#34;${FILE_PATH}&#34; -o &#34;${IMAGE_CACHE_PATH}&#34; -s 0 &amp;&amp; exit 6 160 exit 1;; These lines should be commented out. So remove those comments restart ranger and done. PDF thumbnail preview (requires Image preview working) search forset preview_script ~/.config/ranger/scope.sh in rc.conf which should be commented out remove the comment search for application/pdf in scope.sh 162 ## PDF 163 application/pdf) 164 pdftoppm -f 1 -l 1 \ 165 -scale-to-x &#34;${DEFAULT_SIZE%x*}&#34; \ 166 -scale-to-y -1 \ 167 -singlefile \ 168 -jpeg -tiffcompression jpeg \ 169 -- &#34;${FILE_PATH}&#34; &#34;${IMAGE_CACHE_PATH%.*}&#34; \ 170 &amp;&amp; exit 6 || exit 1;; These lines should be commented out. So remove those comments restart ranger and done">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+    
+  <meta itemprop="name" content="How to Rice Ranger">
+  <meta itemprop="description" content="Pre-requisite Run
+ranger --copy-config=all
+Most of the configurations are done inside ~/config/ranger directory
+Showing borders search for set draw_borders none in rc.conf Set none to both or something like true Colorschemes search for set colorscheme default in rc.conf Change default to something like solarized Image preview Install ueberzug with yay -S ueberzug search for set preview_images false in rc conf change false to true scroll down and spot set preview_images_method w3m change w3m to ueberzug restart ranger and it should be working Video thumbnail preview (requires Image preview working) sudo pacman -S ffmpegthumbnailer search forset preview_script ~/.config/ranger/scope.sh in rc.conf which should be commented out remove the comment search for video in scope.sh 156 ## Video 157 video/*) 158 # Thumbnail 159 ffmpegthumbnailer -i &#34;${FILE_PATH}&#34; -o &#34;${IMAGE_CACHE_PATH}&#34; -s 0 &amp;&amp; exit 6 160 exit 1;; These lines should be commented out. So remove those comments restart ranger and done. PDF thumbnail preview (requires Image preview working) search forset preview_script ~/.config/ranger/scope.sh in rc.conf which should be commented out remove the comment search for application/pdf in scope.sh 162 ## PDF 163 application/pdf) 164 pdftoppm -f 1 -l 1 \ 165 -scale-to-x &#34;${DEFAULT_SIZE%x*}&#34; \ 166 -scale-to-y -1 \ 167 -singlefile \ 168 -jpeg -tiffcompression jpeg \ 169 -- &#34;${FILE_PATH}&#34; &#34;${IMAGE_CACHE_PATH%.*}&#34; \ 170 &amp;&amp; exit 6 || exit 1;; These lines should be commented out. So remove those comments restart ranger and done">
+  <meta itemprop="wordCount" content="228">
+    
+    <link rel="canonical" href="https://mazmr.com/posts/myarchwiki/ranger_rice/">
+    <link rel="icon" href="https://mazmr.com//assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="Taiki M." href="https://mazmr.com//atom.xml" />
+    <link rel="alternate" type="application/json" title="Taiki M." href="https://mazmr.com//feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#fffdfa;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{margin:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2} </style>
+  
+    
+  
+  
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "articleSection": "posts",
+      "name": "How to Rice Ranger",
+      "headline": "How to Rice Ranger",
+      "alternativeHeadline": "",
+      "description": "\u003ch2 id=\u0022pre-requisite\u0022\u003ePre-requisite\u003c\/h2\u003e\n\u003cp\u003eRun\u003c\/p\u003e\n\u003cp\u003e\u003ccode\u003eranger --copy-config=all\u003c\/code\u003e\u003c\/p\u003e\n\u003cp\u003eMost of the configurations are done inside \u003ccode\u003e~\/config\/ranger\u003c\/code\u003e directory\u003c\/p\u003e\n\u003ch2 id=\u0022showing-borders\u0022\u003eShowing borders\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003esearch for \u003ccode\u003eset draw_borders none\u003c\/code\u003e in \u003ccode\u003erc.conf\u003c\/code\u003e\u003c\/li\u003e\n\u003cli\u003eSet \u003ccode\u003enone\u003c\/code\u003e to \u003ccode\u003eboth\u003c\/code\u003e or something like \u003ccode\u003etrue\u003c\/code\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022colorschemes\u0022\u003eColorschemes\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003esearch for \u003ccode\u003eset colorscheme default\u003c\/code\u003e in \u003ccode\u003erc.conf\u003c\/code\u003e\u003c\/li\u003e\n\u003cli\u003eChange \u003ccode\u003edefault\u003c\/code\u003e to something like \u003ccode\u003esolarized\u003c\/code\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022image-preview\u0022\u003eImage preview\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003eInstall ueberzug with \u003ccode\u003eyay -S ueberzug\u003c\/code\u003e\u003c\/li\u003e\n\u003cli\u003esearch for \u003ccode\u003eset preview_images false\u003c\/code\u003e in \u003ccode\u003erc conf\u003c\/code\u003e\u003c\/li\u003e\n\u003cli\u003echange \u003ccode\u003efalse\u003c\/code\u003e to \u003ccode\u003etrue\u003c\/code\u003e\u003c\/li\u003e\n\u003cli\u003escroll down and spot \u003ccode\u003e set preview_images_method w3m\u003c\/code\u003e\u003c\/li\u003e\n\u003cli\u003echange \u003ccode\u003ew3m\u003c\/code\u003e to \u003ccode\u003eueberzug\u003c\/code\u003e\u003c\/li\u003e\n\u003cli\u003erestart ranger and it should be working\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022video-thumbnail-preview-requires-image-preview-working\u0022\u003eVideo thumbnail preview (requires Image preview working)\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003esudo pacman -S ffmpegthumbnailer\u003c\/code\u003e\u003c\/li\u003e\n\u003cli\u003esearch for\u003ccode\u003eset preview_script ~\/.config\/ranger\/scope.sh\u003c\/code\u003e in \u003ccode\u003erc.conf\u003c\/code\u003e which should be commented out\u003c\/li\u003e\n\u003cli\u003eremove the comment\u003c\/li\u003e\n\u003cli\u003esearch for \u003ccode\u003evideo\u003c\/code\u003e in \u003ccode\u003escope.sh\u003c\/code\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-py\u0022 data-lang=\u0022py\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e156\u003c\/span\u003e         \u003cspan style=\u0022color:#75715e\u0022\u003e## Video\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e157\u003c\/span\u003e          \u003cspan style=\u0022color:#111\u0022\u003evideo\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e\/*\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003e)\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e158\u003c\/span\u003e              \u003cspan style=\u0022color:#75715e\u0022\u003e# Thumbnail\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e159\u003c\/span\u003e              \u003cspan style=\u0022color:#111\u0022\u003effmpegthumbnailer\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003ei\u003c\/span\u003e \u003cspan style=\u0022color:#d88200\u0022\u003e\u0026#34;$\u003c\/span\u003e\u003cspan style=\u0022color:#d88200\u0022\u003e{FILE_PATH}\u003c\/span\u003e\u003cspan style=\u0022color:#d88200\u0022\u003e\u0026#34;\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003eo\u003c\/span\u003e \u003cspan style=\u0022color:#d88200\u0022\u003e\u0026#34;$\u003c\/span\u003e\u003cspan style=\u0022color:#d88200\u0022\u003e{IMAGE_CACHE_PATH}\u003c\/span\u003e\u003cspan style=\u0022color:#d88200\u0022\u003e\u0026#34;\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003es\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e0\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e\u0026amp;\u0026amp;\u003c\/span\u003e \u003cspan style=\u0022color:#111\u0022\u003eexit\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e6\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e160\u003c\/span\u003e              \u003cspan style=\u0022color:#111\u0022\u003eexit\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e1\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003e;;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cpre\u003e\u003ccode\u003eThese lines should be commented out. So remove those comments\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003cul\u003e\n\u003cli\u003erestart ranger and done.\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch2 id=\u0022pdf-thumbnail-preview-requires-image-preview-working\u0022\u003ePDF thumbnail preview (requires Image preview working)\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003esearch for\u003ccode\u003eset preview_script ~\/.config\/ranger\/scope.sh\u003c\/code\u003e in \u003ccode\u003erc.conf\u003c\/code\u003e which should be commented out\u003c\/li\u003e\n\u003cli\u003eremove the comment\u003c\/li\u003e\n\u003cli\u003esearch for \u003ccode\u003eapplication\/pdf\u003c\/code\u003e in \u003ccode\u003escope.sh\u003c\/code\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-py\u0022 data-lang=\u0022py\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e162\u003c\/span\u003e         \u003cspan style=\u0022color:#75715e\u0022\u003e## PDF\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e163\u003c\/span\u003e          \u003cspan style=\u0022color:#111\u0022\u003eapplication\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e\/\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003epdf\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003e)\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e164\u003c\/span\u003e              \u003cspan style=\u0022color:#111\u0022\u003epdftoppm\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003ef\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e1\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003el\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e1\u003c\/span\u003e \\\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e165\u003c\/span\u003e                       \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003escale\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003eto\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003ex\u003c\/span\u003e \u003cspan style=\u0022color:#d88200\u0022\u003e\u0026#34;${DEFAULT_SIZE\u003c\/span\u003e\u003cspan style=\u0022color:#d88200\u0022\u003e%x\u003c\/span\u003e\u003cspan style=\u0022color:#d88200\u0022\u003e*}\u0026#34;\u003c\/span\u003e \\\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e166\u003c\/span\u003e                       \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003escale\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003eto\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003ey\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e1\u003c\/span\u003e \\\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e167\u003c\/span\u003e                       \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003esinglefile\u003c\/span\u003e \\\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e168\u003c\/span\u003e                       \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003ejpeg\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e-\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003etiffcompression\u003c\/span\u003e \u003cspan style=\u0022color:#111\u0022\u003ejpeg\u003c\/span\u003e \\\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e169\u003c\/span\u003e                       \u003cspan style=\u0022color:#f92672\u0022\u003e--\u003c\/span\u003e \u003cspan style=\u0022color:#d88200\u0022\u003e\u0026#34;$\u003c\/span\u003e\u003cspan style=\u0022color:#d88200\u0022\u003e{FILE_PATH}\u003c\/span\u003e\u003cspan style=\u0022color:#d88200\u0022\u003e\u0026#34;\u003c\/span\u003e \u003cspan style=\u0022color:#d88200\u0022\u003e\u0026#34;${IMAGE_CACHE_PATH%.*}\u0026#34;\u003c\/span\u003e \\\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#ae81ff\u0022\u003e170\u003c\/span\u003e                  \u003cspan style=\u0022color:#f92672\u0022\u003e\u0026amp;\u0026amp;\u003c\/span\u003e \u003cspan style=\u0022color:#111\u0022\u003eexit\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e6\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e||\u003c\/span\u003e \u003cspan style=\u0022color:#111\u0022\u003eexit\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e1\u003c\/span\u003e\u003cspan style=\u0022color:#111\u0022\u003e;;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cpre\u003e\u003ccode\u003eThese lines should be commented out. So remove those comments\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003cul\u003e\n\u003cli\u003erestart ranger and done\u003c\/li\u003e\n\u003c\/ul\u003e",
+      "inLanguage": "ja",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https:\/\/mazmr.com\/posts\/myarchwiki\/ranger_rice\/"
+      },
+      "author" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "creator" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "accountablePerson" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "copyrightHolder" : "Taiki M.",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "0001-01-01T00:00:00.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Taiki M.",
+          "url": "https://mazmr.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https:\/\/mazmr.com\/assets\/favicon.ico",
+              "width":"32",
+              "height":"32"
+          }
+      },
+      "image": "https://mazmr.com/assets/favicon.ico",
+      "url" : "https:\/\/mazmr.com\/posts\/myarchwiki\/ranger_rice\/",
+      "wordCount" : "228",
+      "genre" : [ ],
+      "keywords" : [ ]
+  }
+  </script>
+  
+  
+  </head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;">
+  <a href="https://mazmr.com/">
+    <b>Taiki M.</b>
+    <span class="text-stone-500 animate-blink">▮</span>
+  </a>
+</p>
+<ul style="padding: 0;margin: 0;">
+  
+  
+  <li class="">
+    <a href="/posts/"><span>Post</span></a>
+    
+  <li class="">
+    <a href="/about/"><span>About</span></a>
+    
+  </li>
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+    <section>
+      <h2 class="post">How to Rice Ranger</h2>
+      <h2 id="pre-requisite">Pre-requisite</h2>
+<p>Run</p>
+<p><code>ranger --copy-config=all</code></p>
+<p>Most of the configurations are done inside <code>~/config/ranger</code> directory</p>
+<h2 id="showing-borders">Showing borders</h2>
+<ul>
+<li>search for <code>set draw_borders none</code> in <code>rc.conf</code></li>
+<li>Set <code>none</code> to <code>both</code> or something like <code>true</code></li>
+</ul>
+<h2 id="colorschemes">Colorschemes</h2>
+<ul>
+<li>search for <code>set colorscheme default</code> in <code>rc.conf</code></li>
+<li>Change <code>default</code> to something like <code>solarized</code></li>
+</ul>
+<h2 id="image-preview">Image preview</h2>
+<ul>
+<li>Install ueberzug with <code>yay -S ueberzug</code></li>
+<li>search for <code>set preview_images false</code> in <code>rc conf</code></li>
+<li>change <code>false</code> to <code>true</code></li>
+<li>scroll down and spot <code> set preview_images_method w3m</code></li>
+<li>change <code>w3m</code> to <code>ueberzug</code></li>
+<li>restart ranger and it should be working</li>
+</ul>
+<h2 id="video-thumbnail-preview-requires-image-preview-working">Video thumbnail preview (requires Image preview working)</h2>
+<ul>
+<li><code>sudo pacman -S ffmpegthumbnailer</code></li>
+<li>search for<code>set preview_script ~/.config/ranger/scope.sh</code> in <code>rc.conf</code> which should be commented out</li>
+<li>remove the comment</li>
+<li>search for <code>video</code> in <code>scope.sh</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#ae81ff">156</span>         <span style="color:#75715e">## Video</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">157</span>          <span style="color:#111">video</span><span style="color:#f92672">/*</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">158</span>              <span style="color:#75715e"># Thumbnail</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">159</span>              <span style="color:#111">ffmpegthumbnailer</span> <span style="color:#f92672">-</span><span style="color:#111">i</span> <span style="color:#d88200">&#34;$</span><span style="color:#d88200">{FILE_PATH}</span><span style="color:#d88200">&#34;</span> <span style="color:#f92672">-</span><span style="color:#111">o</span> <span style="color:#d88200">&#34;$</span><span style="color:#d88200">{IMAGE_CACHE_PATH}</span><span style="color:#d88200">&#34;</span> <span style="color:#f92672">-</span><span style="color:#111">s</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">exit</span> <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">160</span>              <span style="color:#111">exit</span> <span style="color:#ae81ff">1</span><span style="color:#111">;;</span>
+</span></span></code></pre></div><pre><code>These lines should be commented out. So remove those comments
+</code></pre>
+<ul>
+<li>restart ranger and done.</li>
+</ul>
+<h2 id="pdf-thumbnail-preview-requires-image-preview-working">PDF thumbnail preview (requires Image preview working)</h2>
+<ul>
+<li>search for<code>set preview_script ~/.config/ranger/scope.sh</code> in <code>rc.conf</code> which should be commented out</li>
+<li>remove the comment</li>
+<li>search for <code>application/pdf</code> in <code>scope.sh</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#ae81ff">162</span>         <span style="color:#75715e">## PDF</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">163</span>          <span style="color:#111">application</span><span style="color:#f92672">/</span><span style="color:#111">pdf</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">164</span>              <span style="color:#111">pdftoppm</span> <span style="color:#f92672">-</span><span style="color:#111">f</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span><span style="color:#111">l</span> <span style="color:#ae81ff">1</span> \
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">165</span>                       <span style="color:#f92672">-</span><span style="color:#111">scale</span><span style="color:#f92672">-</span><span style="color:#111">to</span><span style="color:#f92672">-</span><span style="color:#111">x</span> <span style="color:#d88200">&#34;${DEFAULT_SIZE</span><span style="color:#d88200">%x</span><span style="color:#d88200">*}&#34;</span> \
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">166</span>                       <span style="color:#f92672">-</span><span style="color:#111">scale</span><span style="color:#f92672">-</span><span style="color:#111">to</span><span style="color:#f92672">-</span><span style="color:#111">y</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> \
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">167</span>                       <span style="color:#f92672">-</span><span style="color:#111">singlefile</span> \
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">168</span>                       <span style="color:#f92672">-</span><span style="color:#111">jpeg</span> <span style="color:#f92672">-</span><span style="color:#111">tiffcompression</span> <span style="color:#111">jpeg</span> \
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">169</span>                       <span style="color:#f92672">--</span> <span style="color:#d88200">&#34;$</span><span style="color:#d88200">{FILE_PATH}</span><span style="color:#d88200">&#34;</span> <span style="color:#d88200">&#34;${IMAGE_CACHE_PATH%.*}&#34;</span> \
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">170</span>                  <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">exit</span> <span style="color:#ae81ff">6</span> <span style="color:#f92672">||</span> <span style="color:#111">exit</span> <span style="color:#ae81ff">1</span><span style="color:#111">;;</span>
+</span></span></code></pre></div><pre><code>These lines should be commented out. So remove those comments
+</code></pre>
+<ul>
+<li>restart ranger and done</li>
+</ul>
+
+      
+      <div class="post-date">
+        <span class="g time">January 1, 0001 </span> &#8729;
+         
+      </div>
+      
+    </section>
+    
+    
+    <div id="comments">
+      
+<script src="https://utteranc.es/client.js"
+    repo=canhtran/maverick
+    issue-term="pathname"
+    theme=github-light
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+    </div>
+    
+    
+  </div>
+</main>
+</body>
+</html>

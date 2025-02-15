@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://mazmr.com/">
+    <title>セルフホストしているサービス | Taiki M.</title>
+    <meta name="description" content="A minimal hugo theme focus on content">
+    <meta property="og:url" content="https://mazmr.com/posts/selfhosted/">
+  <meta property="og:site_name" content="Taiki M.">
+  <meta property="og:title" content="セルフホストしているサービス">
+  <meta property="og:description" content="あくまで、参考程度に参照していただきたい。 そのため、ときとともに変わる傾向にあるURI等は記載しないので検索して情報収集していただきたい。
+docker docker-composeがあるおかげで、大抵のことはコピペとちょこっとの変更で行える。Persistentなストレージと、配布される（Immutableな）イメージの利用、など棲み分けが明確でデータの保全も明快。もし追加のソフトウェアなどのインストールが必要であれば、いつでも自分でDockerfileを書けばいいだけ。 これ以上何を望もうか？
+Wireguard スピード、シンプルさ文句なしのVPN。 クライアントアプリはそこそこに使いにくさや、カスタマイズ不足があるが、それでもセットアップ等が気楽なのでOpenVPNよりも圧倒的におすすめ。 今後は、headscaleあたりにも手を出していけると良いカンジ。
+使う頻度: 毎日
+nginx proxy manager なぜか、Caddyに苦手意識を感じてしまい、GUIのWebインターフェースがあるNginx Proxy Managerは手放せない。 DNS Challengeを使えば、サービスを外部に晒さなくても、LetsEncrypt証明書を手に入れることができる。
+使う頻度: 毎日
+Joplin server Joplin自体はただのマークダウンのメモアプリ。その同期サーバーである。 同期時間はかなり高速で、非常に快適。 クライアントはかなり粗が目立つ(比較的にね、私は悪くないと思う)。 ただ、正直に言おう。選択肢がない。FOSSでセルフホストできるまともなメモアプリは意外と存在しない。 Obsidianは同期サーバーがかなり面倒そうだ。 Notesnookもちょっと面倒そう。 Joplinはセルフホストしてもそこまで苦痛ではない。それが一番重要である。 クライアントサイドエンクリプションにも対応しているのが嬉しい。安いVPSとかで動かしても、データが守られている安心感がある。
+使う頻度: 毎日
+Immich 写真のバックアップに使える。２０２４年現在、かなり急成長中のソフトウェア。 モバイルアプリを含めかなり使いやすい。サーバーにバックアップされたデータを暗号化等はしないため、家族に使うことを勧めにくい。俺が管理者だから、バックアップされた写真がすべて見れるということになってしまうから。
+使う頻度: ほぼ毎日
+ente photos 写真のバックアップに使える。モバイルアプリは正直、必要十分といった感じだ。特徴として、写真動画等のすべてのデータは利用者それぞれのデバイス上で暗号化されてくれる。なので、家族にとても使用を促しやすい。管理者の私ですら、みんなのデータを閲覧することはできない。その反面、みんながパスワード（暗号化の鍵）を忘れてしまったら、私は復旧を助けることができないのが、ちょっと不安感がある。
+使う頻度: ほぼ毎日
+Nextcloud セルフホストといえばNextcloud、っていうイメージが私にはあるが、正直あまり活用していない。CalDAV, CardDAVサーバーとしてほぼ運用されている。カレンダーを家族で共有できるのは便利だ。カレンダーはかなりプライベートなことを書き込むツールなので、個人的にGoogleやAppleに頼らずに自分がデータを管理できるのは心理的に健やか。連絡先情報も、友達や関係者のプライバシーをできる限り尊重したいので、やはり自分で管理したいものだ。
+使う頻度: カレンダーなどはほぼ毎日、ストレージとしては1ヶ月に数回
+LibreChat ChatGPT、Google Geminiをはじめとする、LLMのフロントエンド。 かなり使い心地がいい。おすすめ。
+使う頻度: 2日に1回
+Navidrome Spotifyのようなサービスをセルフホストできる。 私はゲーム音楽のようなニッチな音楽ジャンルが好きなので、重宝している。 Webインターフェースがあるほか、iOSにはAmperfyというアプリも存在していて、結構好き。
+使う頻度: ほぼ毎日、お出かけの時は特に
+IT-tools いろいろな機能があるが、文字数カウントする機能があるのだけを特に重宝している。だって、インターネット上の適当なサイトを信用して、自分の文章をペーストするのはOPSEC的に気分がよろしくないから。
+使う頻度: あまり使っていない
+grist スプレッドシートをWebから管理編集できる。いろいろな使い方ができるので便利。 API関連が充実していて、ドキュメンテーションが割と組み込まれているので、Nextcloudのアプリ(Nextcloud Table)で苦労した私にとってはかなり助かった。
+使う頻度: 最近はほとんど使っていない">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-28T00:00:00+00:00">
+
+    
+  <meta itemprop="name" content="セルフホストしているサービス">
+  <meta itemprop="description" content="あくまで、参考程度に参照していただきたい。 そのため、ときとともに変わる傾向にあるURI等は記載しないので検索して情報収集していただきたい。
+docker docker-composeがあるおかげで、大抵のことはコピペとちょこっとの変更で行える。Persistentなストレージと、配布される（Immutableな）イメージの利用、など棲み分けが明確でデータの保全も明快。もし追加のソフトウェアなどのインストールが必要であれば、いつでも自分でDockerfileを書けばいいだけ。 これ以上何を望もうか？
+Wireguard スピード、シンプルさ文句なしのVPN。 クライアントアプリはそこそこに使いにくさや、カスタマイズ不足があるが、それでもセットアップ等が気楽なのでOpenVPNよりも圧倒的におすすめ。 今後は、headscaleあたりにも手を出していけると良いカンジ。
+使う頻度: 毎日
+nginx proxy manager なぜか、Caddyに苦手意識を感じてしまい、GUIのWebインターフェースがあるNginx Proxy Managerは手放せない。 DNS Challengeを使えば、サービスを外部に晒さなくても、LetsEncrypt証明書を手に入れることができる。
+使う頻度: 毎日
+Joplin server Joplin自体はただのマークダウンのメモアプリ。その同期サーバーである。 同期時間はかなり高速で、非常に快適。 クライアントはかなり粗が目立つ(比較的にね、私は悪くないと思う)。 ただ、正直に言おう。選択肢がない。FOSSでセルフホストできるまともなメモアプリは意外と存在しない。 Obsidianは同期サーバーがかなり面倒そうだ。 Notesnookもちょっと面倒そう。 Joplinはセルフホストしてもそこまで苦痛ではない。それが一番重要である。 クライアントサイドエンクリプションにも対応しているのが嬉しい。安いVPSとかで動かしても、データが守られている安心感がある。
+使う頻度: 毎日
+Immich 写真のバックアップに使える。２０２４年現在、かなり急成長中のソフトウェア。 モバイルアプリを含めかなり使いやすい。サーバーにバックアップされたデータを暗号化等はしないため、家族に使うことを勧めにくい。俺が管理者だから、バックアップされた写真がすべて見れるということになってしまうから。
+使う頻度: ほぼ毎日
+ente photos 写真のバックアップに使える。モバイルアプリは正直、必要十分といった感じだ。特徴として、写真動画等のすべてのデータは利用者それぞれのデバイス上で暗号化されてくれる。なので、家族にとても使用を促しやすい。管理者の私ですら、みんなのデータを閲覧することはできない。その反面、みんながパスワード（暗号化の鍵）を忘れてしまったら、私は復旧を助けることができないのが、ちょっと不安感がある。
+使う頻度: ほぼ毎日
+Nextcloud セルフホストといえばNextcloud、っていうイメージが私にはあるが、正直あまり活用していない。CalDAV, CardDAVサーバーとしてほぼ運用されている。カレンダーを家族で共有できるのは便利だ。カレンダーはかなりプライベートなことを書き込むツールなので、個人的にGoogleやAppleに頼らずに自分がデータを管理できるのは心理的に健やか。連絡先情報も、友達や関係者のプライバシーをできる限り尊重したいので、やはり自分で管理したいものだ。
+使う頻度: カレンダーなどはほぼ毎日、ストレージとしては1ヶ月に数回
+LibreChat ChatGPT、Google Geminiをはじめとする、LLMのフロントエンド。 かなり使い心地がいい。おすすめ。
+使う頻度: 2日に1回
+Navidrome Spotifyのようなサービスをセルフホストできる。 私はゲーム音楽のようなニッチな音楽ジャンルが好きなので、重宝している。 Webインターフェースがあるほか、iOSにはAmperfyというアプリも存在していて、結構好き。
+使う頻度: ほぼ毎日、お出かけの時は特に
+IT-tools いろいろな機能があるが、文字数カウントする機能があるのだけを特に重宝している。だって、インターネット上の適当なサイトを信用して、自分の文章をペーストするのはOPSEC的に気分がよろしくないから。
+使う頻度: あまり使っていない
+grist スプレッドシートをWebから管理編集できる。いろいろな使い方ができるので便利。 API関連が充実していて、ドキュメンテーションが割と組み込まれているので、Nextcloudのアプリ(Nextcloud Table)で苦労した私にとってはかなり助かった。
+使う頻度: 最近はほとんど使っていない">
+  <meta itemprop="datePublished" content="2024-12-28T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-28T00:00:00+00:00">
+  <meta itemprop="wordCount" content="71">
+    
+    <link rel="canonical" href="https://mazmr.com/posts/selfhosted/">
+    <link rel="icon" href="https://mazmr.com//assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="Taiki M." href="https://mazmr.com//atom.xml" />
+    <link rel="alternate" type="application/json" title="Taiki M." href="https://mazmr.com//feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#fffdfa;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{margin:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2} </style>
+  
+    
+  
+  
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "articleSection": "posts",
+      "name": "セルフホストしているサービス",
+      "headline": "セルフホストしているサービス",
+      "alternativeHeadline": "",
+      "description": "\u003cp\u003eあくまで、参考程度に参照していただきたい。\nそのため、ときとともに変わる傾向にあるURI等は記載しないので検索して情報収集していただきたい。\u003c\/p\u003e\n\u003ch2 id=\u0022docker\u0022\u003edocker\u003c\/h2\u003e\n\u003cp\u003edocker-composeがあるおかげで、大抵のことはコピペとちょこっとの変更で行える。Persistentなストレージと、配布される（Immutableな）イメージの利用、など棲み分けが明確でデータの保全も明快。もし追加のソフトウェアなどのインストールが必要であれば、いつでも自分でDockerfileを書けばいいだけ。\nこれ以上何を望もうか？\u003c\/p\u003e\n\u003ch3 id=\u0022wireguard\u0022\u003eWireguard\u003c\/h3\u003e\n\u003cp\u003eスピード、シンプルさ文句なしのVPN。\nクライアントアプリはそこそこに使いにくさや、カスタマイズ不足があるが、それでもセットアップ等が気楽なのでOpenVPNよりも圧倒的におすすめ。\n今後は、headscaleあたりにも手を出していけると良いカンジ。\u003c\/p\u003e\n\u003cp\u003e使う頻度: 毎日\u003c\/p\u003e\n\u003ch3 id=\u0022nginx-proxy-manager\u0022\u003enginx proxy manager\u003c\/h3\u003e\n\u003cp\u003eなぜか、Caddyに苦手意識を感じてしまい、GUIのWebインターフェースがあるNginx Proxy Managerは手放せない。\nDNS Challengeを使えば、サービスを外部に晒さなくても、LetsEncrypt証明書を手に入れることができる。\u003c\/p\u003e\n\u003cp\u003e使う頻度: 毎日\u003c\/p\u003e\n\u003ch3 id=\u0022joplin-server\u0022\u003eJoplin server\u003c\/h3\u003e\n\u003cp\u003eJoplin自体はただのマークダウンのメモアプリ。その同期サーバーである。\n同期時間はかなり高速で、非常に快適。\nクライアントはかなり粗が目立つ(比較的にね、私は悪くないと思う)。\nただ、正直に言おう。選択肢がない。FOSSでセルフホストできるまともなメモアプリは意外と存在しない。\nObsidianは同期サーバーがかなり面倒そうだ。\nNotesnookもちょっと面倒そう。\nJoplinはセルフホストしてもそこまで苦痛ではない。それが一番重要である。\nクライアントサイドエンクリプションにも対応しているのが嬉しい。安いVPSとかで動かしても、データが守られている安心感がある。\u003c\/p\u003e\n\u003cp\u003e使う頻度: 毎日\u003c\/p\u003e\n\u003ch3 id=\u0022immich\u0022\u003eImmich\u003c\/h3\u003e\n\u003cp\u003e写真のバックアップに使える。２０２４年現在、かなり急成長中のソフトウェア。\nモバイルアプリを含めかなり使いやすい。サーバーにバックアップされたデータを暗号化等はしないため、家族に使うことを勧めにくい。俺が管理者だから、バックアップされた写真がすべて見れるということになってしまうから。\u003c\/p\u003e\n\u003cp\u003e使う頻度: ほぼ毎日\u003c\/p\u003e\n\u003ch3 id=\u0022ente-photos\u0022\u003eente photos\u003c\/h3\u003e\n\u003cp\u003e写真のバックアップに使える。モバイルアプリは正直、必要十分といった感じだ。特徴として、写真動画等のすべてのデータは利用者それぞれのデバイス上で暗号化されてくれる。なので、家族にとても使用を促しやすい。管理者の私ですら、みんなのデータを閲覧することはできない。その反面、みんながパスワード（暗号化の鍵）を忘れてしまったら、私は復旧を助けることができないのが、ちょっと不安感がある。\u003c\/p\u003e\n\u003cp\u003e使う頻度: ほぼ毎日\u003c\/p\u003e\n\u003ch3 id=\u0022nextcloud\u0022\u003eNextcloud\u003c\/h3\u003e\n\u003cp\u003eセルフホストといえばNextcloud、っていうイメージが私にはあるが、正直あまり活用していない。CalDAV, CardDAVサーバーとしてほぼ運用されている。カレンダーを家族で共有できるのは便利だ。カレンダーはかなりプライベートなことを書き込むツールなので、個人的にGoogleやAppleに頼らずに自分がデータを管理できるのは心理的に健やか。連絡先情報も、友達や関係者のプライバシーをできる限り尊重したいので、やはり自分で管理したいものだ。\u003c\/p\u003e\n\u003cp\u003e使う頻度: カレンダーなどはほぼ毎日、ストレージとしては1ヶ月に数回\u003c\/p\u003e\n\u003ch3 id=\u0022librechat\u0022\u003eLibreChat\u003c\/h3\u003e\n\u003cp\u003eChatGPT、Google Geminiをはじめとする、LLMのフロントエンド。\nかなり使い心地がいい。おすすめ。\u003c\/p\u003e\n\u003cp\u003e使う頻度: 2日に1回\u003c\/p\u003e\n\u003ch3 id=\u0022navidrome\u0022\u003eNavidrome\u003c\/h3\u003e\n\u003cp\u003eSpotifyのようなサービスをセルフホストできる。\n私はゲーム音楽のようなニッチな音楽ジャンルが好きなので、重宝している。\nWebインターフェースがあるほか、iOSにはAmperfyというアプリも存在していて、結構好き。\u003c\/p\u003e\n\u003cp\u003e使う頻度: ほぼ毎日、お出かけの時は特に\u003c\/p\u003e\n\u003ch3 id=\u0022it-tools\u0022\u003eIT-tools\u003c\/h3\u003e\n\u003cp\u003eいろいろな機能があるが、文字数カウントする機能があるのだけを特に重宝している。だって、インターネット上の適当なサイトを信用して、自分の文章をペーストするのはOPSEC的に気分がよろしくないから。\u003c\/p\u003e\n\u003cp\u003e使う頻度: あまり使っていない\u003c\/p\u003e\n\u003ch3 id=\u0022grist\u0022\u003egrist\u003c\/h3\u003e\n\u003cp\u003eスプレッドシートをWebから管理編集できる。いろいろな使い方ができるので便利。\nAPI関連が充実していて、ドキュメンテーションが割と組み込まれているので、Nextcloudのアプリ(Nextcloud Table)で苦労した私にとってはかなり助かった。\u003c\/p\u003e\n\u003cp\u003e使う頻度: 最近はほとんど使っていない\u003c\/p\u003e",
+      "inLanguage": "ja",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https:\/\/mazmr.com\/posts\/selfhosted\/"
+      },
+      "author" : {
+          "@type": "Person",
+          "name": "松村太貴"
+      },
+      "creator" : {
+          "@type": "Person",
+          "name": "松村太貴"
+      },
+      "accountablePerson" : {
+          "@type": "Person",
+          "name": "松村太貴"
+      },
+      "copyrightHolder" : "Taiki M.",
+      "copyrightYear" : "2024",
+      "dateCreated": "2024-12-28T00:00:00.00Z",
+      "datePublished": "2024-12-28T00:00:00.00Z",
+      "dateModified": "2024-12-28T00:00:00.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Taiki M.",
+          "url": "https://mazmr.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https:\/\/mazmr.com\/assets\/favicon.ico",
+              "width":"32",
+              "height":"32"
+          }
+      },
+      "image": "https://mazmr.com/assets/favicon.ico",
+      "url" : "https:\/\/mazmr.com\/posts\/selfhosted\/",
+      "wordCount" : "71",
+      "genre" : [ ],
+      "keywords" : [ ]
+  }
+  </script>
+  
+  
+  </head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;">
+  <a href="https://mazmr.com/">
+    <b>Taiki M.</b>
+    <span class="text-stone-500 animate-blink">▮</span>
+  </a>
+</p>
+<ul style="padding: 0;margin: 0;">
+  
+  
+  <li class="">
+    <a href="/posts/"><span>Post</span></a>
+    
+  <li class="">
+    <a href="/about/"><span>About</span></a>
+    
+  </li>
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+    <section>
+      <h2 class="post">セルフホストしているサービス</h2>
+      <p>あくまで、参考程度に参照していただきたい。
+そのため、ときとともに変わる傾向にあるURI等は記載しないので検索して情報収集していただきたい。</p>
+<h2 id="docker">docker</h2>
+<p>docker-composeがあるおかげで、大抵のことはコピペとちょこっとの変更で行える。Persistentなストレージと、配布される（Immutableな）イメージの利用、など棲み分けが明確でデータの保全も明快。もし追加のソフトウェアなどのインストールが必要であれば、いつでも自分でDockerfileを書けばいいだけ。
+これ以上何を望もうか？</p>
+<h3 id="wireguard">Wireguard</h3>
+<p>スピード、シンプルさ文句なしのVPN。
+クライアントアプリはそこそこに使いにくさや、カスタマイズ不足があるが、それでもセットアップ等が気楽なのでOpenVPNよりも圧倒的におすすめ。
+今後は、headscaleあたりにも手を出していけると良いカンジ。</p>
+<p>使う頻度: 毎日</p>
+<h3 id="nginx-proxy-manager">nginx proxy manager</h3>
+<p>なぜか、Caddyに苦手意識を感じてしまい、GUIのWebインターフェースがあるNginx Proxy Managerは手放せない。
+DNS Challengeを使えば、サービスを外部に晒さなくても、LetsEncrypt証明書を手に入れることができる。</p>
+<p>使う頻度: 毎日</p>
+<h3 id="joplin-server">Joplin server</h3>
+<p>Joplin自体はただのマークダウンのメモアプリ。その同期サーバーである。
+同期時間はかなり高速で、非常に快適。
+クライアントはかなり粗が目立つ(比較的にね、私は悪くないと思う)。
+ただ、正直に言おう。選択肢がない。FOSSでセルフホストできるまともなメモアプリは意外と存在しない。
+Obsidianは同期サーバーがかなり面倒そうだ。
+Notesnookもちょっと面倒そう。
+Joplinはセルフホストしてもそこまで苦痛ではない。それが一番重要である。
+クライアントサイドエンクリプションにも対応しているのが嬉しい。安いVPSとかで動かしても、データが守られている安心感がある。</p>
+<p>使う頻度: 毎日</p>
+<h3 id="immich">Immich</h3>
+<p>写真のバックアップに使える。２０２４年現在、かなり急成長中のソフトウェア。
+モバイルアプリを含めかなり使いやすい。サーバーにバックアップされたデータを暗号化等はしないため、家族に使うことを勧めにくい。俺が管理者だから、バックアップされた写真がすべて見れるということになってしまうから。</p>
+<p>使う頻度: ほぼ毎日</p>
+<h3 id="ente-photos">ente photos</h3>
+<p>写真のバックアップに使える。モバイルアプリは正直、必要十分といった感じだ。特徴として、写真動画等のすべてのデータは利用者それぞれのデバイス上で暗号化されてくれる。なので、家族にとても使用を促しやすい。管理者の私ですら、みんなのデータを閲覧することはできない。その反面、みんながパスワード（暗号化の鍵）を忘れてしまったら、私は復旧を助けることができないのが、ちょっと不安感がある。</p>
+<p>使う頻度: ほぼ毎日</p>
+<h3 id="nextcloud">Nextcloud</h3>
+<p>セルフホストといえばNextcloud、っていうイメージが私にはあるが、正直あまり活用していない。CalDAV, CardDAVサーバーとしてほぼ運用されている。カレンダーを家族で共有できるのは便利だ。カレンダーはかなりプライベートなことを書き込むツールなので、個人的にGoogleやAppleに頼らずに自分がデータを管理できるのは心理的に健やか。連絡先情報も、友達や関係者のプライバシーをできる限り尊重したいので、やはり自分で管理したいものだ。</p>
+<p>使う頻度: カレンダーなどはほぼ毎日、ストレージとしては1ヶ月に数回</p>
+<h3 id="librechat">LibreChat</h3>
+<p>ChatGPT、Google Geminiをはじめとする、LLMのフロントエンド。
+かなり使い心地がいい。おすすめ。</p>
+<p>使う頻度: 2日に1回</p>
+<h3 id="navidrome">Navidrome</h3>
+<p>Spotifyのようなサービスをセルフホストできる。
+私はゲーム音楽のようなニッチな音楽ジャンルが好きなので、重宝している。
+Webインターフェースがあるほか、iOSにはAmperfyというアプリも存在していて、結構好き。</p>
+<p>使う頻度: ほぼ毎日、お出かけの時は特に</p>
+<h3 id="it-tools">IT-tools</h3>
+<p>いろいろな機能があるが、文字数カウントする機能があるのだけを特に重宝している。だって、インターネット上の適当なサイトを信用して、自分の文章をペーストするのはOPSEC的に気分がよろしくないから。</p>
+<p>使う頻度: あまり使っていない</p>
+<h3 id="grist">grist</h3>
+<p>スプレッドシートをWebから管理編集できる。いろいろな使い方ができるので便利。
+API関連が充実していて、ドキュメンテーションが割と組み込まれているので、Nextcloudのアプリ(Nextcloud Table)で苦労した私にとってはかなり助かった。</p>
+<p>使う頻度: 最近はほとんど使っていない</p>
+<h2 id="proxmox">Proxmox</h2>
+
+      
+      <div class="post-date">
+        <span class="g time">December 28, 2024 </span> &#8729;
+         
+      </div>
+      
+    </section>
+    
+    
+    <div id="comments">
+      
+<script src="https://utteranc.es/client.js"
+    repo=canhtran/maverick
+    issue-term="pathname"
+    theme=github-light
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+    </div>
+    
+    
+  </div>
+</main>
+</body>
+</html>

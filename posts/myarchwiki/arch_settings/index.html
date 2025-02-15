@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://mazmr.com/">
+    <title>Arch Settings | Taiki M.</title>
+    <meta name="description" content="A minimal hugo theme focus on content">
+    <meta property="og:url" content="https://mazmr.com/posts/myarchwiki/arch_settings/">
+  <meta property="og:site_name" content="Taiki M.">
+  <meta property="og:title" content="Arch Settings">
+  <meta property="og:description" content="installing fonts (using otf, ttf) just move those files to ~/.local/share/fonts/
+listing fonts fc-list
+show font priority (the higher the more top in the priority) fc-match
+changing built-in laptop keyboard layout (at kernel level) https://wiki.archlinux.org/title/Map_scancodes_to_keycodes
+create &amp; edit file /etc/udev/hwdb.d/whatever.hwdb to be like below
+evdev:atkbd:dmi:* KEYBOARD_KEY_2b=enter KEYBOARD_KEY_1c=backslash KEYBOARD_KEY_7d=backspace KEYBOARD_KEY_70=leftalt KEYBOARD_KEY_73=rightshift as you can see these lines will tell the kernel “when the key recognized as scancode(e.g. 0x2b, 0x1c…), it will send keycode of right side of =” Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_… Also, scancodes can be aquired by runing this command below in console not in GUI showkey --scancodes You have to use it without 0x (e.g. 0x2b -&gt; 2, 0x1c -&gt; 1c) it might output two or more codes for one key. You might just get the first one (maybe it’s the pressed down) and ignore the second one (maybe it’s the pressed up ig) and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones.">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+    
+  <meta itemprop="name" content="Arch Settings">
+  <meta itemprop="description" content="installing fonts (using otf, ttf) just move those files to ~/.local/share/fonts/
+listing fonts fc-list
+show font priority (the higher the more top in the priority) fc-match
+changing built-in laptop keyboard layout (at kernel level) https://wiki.archlinux.org/title/Map_scancodes_to_keycodes
+create &amp; edit file /etc/udev/hwdb.d/whatever.hwdb to be like below
+evdev:atkbd:dmi:* KEYBOARD_KEY_2b=enter KEYBOARD_KEY_1c=backslash KEYBOARD_KEY_7d=backspace KEYBOARD_KEY_70=leftalt KEYBOARD_KEY_73=rightshift as you can see these lines will tell the kernel “when the key recognized as scancode(e.g. 0x2b, 0x1c…), it will send keycode of right side of =” Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_… Also, scancodes can be aquired by runing this command below in console not in GUI showkey --scancodes You have to use it without 0x (e.g. 0x2b -&gt; 2, 0x1c -&gt; 1c) it might output two or more codes for one key. You might just get the first one (maybe it’s the pressed down) and ignore the second one (maybe it’s the pressed up ig) and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones.">
+  <meta itemprop="wordCount" content="337">
+    
+    <link rel="canonical" href="https://mazmr.com/posts/myarchwiki/arch_settings/">
+    <link rel="icon" href="https://mazmr.com//assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="Taiki M." href="https://mazmr.com//atom.xml" />
+    <link rel="alternate" type="application/json" title="Taiki M." href="https://mazmr.com//feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#fffdfa;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{margin:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2} </style>
+  
+    
+  
+  
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "articleSection": "posts",
+      "name": "Arch Settings",
+      "headline": "Arch Settings",
+      "alternativeHeadline": "",
+      "description": "\u003ch2 id=\u0022installing-fonts-using-otf-ttf\u0022\u003einstalling fonts (using otf, ttf)\u003c\/h2\u003e\n\u003cp\u003ejust move those files to ~\/.local\/share\/fonts\/\u003c\/p\u003e\n\u003ch2 id=\u0022listing-fonts\u0022\u003elisting fonts\u003c\/h2\u003e\n\u003cp\u003e\u003ccode\u003efc-list\u003c\/code\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022show-font-priority-the-higher-the-more-top-in-the-priority\u0022\u003eshow font priority (the higher the more top in the priority)\u003c\/h2\u003e\n\u003cp\u003e\u003ccode\u003efc-match\u003c\/code\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022changing-built-in-laptop-keyboard-layout-at-kernel-level\u0022\u003echanging built-in laptop keyboard layout (at kernel level)\u003c\/h2\u003e\n\u003cp\u003e\u003ca href=\u0022https:\/\/wiki.archlinux.org\/title\/Map_scancodes_to_keycodes\u0022\u003ehttps:\/\/wiki.archlinux.org\/title\/Map_scancodes_to_keycodes\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003ecreate \u0026amp; edit file \u003ccode\u003e\/etc\/udev\/hwdb.d\/whatever.hwdb\u003c\/code\u003e\nto be like below\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003eevdev:atkbd:dmi:*\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e \u003cspan style=\u0022color:#111\u0022\u003eKEYBOARD_KEY_2b\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003eenter\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e  \u003cspan style=\u0022color:#111\u0022\u003eKEYBOARD_KEY_1c\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003ebackslash\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e   \u003cspan style=\u0022color:#111\u0022\u003eKEYBOARD_KEY_7d\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003ebackspace\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e    \u003cspan style=\u0022color:#111\u0022\u003eKEYBOARD_KEY_70\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003eleftalt\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\t \u003cspan style=\u0022color:#111\u0022\u003eKEYBOARD_KEY_73\u003c\/span\u003e\u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003erightshift\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003eas you can see these lines will tell the kernel \u0026ldquo;when the key recognized as scancode(e.g. 0x2b, 0x1c\u0026hellip;), it will send keycode of right side of =\u0026rdquo;\nBe aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_\u0026hellip;\nAlso, scancodes can be aquired by runing this command below in console not in GUI\n\u003ccode\u003eshowkey --scancodes\u003c\/code\u003e\nYou have to use it without 0x (e.g. 0x2b -\u0026gt; 2, 0x1c -\u0026gt; 1c)\nit might output two or more codes for one key. You might just get the first one (maybe it\u0026rsquo;s the pressed down) and ignore the second one (maybe it\u0026rsquo;s the pressed up ig)\nand about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones.\u003c\/p\u003e",
+      "inLanguage": "ja",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https:\/\/mazmr.com\/posts\/myarchwiki\/arch_settings\/"
+      },
+      "author" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "creator" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "accountablePerson" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "copyrightHolder" : "Taiki M.",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "0001-01-01T00:00:00.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Taiki M.",
+          "url": "https://mazmr.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https:\/\/mazmr.com\/assets\/favicon.ico",
+              "width":"32",
+              "height":"32"
+          }
+      },
+      "image": "https://mazmr.com/assets/favicon.ico",
+      "url" : "https:\/\/mazmr.com\/posts\/myarchwiki\/arch_settings\/",
+      "wordCount" : "337",
+      "genre" : [ ],
+      "keywords" : [ ]
+  }
+  </script>
+  
+  
+  </head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;">
+  <a href="https://mazmr.com/">
+    <b>Taiki M.</b>
+    <span class="text-stone-500 animate-blink">▮</span>
+  </a>
+</p>
+<ul style="padding: 0;margin: 0;">
+  
+  
+  <li class="">
+    <a href="/posts/"><span>Post</span></a>
+    
+  <li class="">
+    <a href="/about/"><span>About</span></a>
+    
+  </li>
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+    <section>
+      <h2 class="post">Arch Settings</h2>
+      <h2 id="installing-fonts-using-otf-ttf">installing fonts (using otf, ttf)</h2>
+<p>just move those files to ~/.local/share/fonts/</p>
+<h2 id="listing-fonts">listing fonts</h2>
+<p><code>fc-list</code></p>
+<h2 id="show-font-priority-the-higher-the-more-top-in-the-priority">show font priority (the higher the more top in the priority)</h2>
+<p><code>fc-match</code></p>
+<h2 id="changing-built-in-laptop-keyboard-layout-at-kernel-level">changing built-in laptop keyboard layout (at kernel level)</h2>
+<p><a href="https://wiki.archlinux.org/title/Map_scancodes_to_keycodes">https://wiki.archlinux.org/title/Map_scancodes_to_keycodes</a></p>
+<p>create &amp; edit file <code>/etc/udev/hwdb.d/whatever.hwdb</code>
+to be like below</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>evdev:atkbd:dmi:*
+</span></span><span style="display:flex;"><span> <span style="color:#111">KEYBOARD_KEY_2b</span><span style="color:#f92672">=</span>enter
+</span></span><span style="display:flex;"><span>  <span style="color:#111">KEYBOARD_KEY_1c</span><span style="color:#f92672">=</span>backslash
+</span></span><span style="display:flex;"><span>   <span style="color:#111">KEYBOARD_KEY_7d</span><span style="color:#f92672">=</span>backspace
+</span></span><span style="display:flex;"><span>    <span style="color:#111">KEYBOARD_KEY_70</span><span style="color:#f92672">=</span>leftalt
+</span></span><span style="display:flex;"><span>	 <span style="color:#111">KEYBOARD_KEY_73</span><span style="color:#f92672">=</span>rightshift
+</span></span></code></pre></div><p>as you can see these lines will tell the kernel &ldquo;when the key recognized as scancode(e.g. 0x2b, 0x1c&hellip;), it will send keycode of right side of =&rdquo;
+Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_&hellip;
+Also, scancodes can be aquired by runing this command below in console not in GUI
+<code>showkey --scancodes</code>
+You have to use it without 0x (e.g. 0x2b -&gt; 2, 0x1c -&gt; 1c)
+it might output two or more codes for one key. You might just get the first one (maybe it&rsquo;s the pressed down) and ignore the second one (maybe it&rsquo;s the pressed up ig)
+and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones.</p>
+<p>and run
+<code>sudo systemd-hwdb update</code>
+<code>sudo udevadm trigger</code></p>
+<h2 id="natural-scrolling">Natural Scrolling</h2>
+<p><a href="https://wiki.archlinux.org/title/Libinput">https://wiki.archlinux.org/title/Libinput</a>
+this wiki page literally says everything.</p>
+<ol>
+<li><code>xinput list</code>
+to get devices and their ids</li>
+<li><code>xinput list-props &lt;id&gt;</code>
+without &lt;&gt; and check which number in parenthesis is assigned to the Natural Scrolling Enabled</li>
+<li><code>xinput set-props &lt;id&gt; &lt;number&gt; 1</code>
+this time, we want the natural scrolling to be enabled which is 1.</li>
+</ol>
+<h2 id="keychron-keyboard-function-keys-not-working">Keychron keyboard function keys not working</h2>
+<p>Keychron is used like Apple keyboard in ubuntu:
+Reference: <a href="https://help.ubuntu.com/community/AppleKeyboard">https://help.ubuntu.com/community/AppleKeyboard</a></p>
+<ul>
+<li>0 = disabled : Disable the &lsquo;fn&rsquo; key. Pressing &lsquo;fn&rsquo;+&lsquo;F8&rsquo; will behave like you only press &lsquo;F8&rsquo;</li>
+<li>1 = fkeyslast : Function keys are used as last key. Pressing &lsquo;F8&rsquo; key will act as a special key. Pressing &lsquo;fn&rsquo;+&lsquo;F8&rsquo; will behave like a F8.</li>
+<li>2 = fkeysfirst : Function keys are used as first key. Pressing &lsquo;F8&rsquo; key will behave like a F8. Pressing &lsquo;fn&rsquo;+&lsquo;F8&rsquo; will act as special key (play/pause).</li>
+</ul>
+<p>example:</p>
+<p><code>echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode</code></p>
+
+      
+      <div class="post-date">
+        <span class="g time">January 1, 0001 </span> &#8729;
+         
+      </div>
+      
+    </section>
+    
+    
+    <div id="comments">
+      
+<script src="https://utteranc.es/client.js"
+    repo=canhtran/maverick
+    issue-term="pathname"
+    theme=github-light
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+    </div>
+    
+    
+  </div>
+</main>
+</body>
+</html>

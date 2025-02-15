@@ -7,21 +7,1079 @@
     
     <language>en</language>
     <copyright>Copyright 2025, Calvin Tran</copyright>
-    <lastBuildDate>Sat, 15 Feb 2025 23:45:48 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2025 02:11:36 +0900</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://mazmr.com//atom.xml" rel="self" type="application/atom+xml"/>
     
     
     <item>
-      <title>Firstpost</title>
-      <link>https://mazmr.com/posts/firstpost/</link>
-      <description>&lt;h1 id=&#34;hello-world&#34;&gt;hello world&lt;/h1&gt;
-&lt;p&gt;can you see me?&lt;/p&gt;
+      <title>学部生研究生活を振り返る</title>
+      <link>https://mazmr.com/posts/undergrad/</link>
+      <description>&lt;p&gt;入学当時から卒業完遂まで常に【データプライバシー】を日々考えて過ごしてきた。&lt;/p&gt;
+&lt;p&gt;4年間同じトピックを様々な視点から見つめる、面白い期間だった。&lt;/p&gt;
+&lt;p&gt;自分自身が成長した部分は大きくないと思う。ただ、その過程で触れてきたものは今後につながると考えている。&lt;/p&gt;
+&lt;p&gt;この記事は主に私が自分の生活を振り返り、今後を改善する目的で作成されたものですが、一部には今後、学部生で研究活動を行っていく方へのアドバイスも混じっている。
+また、私自身のプライバシーに配慮し、研究に深く関連する部分にフォーカスを当てた記事である。&lt;/p&gt;
+&lt;h2 id=&#34;大学1年生&#34;&gt;大学1年生&lt;/h2&gt;
+&lt;h3 id=&#34;コロナ禍で始まる大学生活&#34;&gt;コロナ禍で始まる大学生活&lt;/h3&gt;
+&lt;p&gt;講義はオンラインが主であった。
+けれど、クラス全体での講義は対面であった。
+そのため、思ったよりも学校に行く機会はあった。&lt;/p&gt;
+&lt;p&gt;途中、コロナがまた流行しだして、体育がオンラインになるなんてこともあった。&lt;/p&gt;
+&lt;h3 id=&#34;色濃くなるfoss信仰&#34;&gt;色濃くなるFOSS信仰&lt;/h3&gt;
+&lt;p&gt;中高生時代をApple信者として生きていた私だったが、
+大学生活を始めるタイミングから、私のLinuxの導入はとどまりを見せなかった。
+主な理由はやはりデータプライバシーである。
+この決断がそれ以降の自由(Freedom)への思想意識の開花につながることになる。
+ただ、この時点では、Manjaro→ Arch Linuxへとスキルが身についていく感覚が楽しかった覚えがある。
+特にオンラインで講義があり、家から出なくて良いという点が、Linuxの学習の時間に貢献されていた気がする。&lt;/p&gt;
+&lt;p&gt;割とMental Outlaw氏とLuke Smith氏の影響は強かったと考える。&lt;/p&gt;
+&lt;p&gt;CLIへの異様な執着も生まれていた。
+軽量なWM&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; にも憧れ、dwm&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; というなかなかに硬派なWMにも手を出していた。
+今考えると、現代の8GB以上のRAMリソースがあるなかで、軽量なWMを動かすメリットというのは雀の涙ではあったかもしれない。
+ただ、当時使っていたラップトップはMacBook 2017という貧弱なハードだったのも起因するかもしれない。&lt;/p&gt;
+&lt;p&gt;これらの激動に準じて、私のBig Techなどに対する反発心は良くも悪くも育まれていった。&lt;/p&gt;
+&lt;h3 id=&#34;デジタルトラストへの入団kg&#34;&gt;デジタルトラストへの入団&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+&lt;p&gt;秋学期前に、友人たちと入る研究会の話が出たときに、デジタルトラストに参加する人がいた。
+そこから、デジタルトラストを調べると、データのトラストという観点で、プライバシーとも通ずるところがあると考えた。
+そして私はデジタルトラストに参加することを決めた。&lt;/p&gt;
+&lt;p&gt;中高とは違い、大きなスキルギャップを感じる人達と初めて目の当たりにするタイミングだった。&lt;/p&gt;
+&lt;h2 id=&#34;大学2年生-過剰な自分の信念との戦い&#34;&gt;大学2年生: 過剰な自分の信念との戦い&lt;/h2&gt;
+&lt;h3 id=&#34;zkpzkp-との出会い&#34;&gt;ZKP&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; との出会い&lt;/h3&gt;
+&lt;p&gt;データプライバシーに関わる研究をしたいと、研究会で相談したところ、先輩からPETs&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; の存在を教えてもらった。&lt;/p&gt;
+&lt;p&gt;当時、私の頭の中で、フワッと存在していた「あるソフトウェアが悪いことをしていないとソフトウェア開発者が利用者に対して証明する」ことを可能すにする、というものがあった。&lt;/p&gt;
+&lt;p&gt;このゴールに最も関わりが強そうなものがPETsの中にあった。ZKPである。&lt;/p&gt;
+&lt;h4 id=&#34;zkpに関する同人誌プロジェクトを発案するも消滅&#34;&gt;ZKPに関する同人誌プロジェクトを発案するも消滅&lt;/h4&gt;
+&lt;p&gt;先輩から、技術書典という同人誌イベントの存在を聞いた。
+自分なりのZKPへの勉強や理解をうっすい本の形にしようというプロジェクトを提案された。
+断る理由もなかったため、私は早速取り組んだ。
+ただ、既存の本の二番煎じになるだけのような感覚が邪魔をして、なかなか進まず結果的に自然消滅となってしまった。なんだか残念だ。&lt;/p&gt;
+&lt;h3 id=&#34;やりたいことの明確化ができたとできないのジレンマ&#34;&gt;やりたいことの明確化ができた！と、できない…のジレンマ&lt;/h3&gt;
+&lt;p&gt;この時期に、ZKPへの向き合いを皮切りに、自分がやりたいことのビジョンが少し明確になってきていた。
+当時の研究主題は以下だ。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;昨今のコンピュータはテレメトリー・クラッシュレポートなどソフトウェアの改善に必要なものを含めて、様々な通信が行われるが、一部の親切設計なソフトウェアを除いて、それらの通信は知らぬ間に不明な内容で行われる。プライバシーポリシーに言及があり、利用者は同意することでプライバシー問題を現在は解決している。
+しかし、「どのような内容が送信されているか」を利用者に明らかにすることを第三者ソフトウェアの存在で強制することができるのはnice to have である&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;特に&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SBOM&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;で解決しない（ソフトウェアサプライチェーンによる脆弱性発生ではない）
+製品がやる、と言っていること以外のことを無断でしている例&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;が自分の新規性だと考えていた。&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://mazmr.com/images/kenkyu-slide.png&#34;
+  alt=&#34;当時のスライド画像&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt;これに対して研究相談をさせてもらっていたファカルティの方々には以下の提案をされた。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;EDR (Endpoint Detection &amp;amp; Response)&lt;/li&gt;
+&lt;li&gt;Proxy (Reverse Proxy)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;EDRに関しては、確かに関連性はあった。ランタイムの監視を行うという点において。
+Proxyは通信経路上で行う事ができるというのも魅力的であった。&lt;/p&gt;
+&lt;p&gt;以上についてかなりの期間を使って検討したが、結果的にお流れとなった。&lt;/p&gt;
+&lt;p&gt;これらの採用には根深い課題があったからだ。&lt;/p&gt;
+&lt;h4 id=&#34;コンセプトの崩壊&#34;&gt;コンセプトの崩壊&lt;/h4&gt;
+&lt;p&gt;さらに言えば、アイデアの時点でコンセプトが崩壊していたことも、後に明らかになった。
+OSSの誰もがAudit可能な特性を、ランタイム上に適応できないだろうか？と考え試みたいと思っていた。&lt;/p&gt;
+&lt;p&gt;しかしながら、ランタイムにおいては、特定の条件(場所や時間)をもとにソフトウェアの動きが変わることが常である。
+そのため、他人がAuditした内容が自分の環境に適用される限りではない。&lt;/p&gt;
+&lt;p&gt;この指摘が研究の根幹を揺るがすきっかけとなった。&lt;/p&gt;
+&lt;h3 id=&#34;当時の研究に対して思うこと&#34;&gt;当時の研究に対して思うこと&lt;/h3&gt;
+&lt;p&gt;eCapture(旁观者) &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;
+みたいな技術の存在に気づいていたら、もうちょっと発展の領域があったかもしれない。&lt;/p&gt;
+&lt;h3 id=&#34;情報法への興味が出てくる&#34;&gt;情報法への興味が出てくる&lt;/h3&gt;
+&lt;p&gt;自分の研究の実現可能性は、ソフトウェアの開発者にも大きく依存するということが判明していった。
+そんな中、やはり、一律にある技術を実現するには法律・規則の側面へのアプローチも必要になることを意識し始めた。
+これは後の新保研への所属に発展していく。&lt;/p&gt;
+&lt;h2 id=&#34;大学3年生-雑食期間&#34;&gt;大学3年生: 雑食期間&lt;/h2&gt;
+&lt;h3 id=&#34;新保研へ加入し研究会の掛け持ちへ&#34;&gt;新保研へ加入し、研究会の掛け持ちへ&lt;/h3&gt;
+&lt;p&gt;大学3年生になった。すでに長い間同じ研究会に居続けたので、環境を変えたいという気持ちがあった。情報の関連の法律を知ってはいたが、詳しくなりたいと思っていた私は、新保研へ加入させてもらうことになった。&lt;/p&gt;
+&lt;h3 id=&#34;研究の視点の大幅な転向&#34;&gt;研究の視点の大幅な転向&lt;/h3&gt;
+&lt;p&gt;私は、大学2年生の終わりまで、消費者(ユーザー)を守るという視点で研究を続けていた。
+当時も、何なら今もその気持ちは変わっていない。
+ただ、つい先程書いた通り、随分と長い間同じ思考で同じ環境に居続けたので、ここらで一つ大きく変えたい。願わくば、研究に大きな進捗も産めたらいいな。という邪な考えのもと、研究の視点を180度変えてみることにした。
+サービス提供者側の視点に立つということだ。&lt;/p&gt;
+&lt;p&gt;これと同時期に、今まで考えてきた研究テーマは一度白紙に戻して(考え方として残しつつも)いくことも決断し。周辺分野のリサーチから始めた。&lt;/p&gt;
+&lt;h4 id=&#34;箸休め幽霊化しかける&#34;&gt;【箸休め】幽霊化しかける&lt;/h4&gt;
+&lt;p&gt;少しメンタルの話になる。
+研究会の相談に持っていく進捗がなく、重い気持ちで相談に行くことも多々あったなかで、ついに若干行かない期間を作ってしまった。
+相談等もなしだったのでご迷惑をおかけしたなと思っています。
+私自身は、進捗がなくても、「進捗ないっすーガハハー」という気の持ちようで臨むことができる楽観的な部分はあったので、今考えるとちょっとびっくりではある。
+原因として考えられるのは、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;自分の研究テーマの本質が何度相談を繰り返しても伝わっていない気がする&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;言葉の表現などはいい例で、同じ単語を使っているのに全く違う意味合いで取られていることが多かったので、これに関しては後の活動の中でかなり気をつけるようになった。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;特にやはり、伝わっていない気がするというのが繰り返されると精神的にキツイ事実に気がついた。
+研究相談の限られた時間であるということももちろんある。
+加えて、相談相手(ファカルティ)は目上だし、自分よりも知識がある人のはずなので、ファカルティの人がまとめ上げると、それっぽく聞こえてしまう。ただその反面、私の頭の中で描いているものとどうしても違いを感じてしまっていて、「ここを訂正したら、また議論がふりだしに戻って時間が・・・」という良くないサイクルに入っていた。相談当時は納得したような素振りをするが、一人の時間で熟考するとやっぱりなにか違う気がしてしまうのだ。
+それを踏まえて、次の相談回で結局のところふりだしに戻って議論を続けることになるので、そりゃあ進捗なんてあったもんじゃない。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;成功体験に基づく、報酬系が形成されていない&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;私達人間は結局、報酬システムに縛られている。
+中高生時代、試験勉強を頑張る→テストで良い点が取れる→試験勉強の評価ができる→次回のテスト勉強に反映できる。
+こんなサイクルを作っていたから、そこそこ勉強は取り組めていた。&lt;/p&gt;
+&lt;p&gt;大学で研究というものに初めて触れて思うのは、この報酬システムを再形成しなければいけないことだ。
+ただ、成功体験という報酬が論文を仕上げたことのない私にはなかったため、具体的にどの部分を変えれば、進捗につながるのかよくわからないというのが当時の感覚だ。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;もし、似たような境遇や、悩んでいる人が居たら、以下を参考にしてほしい。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;話す人を変えてみる&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;研究相談の相手はどうしても限られる。
+同じ人と議論を深めることは、良いサイクルに入ってからでいいと思う。
+私みたいに悪いサイクルの中にいる間は、話し相手をとことん変えていくべきだ。
+というより、ここは楽をしてほしい。
+自分と似たような価値観を持つ人を見つけて、その人に相談するとすんなり伝わったりしてすごい楽だ。
+自分と違う価値観を持っている人にプレゼンするのは後回しでいい。
+とりあえず、自分の世界観とそれを囲むフィルターバブルでいいから作って、その中で実現可能性を検討してから、自分の世界観の外に出ていけばいいと思う。
+最初から楽しても・・・と思うかもしれないけど、辛くなって研究をめっきりやめるよりは、多分いい。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;卒論のテーマにつながるトピックを発掘&#34;&gt;卒論のテーマにつながるトピックを発掘&lt;/h3&gt;
+&lt;p&gt;三年生の秋。
+良くも悪くも、卒論のテーマを決めなければいけない段階になってきた。&lt;/p&gt;
+&lt;p&gt;結論から言うと、「設定」に注目した。&lt;/p&gt;
+&lt;p&gt;当時なぜ、この着想を得たかは明確な記憶がない。ただ、設定行為でミスったら、サービス提供側がどんなにプライバシーに配慮した設計をしても意味がない。それに、家族があまりにもデータプライバシーの設定項目に無関心であった。この2つは間違いなくモチベーションになっている。&lt;/p&gt;
+&lt;p&gt;夏休み中に、「Automating Privacy Decisions - Where to draw line」というサーベイ論文を見つけてオモシロイと思ったため、それを研究のベースとして進めていった。特にこの夏はIEEEの存在を初めて知り(遅すぎるだろ！と今の私は怒っているぞ！)、その参考文献群を頼りに、結構な量の論文を漁った気がする。これを大学1年生の頃にやれていたら・・・と今でも後悔するばかりだ。周りのみんなは一体どこで先行研究を見つけてくるんだろう・・・と本当にその時まで不思議だった。前から周辺分野のリサーチは行っていたはずなのに、意外と研究というのは私の人生で初めてのことだったから、こういう当たり前に気付けないことが恐ろしい。&lt;/p&gt;
+&lt;p&gt;その中で登場する機械学習によって、ユーザーのスマートフォンの許可設定を自動的に決定する技術に、コレだ！と感じた。&lt;/p&gt;
+&lt;h4 id=&#34;生成ai大爆発&#34;&gt;生成AI大爆発&lt;/h4&gt;
+&lt;p&gt;この時期本当に扱ったのは生成AIの普及だ。
+正直、私を含めて割とみんな、これは何でもできるじゃないか、と感動していた頃だと思う。
+そして、先行研究との新規性差分を作るために、機械学習モデルを利用するのではなくLLMを利用しようという安直な発想に至った。&lt;/p&gt;
+&lt;p&gt;卒論テーマ発表の三年末にかけては、これを主に取り扱うことになる。&lt;/p&gt;
+&lt;p&gt;Androidを対象にアプリ毎のプライバシー関連の権限設定をLLMに自動でいじらせることができるか？というのも題材に発表を行うべく、準備に取り掛かった。、発表前なんかはこたつに籠もってすごい遅くの時間までファカルティの方と相談させていただくようなこともあった。今思うと、信じられないくらい親身な人達だったんだと実感している。
+ただ、身内でも色々なことが起こっていたこともあり。実装は困難をきたした。
+まともな評価値もとれず、案の定発表では刺されまくり、その指摘も自分も同じ考えを持っていたため、少し諦めようかという気分になってしまった。&lt;/p&gt;
+&lt;h4 id=&#34;余談-ntt-社会情報研究所との出会い&#34;&gt;余談: NTT 社会情報研究所との出会い&lt;/h4&gt;
+&lt;p&gt;新保研で出張講義に来てくださった、NTTの社会情報研究所の藤村あきこさんのお話は、大学生活の中でもすごく印象に残っている。&lt;/p&gt;
+&lt;p&gt;一言でいうと、私と大学生活から課題模索の背景が本当に似ていたからだ。といっても私はペーペーで、彼女は社会的意義のある活動をされている素晴らしい方であるため、比べるのもおこがましいが・・・
+そういう意味でも目指したいと思える人生の道筋だった。&lt;/p&gt;
+&lt;p&gt;例えば、藤村さんは学部生を法学部で過ごされ、その中で技術的な知識や研究の重要さに気づき、修士をSFCで取得していた。
+私が、デジタルトラストで技術研究をしていて、データプライバシーをやるには技術だけでは無理だ、法規制もやらなければ、と新保研に来たように、(順番は逆だが)他にもデータプライバシーを研究するならではのジレンマの数々に共感がとまらなかった。&lt;/p&gt;
+&lt;h2 id=&#34;大学4年生-妥協して良いと気づく&#34;&gt;大学4年生: 妥協して良いと気づく&lt;/h2&gt;
+&lt;p&gt;この1年は、妥協に尽きる。
+とにかく、自分の自分への期待を妥協する。
+私は、4年も同じトピックを扱っているのだから、大層なことができる。そんなふうに思っていた。
+実際はそうではない。研究のセンスどうこうの話ではなく、まぁ、ヨーイドンで同じことしても早くできちゃう人もいれば異常に遅い人だっているよねって話。
+生活の中で何と出会えるかというのは結局のところランダム要素が絡む。
+私はあまり、外向きの人間ではないし、社交は好きじゃないから家からも出ない。
+では、好きでもないのに社交の場に出て、劣等感を感じながら優れた技術者に囲まれていたら、状況は良かったのか？
+これも正直、どっちつかずだっただろう。&lt;/p&gt;
+&lt;h3 id=&#34;楽しかった就職活動はきつかった&#34;&gt;楽しかった就職活動はきつかった&lt;/h3&gt;
+&lt;p&gt;楽しいときついは相反するが、一緒くたにできる。
+就活はそんな体験だった。&lt;/p&gt;
+&lt;p&gt;私が好む思想や研究対象は、お金になりにくい。
+少なくとも私はそう考えている。
+データセキュリティやプライバシーは利益を生み出す部分ではなく、損失のリスクを下げる部分だからだ。&lt;/p&gt;
+&lt;p&gt;研究職はやめておきたい、とは考えていた。
+実世界の業務上の課題を直視してみたいという欲求があった。&lt;/p&gt;
+&lt;p&gt;正直、自分の_市場価値_を見限っていて大人しくデータセキュリティの職につこうと、考えていた矢先に、新保研の就職案内でIIJの方がいらした。
+IIJの存在は知っていたが、インターネットのパイオニアのイメージが強く、プライバシー重視の私の思想とは合わないと考えていて、最初は話半分に聞いていた。
+しかし、パンフレットをめくっていると、ある項目が目に入ったのだ。
+そこには「プライバシー保護対応」とあった。
+実際の業務と差異があるかもしれないので詳しくは書かないが、そこから、就職先にすることを本気で検討した。
+その後も、面接などの前に改めてIIJを知る機会を作ってくださった人事の田中さんにはとても感謝している。&lt;/p&gt;
+&lt;h4 id=&#34;熱意は伝わる&#34;&gt;熱意は伝わる&lt;/h4&gt;
+&lt;p&gt;就活ですごく感じたのは、熱意は伝わる、ということだ。
+IIJ以外にも、サイバーセキュリティ関連の職に選考をしたこともあったのだが、どうしても無理やり私がデータプライバシーの話からサイバーセキュリティに寄せているような気がしてたまらなかった。そして、そういう場所は往々にしてうまくいっていない。
+一方で、データプライバシーという自分路線を選考期間中貫くことができる会社に対しては、すごく自分をだせて楽しい時間だった。&lt;/p&gt;
+&lt;p&gt;やはりやりたいと思っていることには熱意を持って将来像を語れるし、シンプルにここだ、御社の事業のここをやりたいんだよ！と言えばダイレクトに伝わる。
+就活について、小手先の技術を調べていた私だったが、そんなのははなの役にもたたない愚策だった。賢い逆質問を1週間で10個考えるより、何年もかけて醸成されたた1個の熱意で、自分は売り出せる。そういう話だ。&lt;/p&gt;
+&lt;p&gt;だから、就活において、いろいろな企業からリジェクトされるのはキツかった。ただ、好きな企業に受かる、というその一点においてはとても楽しいと思える経験だった。&lt;/p&gt;
+&lt;h3 id=&#34;卒論そして締めくくり&#34;&gt;卒論、そして締めくくり&lt;/h3&gt;
+&lt;p&gt;卒論に本格着手できたのは、11月とかなり遅かった。&lt;/p&gt;
+&lt;p&gt;成果物に妥協してもいいから、自分の成長機会として活かそうと思いながら、作業していた。
+前は卒論だから堅実にやろうと思っていた。そこを逆に新しい挑戦を織り交ぜながら、取り組む(Typstを初めての突貫で使ってみようとか、英語で書いちまおうとか)。
+正直、卒論は恥ずかしくって絶対に誰にも見せたくないレベルだが、この取り組み過程だったら、普通だったらこうやらないだろうみたいな工夫をたくさん織り交ぜながら、成長の機会にさせてもらった。
+執筆が遅くなろうが、関係ない。1回取りあえずなにか完成させなきゃいけない、というのを口実に、いろんな部分を冒険させてもらった。&lt;/p&gt;
+&lt;h2 id=&#34;さいごに&#34;&gt;さいごに&lt;/h2&gt;
+&lt;p&gt;この学部生4年間は、自分を改めて見つめることができて、すごくいい時間だった。後悔ばかりだが、一切の無駄なく過ごさせてもらった。&lt;/p&gt;
+&lt;p&gt;改めてこんな機会を与えてくれた両親・支えてくれた研究会のメンバー達には感謝してもしきれない。ありがとうございます。&lt;/p&gt;
+&lt;p&gt;私が追求したいと考えていた、そして今でも考えているデータプライバシーへの取り組みは、今後も一層力を入れていきたい。
+4年以上やってても噛み応えのある非常に良いトピックに出会えた。
+情報技術よ、ありがとう。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Window Manager&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;sucklessの作るWM&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;ちなみに、KGは研究グループの頭文字という派閥が多いが、実際には研究軍団の略らしい。そのため、入団という表現が適切である(適当)&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;Zero Knowledge Proof ゼロ知識証明&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
+&lt;p&gt;Privacy Enhancing Technologies プライバシー強化技術&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34;&gt;
+&lt;p&gt;Software Bill Of Materials 端的に言えば、ソフトウェアの成分表示をすること&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34;&gt;
+&lt;p&gt;capture SSL/TLS text content without a CA certificate using eBPF.
+&lt;a href=&#34;https://github.com/gojue/ecapture&#34;&gt;https://github.com/gojue/ecapture&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/firstpost/</guid>
-      <pubDate>Sat, 15 Feb 2025 23:00:21 +0900</pubDate>
+      <guid>https://mazmr.com/posts/undergrad/</guid>
+      <pubDate>Sun, 16 Feb 2025 02:11:36 +0900</pubDate>
+    </item>
+    
+    <item>
+      <title>セルフホストしているサービス</title>
+      <link>https://mazmr.com/posts/selfhosted/</link>
+      <description>&lt;p&gt;あくまで、参考程度に参照していただきたい。
+そのため、ときとともに変わる傾向にあるURI等は記載しないので検索して情報収集していただきたい。&lt;/p&gt;
+&lt;h2 id=&#34;docker&#34;&gt;docker&lt;/h2&gt;
+&lt;p&gt;docker-composeがあるおかげで、大抵のことはコピペとちょこっとの変更で行える。Persistentなストレージと、配布される（Immutableな）イメージの利用、など棲み分けが明確でデータの保全も明快。もし追加のソフトウェアなどのインストールが必要であれば、いつでも自分でDockerfileを書けばいいだけ。
+これ以上何を望もうか？&lt;/p&gt;
+&lt;h3 id=&#34;wireguard&#34;&gt;Wireguard&lt;/h3&gt;
+&lt;p&gt;スピード、シンプルさ文句なしのVPN。
+クライアントアプリはそこそこに使いにくさや、カスタマイズ不足があるが、それでもセットアップ等が気楽なのでOpenVPNよりも圧倒的におすすめ。
+今後は、headscaleあたりにも手を出していけると良いカンジ。&lt;/p&gt;
+&lt;p&gt;使う頻度: 毎日&lt;/p&gt;
+&lt;h3 id=&#34;nginx-proxy-manager&#34;&gt;nginx proxy manager&lt;/h3&gt;
+&lt;p&gt;なぜか、Caddyに苦手意識を感じてしまい、GUIのWebインターフェースがあるNginx Proxy Managerは手放せない。
+DNS Challengeを使えば、サービスを外部に晒さなくても、LetsEncrypt証明書を手に入れることができる。&lt;/p&gt;
+&lt;p&gt;使う頻度: 毎日&lt;/p&gt;
+&lt;h3 id=&#34;joplin-server&#34;&gt;Joplin server&lt;/h3&gt;
+&lt;p&gt;Joplin自体はただのマークダウンのメモアプリ。その同期サーバーである。
+同期時間はかなり高速で、非常に快適。
+クライアントはかなり粗が目立つ(比較的にね、私は悪くないと思う)。
+ただ、正直に言おう。選択肢がない。FOSSでセルフホストできるまともなメモアプリは意外と存在しない。
+Obsidianは同期サーバーがかなり面倒そうだ。
+Notesnookもちょっと面倒そう。
+Joplinはセルフホストしてもそこまで苦痛ではない。それが一番重要である。
+クライアントサイドエンクリプションにも対応しているのが嬉しい。安いVPSとかで動かしても、データが守られている安心感がある。&lt;/p&gt;
+&lt;p&gt;使う頻度: 毎日&lt;/p&gt;
+&lt;h3 id=&#34;immich&#34;&gt;Immich&lt;/h3&gt;
+&lt;p&gt;写真のバックアップに使える。２０２４年現在、かなり急成長中のソフトウェア。
+モバイルアプリを含めかなり使いやすい。サーバーにバックアップされたデータを暗号化等はしないため、家族に使うことを勧めにくい。俺が管理者だから、バックアップされた写真がすべて見れるということになってしまうから。&lt;/p&gt;
+&lt;p&gt;使う頻度: ほぼ毎日&lt;/p&gt;
+&lt;h3 id=&#34;ente-photos&#34;&gt;ente photos&lt;/h3&gt;
+&lt;p&gt;写真のバックアップに使える。モバイルアプリは正直、必要十分といった感じだ。特徴として、写真動画等のすべてのデータは利用者それぞれのデバイス上で暗号化されてくれる。なので、家族にとても使用を促しやすい。管理者の私ですら、みんなのデータを閲覧することはできない。その反面、みんながパスワード（暗号化の鍵）を忘れてしまったら、私は復旧を助けることができないのが、ちょっと不安感がある。&lt;/p&gt;
+&lt;p&gt;使う頻度: ほぼ毎日&lt;/p&gt;
+&lt;h3 id=&#34;nextcloud&#34;&gt;Nextcloud&lt;/h3&gt;
+&lt;p&gt;セルフホストといえばNextcloud、っていうイメージが私にはあるが、正直あまり活用していない。CalDAV, CardDAVサーバーとしてほぼ運用されている。カレンダーを家族で共有できるのは便利だ。カレンダーはかなりプライベートなことを書き込むツールなので、個人的にGoogleやAppleに頼らずに自分がデータを管理できるのは心理的に健やか。連絡先情報も、友達や関係者のプライバシーをできる限り尊重したいので、やはり自分で管理したいものだ。&lt;/p&gt;
+&lt;p&gt;使う頻度: カレンダーなどはほぼ毎日、ストレージとしては1ヶ月に数回&lt;/p&gt;
+&lt;h3 id=&#34;librechat&#34;&gt;LibreChat&lt;/h3&gt;
+&lt;p&gt;ChatGPT、Google Geminiをはじめとする、LLMのフロントエンド。
+かなり使い心地がいい。おすすめ。&lt;/p&gt;
+&lt;p&gt;使う頻度: 2日に1回&lt;/p&gt;
+&lt;h3 id=&#34;navidrome&#34;&gt;Navidrome&lt;/h3&gt;
+&lt;p&gt;Spotifyのようなサービスをセルフホストできる。
+私はゲーム音楽のようなニッチな音楽ジャンルが好きなので、重宝している。
+Webインターフェースがあるほか、iOSにはAmperfyというアプリも存在していて、結構好き。&lt;/p&gt;
+&lt;p&gt;使う頻度: ほぼ毎日、お出かけの時は特に&lt;/p&gt;
+&lt;h3 id=&#34;it-tools&#34;&gt;IT-tools&lt;/h3&gt;
+&lt;p&gt;いろいろな機能があるが、文字数カウントする機能があるのだけを特に重宝している。だって、インターネット上の適当なサイトを信用して、自分の文章をペーストするのはOPSEC的に気分がよろしくないから。&lt;/p&gt;
+&lt;p&gt;使う頻度: あまり使っていない&lt;/p&gt;
+&lt;h3 id=&#34;grist&#34;&gt;grist&lt;/h3&gt;
+&lt;p&gt;スプレッドシートをWebから管理編集できる。いろいろな使い方ができるので便利。
+API関連が充実していて、ドキュメンテーションが割と組み込まれているので、Nextcloudのアプリ(Nextcloud Table)で苦労した私にとってはかなり助かった。&lt;/p&gt;
+&lt;p&gt;使う頻度: 最近はほとんど使っていない&lt;/p&gt;
+&lt;h2 id=&#34;proxmox&#34;&gt;Proxmox&lt;/h2&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/selfhosted/</guid>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>メモアプリ困窮問題</title>
+      <link>https://mazmr.com/posts/note-taking-app/</link>
+      <description>&lt;p&gt;2024年も終わりかけている。思っているように進歩しないのが、私のメモアプリ問題である。&lt;/p&gt;
+&lt;h2 id=&#34;事の発端&#34;&gt;事の発端&lt;/h2&gt;
+&lt;p&gt;昔から、いろいろなメモアプリを行ったり来たり適当に生きてきた私だった。
+ただ、最近の生成AIの進歩が著しく、自分の知識やデータはテキストとして保存することの価値が上がった。
+本気でメモに特化しようとするも、意外と出会えない理想のアプリ。&lt;/p&gt;
+&lt;h2 id=&#34;こだわり思想が邪魔する先&#34;&gt;こだわり(思想)が邪魔する先&lt;/h2&gt;
+&lt;p&gt;FOSS信仰心の強い私だったが、生産性を優先し、何度か魂を売っている。
+例えば、Obsidian, Notionあたりは有名かつプロプライエタリなメモアプリの筆頭だろう(人によっては、メモアプリよりもっと高度なものだろうが)&lt;/p&gt;
+&lt;p&gt;Notionはオンラインでしか使えないというのと、データオーナーシップを真に考えた時にはやはりそれから脱出したいという衝動に駆られていた。PIIになりうるものや、APIキーなどを間違ってペーストしてしまっても、割となんとかなるような基盤が必要だった。&lt;/p&gt;
+&lt;p&gt;厳密にはObsidianはデータオーナーシップは自分自身にあるが、それを複数の端末間で同期する手法が限られている。&lt;/p&gt;
+&lt;p&gt;その後、Notesnookというなかなかに信頼の置ける如何にもプライバシー狂信者のためのアプリを試していた時期もあったが、当時サーバー技術がプロプラだったため、結局脱出を決心した。&lt;/p&gt;
+&lt;h2 id=&#34;そして出会うjoplinとその不完全さのジレンマ&#34;&gt;そして出会うJoplin・・・と、その不完全さのジレンマ&lt;/h2&gt;
+&lt;p&gt;そして現在利用するに至っているのがJoplin。だが、最初に言おう、満足はしていない。
+なにかと、機能的には満たされているJoplin。特にお気に入りの機能を以下に列挙しておこう。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;マークダウンで書ける(人権)&lt;/li&gt;
+&lt;li&gt;PDFとして出力できる(人権) → 大学の課題作成にも対応できる&lt;/li&gt;
+&lt;li&gt;プラグインを使えばスライド出力もできる&lt;/li&gt;
+&lt;li&gt;Webサイトとして公開することができる&lt;/li&gt;
+&lt;li&gt;同期サーバーをセルフホストできる(人権)
+&lt;ul&gt;
+&lt;li&gt;同期メッチャ早い&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;メモたちを暗号化した状態で同期できる → サーバーの所在は問わなくなるので素敵&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;でもやっぱり悪い点も結構ある&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ファイル・ディレクトリ構造がObfscutedなので、例えばVimとかでシンプルにマークダウンファイルにアクセス・編集できない ← 暗号化とはトレードオフな感じはあるけどね&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;クライアントがデスクトップ・モバイルともにもう一息ほしい&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;見た目がモダンでない&lt;/li&gt;
+&lt;li&gt;アプリ自体のサイズがでかい。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;タグの検索関連が不完全: 複数タグで絞り込みとかもできない&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;モバイル版なんてかなりひどい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;アプリの利用が必須なのが絶妙。Webクライアントがほしい&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;今後の展望&#34;&gt;今後の展望&lt;/h2&gt;
+&lt;p&gt;正直、かなりJoplinにフルコミットしているので、しばらくは変わらない予定である。
+しかし、興味深い代替FOSSアプリも存在自体は認識しているので以下に記す&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Logseq
+&lt;ul&gt;
+&lt;li&gt;同期がWebdav依存だとすると遅さによるコンフリクトが心配
+&lt;ul&gt;
+&lt;li&gt;セルフホスト可能な同期サーバーはなさそう+計画も乏しそう(&lt;a href=&#34;https://discuss.logseq.com/t/will-logseq-remain-fully-open-source-in-the-future-and-will-the-synchronization-feature-be-self-hostable/11951/5&#34;&gt;https://discuss.logseq.com/t/will-logseq-remain-fully-open-source-in-the-future-and-will-the-synchronization-feature-be-self-hostable/11951/5&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;結構、使用感が独特&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
+&lt;p&gt;メモアプリ一つとっても、意外と難しいんだなと思った。
+正直、人それぞれ求めているものや思想が違うので、既存のアプリと考え方が合致しないとナレッジベースを育てていくのは苦しい時代だ。
+ただ、今回この記事を書いていて、意外とJoplinは愛すべき存在なのかもしれないと思い、今後の改善を説に望む一方だ。とにかく、クライアント群がもうちょっと良くなるだけでかなり変わるだろう。&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/note-taking-app/</guid>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>💻M1 MacBook Airを2023に手に入れた！</title>
+      <link>https://mazmr.com/posts/m1mba/</link>
+      <description>&lt;p&gt;2023年になり、とっくにM2も出ていますが、M1のMacBook Airを買いました。&lt;/p&gt;
+&lt;p&gt;理由は&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;値段が安い&lt;/li&gt;
+&lt;li&gt;スピーカーが良さそう&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;意外と理由はこんなもんだった。
+実際に、値段は18万。スピーカーはこの小ささから想像できないくらいステレオがしっかりしててびっくりした。&lt;/p&gt;
+&lt;p&gt;今回のアップグレードは&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;　MacBook mid 2017　→　M1　MacBook Air&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;となっており、前使っていたMacBookは6年間添い遂げた&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;これまで使っていたMacBookとは比べ物にならないくらいすべての動作が軽い、速い！&lt;/li&gt;
+&lt;li&gt;ただ筐体はデカい分ちょい重め。これまで片手でひょいひょい持ち上げていた感覚だと危ない
+画面が大きくなったので作業が圧倒的に快適&lt;/li&gt;
+&lt;li&gt;発熱が本当に無い。すごすぎる。膝の上に載せても大丈夫なんか！&lt;/li&gt;
+&lt;li&gt;キーボードの感触が良すぎる。Thinkpadで感じるアレ。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;なんというか感動の要素が大きすぎて、多少だめなところがあっても目を瞑ってしまうレベル&lt;/p&gt;
+&lt;p&gt;旧MacBookはトリプルブートしており、macOS + Arch Linux + Windows 10という超イキリセットアップだった。&lt;/p&gt;
+&lt;p&gt;ただ、Windowsは論外で必要なとき以外使わなく、Archも悪くはなかったが、タイリングWMが必須、かつ、トラックパッドが使いにくいという始末で、最終的にmacOSを使うことになってしまっていた。&lt;/p&gt;
+&lt;p&gt;Linuxはいじくり回すのは楽しいのだが、それが目的になってしまって、実際に何かを生み出そうという気にならない。いわゆる環境を整えて気持ちよくなってしまう病にかかってしまう。&lt;/p&gt;
+&lt;p&gt;なので、今回MacBookという脳死で極上の端末を手に入れたことにより、私の生産性が少しでも向上することを期待している。&lt;/p&gt;
+&lt;p&gt;この文章はもちろんM1で書いているんだけど、やっぱこのキーボード最高にうち心地も音もいいな！！&lt;/p&gt;
+&lt;h1 id=&#34;セットアップの流れ&#34;&gt;セットアップの流れ&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install Firefox&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install uBlock Origin&lt;/li&gt;
+&lt;li&gt;Install Account Containers&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install Xcode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install Homebrew
+&lt;a href=&#34;https://docs.brew.sh/Installation&#34;&gt;homebrew&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install Kitty
+&lt;code&gt;brew install --cask kitty&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SSH鍵生成
+&lt;code&gt;ssh key-gen&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;とりあえず、これはやらなくちゃ始まらない。&lt;br&gt;
+作成できたら、忘れずにGitHub等に公開鍵を登録する。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install &amp;lsquo;vim&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew install vim&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install &amp;lsquo;ranger&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew install ranger&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;do&lt;br&gt;
+&lt;code&gt;ranger --copy-config=all&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In ranger, I&amp;rsquo;d recommend doing:&lt;br&gt;
+&lt;code&gt;set colorscheme solarized&lt;/code&gt;&lt;br&gt;
+set the line below in &lt;code&gt;rc.conf&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;set draw_borders true&lt;/code&gt;&lt;br&gt;
+so it will look prettier.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Register git email address
+&lt;code&gt;git config --global user.email &amp;quot;youremail@yourdomain.com&amp;quot;&lt;/code&gt;&lt;br&gt;
+So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install CyberDuck for easier fiile transfer over sftp&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install Google 日本語入力&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.google.co.jp/ime/&#34;&gt;Google IME&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mail.app に使用するメアドを追加&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/m1mba/</guid>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>初めての一人暮らし備忘録</title>
+      <link>https://mazmr.com/posts/newhome/</link>
+      <description>&lt;h2 id=&#34;失敗たちこれからどうかえていくかを考察&#34;&gt;失敗たち（これからどうかえていくかを考察）&lt;/h2&gt;
+&lt;p&gt;二度同じ失敗を繰り返さないため、ここに何がどうだめでどう変えられるかを書いておく&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;部屋がただただ広い&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ロフトはいらない、転落怖い&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;少なくとも柵の高さは内見あるいは不動産に確認を絶対取る。&lt;/li&gt;
+&lt;li&gt;それを差し置いても、上で寝る場合は昇降が危険。&lt;/li&gt;
+&lt;li&gt;さらに言えば空調の効きがどう考えても悪くなる。&lt;/li&gt;
+&lt;li&gt;ロマンはある。&lt;/li&gt;
+&lt;li&gt;今回はいい（苦い）経験として、次回以降はよほど困らない限りロフトはやめる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;洗濯機を買うときは蛇口や排水溝の関係で「奥行き」「幅」に加えて「高さ」も思考にいれる&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;天井が斜めの場合は普通のシーリングライトはつかない&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ロフトのように天井が斜めになっている場合は一般のシーリングライトがつかない。&lt;/li&gt;
+&lt;li&gt;内見あるいは不動産に天井に斜めになっていないかをしっかり確認すること。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;シーリングライトを買って自分で梱包する場合は割れないようにしっかり梱包する&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;キッチンまわりは隅々まで内見で臭いを確認するのが理想&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;キッチンはコンロの数もそうだが、なにより作業スペースがどれくらいあるかを要確認&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;今住んでいる家はコンロ２口あるが作業スペースが全く無い&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;シャワーヘッドの取り替えは銀の部分だけをもって回転させる、ホース部分に力を入れてしまうと壊れてしまう&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;パッキンを入れ直して様子見をする予定ではある&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;風呂場の壁にマグネットがつくかの確認&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;シャワーの水の温度は一定を保ったまま出てくれるか&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;こればっかりは、別の部屋の人に聞き込みをするしかない?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/newhome/</guid>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://mazmr.com/posts/index_en/</link>
+      <description>&lt;p&gt;&lt;a href=&#34;../index.html&#34;&gt;🌐日本語&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note that this page does not include all the information present in the Japanese version.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;tiz. Taiki Matsumura. 松村 太貴&lt;/p&gt;
+&lt;img src=&#34;../img/me.jpg&#34; alt=&#34;A picture of myself&#34; title=&#34;my pic&#34; height=&#34;100&#34;/&gt;
+&lt;h3 id=&#34;mmeber-of&#34;&gt;Mmeber of&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Keio Faculty of Environment and Information
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rg.sfc.keio.ac.jp&#34;&gt;Murai Research Lab.&lt;/a&gt;（Keio SFC）
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://d-trust.sfc.wide.ad.jp/&#34;&gt;Tezuka Lab./ Digital Trust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sfc.keio.ac.jp/faculty_profile/list/PM/fumio-shimpo.html&#34;&gt;Shimpo Fumio Lab.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;i-research&#34;&gt;I research&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Online Privacy
+&lt;ul&gt;
+&lt;li&gt;PETs (Privacy Enhancing Technologies)&lt;/li&gt;
+&lt;li&gt;Privacy-related regulation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cryptography
+&lt;ul&gt;
+&lt;li&gt;QKD (Quantum Key Distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;i-love&#34;&gt;I love&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;English 🇬🇧&lt;/li&gt;
+&lt;li&gt;Sleeping 🛌&lt;/li&gt;
+&lt;li&gt;Themeparks 🎡&lt;/li&gt;
+&lt;li&gt;GNU/Linux 🐧&lt;/li&gt;
+&lt;li&gt;Selfhosting/HomeLab 🏠&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;i-respect&#34;&gt;I respect&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mom and Dad&lt;/li&gt;
+&lt;li&gt;Linus Torvalds&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;sk.html&#34;&gt;My lover&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;my-gpg&#34;&gt;My GPG&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../files/tiz.gpg&#34;&gt;&lt;code&gt;$ gpg --import 🔑🔒&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;my-contacts&#34;&gt;My Contacts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;tizberius⇓keio.jp&amp;gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;tiz⇓sfc.wide.ad.jp&amp;gt; / Murai Lab. WIDE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;my-crypto-wallet&#34;&gt;My Crypto Wallet&lt;/h3&gt;
+&lt;h4 id=&#34;monero&#34;&gt;Monero&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;89gyF7jkXek6uzRnkzXz7AW5mAEWz2MiNWyycpjm2MRyPQ7TznqFFQGXm1a3wKQaYMNYyz1m7JDa43R6CWXwx4f9FsLhVSe&lt;/code&gt;&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/index_en/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>Arch Installation</title>
+      <link>https://mazmr.com/posts/myarchwiki/archlinuxinstallation/</link>
+      <description>&lt;h1 id=&#34;during-installation&#34;&gt;During installation&lt;/h1&gt;
+&lt;h2 id=&#34;when-efi-directory-not-found-when-grub-install&#34;&gt;When EFI directory not found when grub-install,&lt;/h2&gt;
+&lt;p&gt;Inside chroot environment
+Make sure if you have installed efibootmgr&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;grub-install --efi-directory=/boot/efi --target=x86_64-efi /dev/sdX&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;when-you-cannot-see-the-entire-screen&#34;&gt;When you cannot see the entire screen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install fbset&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use
+&lt;code&gt;fbset -xres 2000 -yres 1200&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Or something like that&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;post-installation&#34;&gt;Post Installation&lt;/h1&gt;
+&lt;h2 id=&#34;fix-wifi-adapter-not-recognized-issue&#34;&gt;Fix WiFi adapter not recognized issue&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;lspci -k&lt;/code&gt; to show drivers in use.&lt;/p&gt;
+&lt;p&gt;Find the Wi-Fi adapter (most likely the Broadcom one)&lt;/p&gt;
+&lt;p&gt;If the kernel driver in use is either &lt;code&gt;bcma-pci-bridge&lt;/code&gt; or &lt;code&gt;b43-pci-bridge&lt;/code&gt;, I need
+this process&lt;/p&gt;
+&lt;h3 id=&#34;procedure&#34;&gt;procedure&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman-mirrors -f 5 &amp;amp;&amp;amp; sudo pacman -Syyu&lt;/code&gt;
+to update system&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman -S $(pacman -Qsq &amp;quot;^linux&amp;quot; | grep &amp;quot;^linux[0-9]*[-rt]*$&amp;quot; | awk &#39;{print $1&amp;quot;-headers&amp;quot;}&#39; ORS=&#39; &#39;)&lt;/code&gt;
+to install Linux headers packages&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman -S dkms&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman -S broadcom-wl-dkms&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;reboot!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ref: &lt;a href=&#34;https://archived.forum.manjaro.org/t/broadcom-wifi-driver-fails-to-install-properly/46316/2&#34;&gt;https://archived.forum.manjaro.org/t/broadcom-wifi-driver-fails-to-install-properly/46316/2&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;connect-to-wifi&#34;&gt;Connect to WiFi&lt;/h2&gt;
+&lt;h2 id=&#34;fix-wifi-adapter-not-recognized-issue-1&#34;&gt;Fix WiFi adapter not recognized issue&lt;/h2&gt;
+&lt;p&gt;Use
+&lt;code&gt;lspci -k&lt;/code&gt;
+to show drivers in use.&lt;/p&gt;
+&lt;p&gt;Find the Wi-Fi adapter (most likely the Broadcom one)&lt;/p&gt;
+&lt;p&gt;If the kernel driver in use is either bcma-pci-bridge or b43-pci-bridge, I need this process&lt;/p&gt;
+&lt;h3 id=&#34;procedure-1&#34;&gt;procedure&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman-mirrors -f 5 &amp;amp;&amp;amp; sudo pacman -Syyu&lt;/code&gt;
+to update system&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman -S $(pacman -Qsq &amp;quot;^linux&amp;quot; | grep &amp;quot;^linux[0-9]*[-rt]*$&amp;quot; | awk &#39;{print $1&amp;quot;-headers&amp;quot;}&#39; ORS=&#39; &#39;)&lt;/code&gt;
+to install Linux headers packages&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman -S dkms&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman -S broadcom-wl-dkms&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;reboot!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ref: &lt;a href=&#34;https://archived.forum.manjaro.org/t/broadcom-wifi-driver-fails-to-install-properly/46316/2&#34;&gt;https://archived.forum.manjaro.org/t/broadcom-wifi-driver-fails-to-install-properly/46316/2&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;connect-to-wifi-with-iwd&#34;&gt;Connect to WiFi (with iwd)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman -S iwd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl start iwd.service&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl enable iwd.service&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enter &lt;code&gt;iwctl&lt;/code&gt; to get in to the interface
+Use &lt;code&gt;device list&lt;/code&gt; to see WiFi adapters available
+&lt;code&gt;station {device} scan&lt;/code&gt; to scan networks
+&lt;code&gt;station {device} get-networks&lt;/code&gt; to see available ones
+&lt;code&gt;station {device} connect {network}&lt;/code&gt; to connect!&lt;/p&gt;
+&lt;h1 id=&#34;connect-to-wifi-with-networkmanager&#34;&gt;Connect to WiFi (with NetworkManager)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman -S networkmanager&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl start NetworkManager&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl enable NetworkManager&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nmcli dev wifi list&lt;/code&gt;
+to show every Wi-Fi available&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nmcli dev wifi con &amp;quot;{SSID}&amp;quot; password &amp;quot;{password}&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;try enabling/starting wpa_supplicant as well if it didn&amp;rsquo;t work!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;boot-option-doesnt-show-up-on-mac&#34;&gt;Boot option doesn&amp;rsquo;t show up (on Mac)&lt;/h1&gt;
+&lt;p&gt;Always check this ref: &lt;a href=&#34;https://wiki.archlinux.org/title/Mac&#34;&gt;https://wiki.archlinux.org/title/Mac&lt;/a&gt;
+First, inside chrooted environment, run
+&lt;code&gt;bootctl --path=/boot install&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll modify files in /boot/loader/
+change loader.conf content to&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    default arch.conf
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    timeout &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    console-mode max
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    editor no
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;add two files (arch.conf, arch-fallback.conf) under &lt;code&gt;/boot/loader/entries/&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;arch.conf&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    title Arch Linux
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    linux /vmlinuz-linux
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    initrd /initramfs-linux.img
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    options &lt;span style=&#34;color:#111&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;UUID={UUID}&amp;#34;&lt;/span&gt; rw
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;arch-fallback.conf (*optional)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    title Arch Linux &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;fallback initramfs&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    linux /vmlinuz-linux
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    initrd /initramfs-linuz-fallback.img
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    options &lt;span style=&#34;color:#111&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;UUID={UUID}&amp;#34;&lt;/span&gt; rw
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;for-amd-video-cards&#34;&gt;For AMD video cards&lt;/h1&gt;
+&lt;p&gt;pacman -S xf86-video-amdgpu&lt;/p&gt;
+&lt;h1 id=&#34;for-ati-video-cards&#34;&gt;For ATI video cards&lt;/h1&gt;
+&lt;p&gt;pacman -S xf86-video-ati&lt;/p&gt;
+&lt;h1 id=&#34;for-intel-video-cards&#34;&gt;For Intel video cards&lt;/h1&gt;
+&lt;p&gt;pacman -S xf86-video-intel&lt;/p&gt;
+&lt;h1 id=&#34;for-nvidia-video-cards&#34;&gt;For nVidia video cards&lt;/h1&gt;
+&lt;p&gt;pacman -S nvidia&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/myarchwiki/archlinuxinstallation/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>Arch Settings</title>
+      <link>https://mazmr.com/posts/myarchwiki/arch_settings/</link>
+      <description>&lt;h2 id=&#34;installing-fonts-using-otf-ttf&#34;&gt;installing fonts (using otf, ttf)&lt;/h2&gt;
+&lt;p&gt;just move those files to ~/.local/share/fonts/&lt;/p&gt;
+&lt;h2 id=&#34;listing-fonts&#34;&gt;listing fonts&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;fc-list&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;show-font-priority-the-higher-the-more-top-in-the-priority&#34;&gt;show font priority (the higher the more top in the priority)&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;fc-match&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;changing-built-in-laptop-keyboard-layout-at-kernel-level&#34;&gt;changing built-in laptop keyboard layout (at kernel level)&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Map_scancodes_to_keycodes&#34;&gt;https://wiki.archlinux.org/title/Map_scancodes_to_keycodes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;create &amp;amp; edit file &lt;code&gt;/etc/udev/hwdb.d/whatever.hwdb&lt;/code&gt;
+to be like below&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;evdev:atkbd:dmi:*
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#111&#34;&gt;KEYBOARD_KEY_2b&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;enter
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#111&#34;&gt;KEYBOARD_KEY_1c&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;backslash
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#111&#34;&gt;KEYBOARD_KEY_7d&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;backspace
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#111&#34;&gt;KEYBOARD_KEY_70&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;leftalt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	 &lt;span style=&#34;color:#111&#34;&gt;KEYBOARD_KEY_73&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rightshift
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;as you can see these lines will tell the kernel &amp;ldquo;when the key recognized as scancode(e.g. 0x2b, 0x1c&amp;hellip;), it will send keycode of right side of =&amp;rdquo;
+Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_&amp;hellip;
+Also, scancodes can be aquired by runing this command below in console not in GUI
+&lt;code&gt;showkey --scancodes&lt;/code&gt;
+You have to use it without 0x (e.g. 0x2b -&amp;gt; 2, 0x1c -&amp;gt; 1c)
+it might output two or more codes for one key. You might just get the first one (maybe it&amp;rsquo;s the pressed down) and ignore the second one (maybe it&amp;rsquo;s the pressed up ig)
+and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones.&lt;/p&gt;
+&lt;p&gt;and run
+&lt;code&gt;sudo systemd-hwdb update&lt;/code&gt;
+&lt;code&gt;sudo udevadm trigger&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;natural-scrolling&#34;&gt;Natural Scrolling&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Libinput&#34;&gt;https://wiki.archlinux.org/title/Libinput&lt;/a&gt;
+this wiki page literally says everything.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;xinput list&lt;/code&gt;
+to get devices and their ids&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xinput list-props &amp;lt;id&amp;gt;&lt;/code&gt;
+without &amp;lt;&amp;gt; and check which number in parenthesis is assigned to the Natural Scrolling Enabled&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xinput set-props &amp;lt;id&amp;gt; &amp;lt;number&amp;gt; 1&lt;/code&gt;
+this time, we want the natural scrolling to be enabled which is 1.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;keychron-keyboard-function-keys-not-working&#34;&gt;Keychron keyboard function keys not working&lt;/h2&gt;
+&lt;p&gt;Keychron is used like Apple keyboard in ubuntu:
+Reference: &lt;a href=&#34;https://help.ubuntu.com/community/AppleKeyboard&#34;&gt;https://help.ubuntu.com/community/AppleKeyboard&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 = disabled : Disable the &amp;lsquo;fn&amp;rsquo; key. Pressing &amp;lsquo;fn&amp;rsquo;+&amp;lsquo;F8&amp;rsquo; will behave like you only press &amp;lsquo;F8&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;1 = fkeyslast : Function keys are used as last key. Pressing &amp;lsquo;F8&amp;rsquo; key will act as a special key. Pressing &amp;lsquo;fn&amp;rsquo;+&amp;lsquo;F8&amp;rsquo; will behave like a F8.&lt;/li&gt;
+&lt;li&gt;2 = fkeysfirst : Function keys are used as first key. Pressing &amp;lsquo;F8&amp;rsquo; key will behave like a F8. Pressing &amp;lsquo;fn&amp;rsquo;+&amp;lsquo;F8&amp;rsquo; will act as special key (play/pause).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;example:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode&lt;/code&gt;&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/myarchwiki/arch_settings/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>Bring vertical tabs to Firefox &#43; Other useful stuff</title>
+      <link>https://mazmr.com/posts/myarchwiki/ff_vertical_tabs/</link>
+      <description>&lt;h1 id=&#34;procedure&#34;&gt;Procedure&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Set up &amp;lsquo;Sideberry&amp;rsquo;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install &lt;code&gt;Sideberry&lt;/code&gt; from extension store.&lt;/li&gt;
+&lt;li&gt;Click &amp;lsquo;Cog&amp;rsquo; ⚙️ icon in the top right of the sidebar.&lt;/li&gt;
+&lt;li&gt;Choose &amp;lsquo;Style Editor&amp;rsquo; from side menu.
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add these lines to set properties for fonts and background colors;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;--tabs-indent&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;--tabs-activated-bg&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;#BC8F8F&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;--tabs-font&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.77&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;rem&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;sans-serif&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;--frame-bg&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;#f3b1a6&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;--toolbar-el-overlay-active-bg&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;rgba&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;255&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;255&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;255&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.133&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;);}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;--toolbar-bg&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;#f3b1a6&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;--toolbar-el-overlay-selected-border&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;#146fd9&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Next, in order to hide horizontal(normal) tabs&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Enter about:config in the address bar and select “Accept the Risk and Continue.”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Under “Search preference name,” paste the following text: toolkit.legacyUserProfileCustomizations.stylesheets&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tap the toggle button on the right so the preference says “true.”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter about:support in the address bar.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scroll down to the section that says “Profile Folder,” and click the “Open Folder” (&amp;ldquo;Show in Finder&amp;rdquo; on macOS) button.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new subfolder called “chrome” within the folder you just opened.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the new “chrome” folder, create a new file named &lt;code&gt;userChrome.css&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/* ----- For macOS  ----- */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;tabbrowser-tab&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;visibility&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;collapse&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;titlebar-button&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;27&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;!important&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;nav-bar&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;margin-top&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-30&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;margin-left&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;margin-right&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;box-shadow&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;none&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;!important&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;border-top-left-radius&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;border-top-right-radius&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;uidensity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;titlebar-button&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;!important&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;uidensity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;compact&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;nav-bar&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;margin-top&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-32&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;titlebar-spacer&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;chrome&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;secondary&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;background&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;titlebar-buttonbox-container&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;var&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;chrome&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;secondary&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;background&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;titlebar-color&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;main-window&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;inFullscreen&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;sidebar-box&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;main-window&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;inFullscreen&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;sidebar-box&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;splitter&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00a8c8&#34;&gt;visibility&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;collapse&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;sidebar-box&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;sidebar-header&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;display&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;none&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;!important&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Restart Firefox to take effect.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/myarchwiki/ff_vertical_tabs/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>How to Rice Ranger</title>
+      <link>https://mazmr.com/posts/myarchwiki/ranger_rice/</link>
+      <description>&lt;h2 id=&#34;pre-requisite&#34;&gt;Pre-requisite&lt;/h2&gt;
+&lt;p&gt;Run&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ranger --copy-config=all&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Most of the configurations are done inside &lt;code&gt;~/config/ranger&lt;/code&gt; directory&lt;/p&gt;
+&lt;h2 id=&#34;showing-borders&#34;&gt;Showing borders&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;search for &lt;code&gt;set draw_borders none&lt;/code&gt; in &lt;code&gt;rc.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;none&lt;/code&gt; to &lt;code&gt;both&lt;/code&gt; or something like &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;colorschemes&#34;&gt;Colorschemes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;search for &lt;code&gt;set colorscheme default&lt;/code&gt; in &lt;code&gt;rc.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Change &lt;code&gt;default&lt;/code&gt; to something like &lt;code&gt;solarized&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;image-preview&#34;&gt;Image preview&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Install ueberzug with &lt;code&gt;yay -S ueberzug&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;search for &lt;code&gt;set preview_images false&lt;/code&gt; in &lt;code&gt;rc conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;change &lt;code&gt;false&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;scroll down and spot &lt;code&gt; set preview_images_method w3m&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;change &lt;code&gt;w3m&lt;/code&gt; to &lt;code&gt;ueberzug&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;restart ranger and it should be working&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;video-thumbnail-preview-requires-image-preview-working&#34;&gt;Video thumbnail preview (requires Image preview working)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo pacman -S ffmpegthumbnailer&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;search for&lt;code&gt;set preview_script ~/.config/ranger/scope.sh&lt;/code&gt; in &lt;code&gt;rc.conf&lt;/code&gt; which should be commented out&lt;/li&gt;
+&lt;li&gt;remove the comment&lt;/li&gt;
+&lt;li&gt;search for &lt;code&gt;video&lt;/code&gt; in &lt;code&gt;scope.sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;156&lt;/span&gt;         &lt;span style=&#34;color:#75715e&#34;&gt;## Video&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;157&lt;/span&gt;          &lt;span style=&#34;color:#111&#34;&gt;video&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/*&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;158&lt;/span&gt;              &lt;span style=&#34;color:#75715e&#34;&gt;# Thumbnail&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;159&lt;/span&gt;              &lt;span style=&#34;color:#111&#34;&gt;ffmpegthumbnailer&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;$&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;{FILE_PATH}&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;o&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;$&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;{IMAGE_CACHE_PATH}&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;exit&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;160&lt;/span&gt;              &lt;span style=&#34;color:#111&#34;&gt;exit&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;These lines should be commented out. So remove those comments
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;restart ranger and done.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;pdf-thumbnail-preview-requires-image-preview-working&#34;&gt;PDF thumbnail preview (requires Image preview working)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;search for&lt;code&gt;set preview_script ~/.config/ranger/scope.sh&lt;/code&gt; in &lt;code&gt;rc.conf&lt;/code&gt; which should be commented out&lt;/li&gt;
+&lt;li&gt;remove the comment&lt;/li&gt;
+&lt;li&gt;search for &lt;code&gt;application/pdf&lt;/code&gt; in &lt;code&gt;scope.sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;162&lt;/span&gt;         &lt;span style=&#34;color:#75715e&#34;&gt;## PDF&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;163&lt;/span&gt;          &lt;span style=&#34;color:#111&#34;&gt;application&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;pdf&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;164&lt;/span&gt;              &lt;span style=&#34;color:#111&#34;&gt;pdftoppm&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;f&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;l&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;165&lt;/span&gt;                       &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;scale&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;${DEFAULT_SIZE&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;%x&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;*}&amp;#34;&lt;/span&gt; \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;166&lt;/span&gt;                       &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;scale&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;167&lt;/span&gt;                       &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;singlefile&lt;/span&gt; \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;168&lt;/span&gt;                       &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;jpeg&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;tiffcompression&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;jpeg&lt;/span&gt; \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;169&lt;/span&gt;                       &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;$&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;{FILE_PATH}&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;${IMAGE_CACHE_PATH%.*}&amp;#34;&lt;/span&gt; \
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;170&lt;/span&gt;                  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;exit&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;exit&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;These lines should be commented out. So remove those comments
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;restart ranger and done&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/myarchwiki/ranger_rice/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>LaTeX日本語</title>
+      <link>https://mazmr.com/posts/myarchwiki/jp_latex_pandoc/</link>
+      <description>&lt;h1 id=&#34;using-jp-characters-in-latex-or-pandoc&#34;&gt;Using JP characters in Latex or Pandoc&lt;/h1&gt;
+&lt;h2 id=&#34;in-latex&#34;&gt;In Latex&lt;/h2&gt;
+&lt;p&gt;Put this line&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;\usepackage&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;[whole]&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;bxcjkjatype&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;on top of anything else.&lt;/p&gt;
+&lt;h2 id=&#34;in-pandoc-markdown&#34;&gt;In Pandoc (Markdown)&lt;/h2&gt;
+&lt;p&gt;Put these lines&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;header-includes:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;-&lt;/span&gt; \usepackage[whole]{bxcjkjatype}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;on top of anything else.
+the part between &lt;code&gt;---&lt;/code&gt; is meant to be the meta data.&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/myarchwiki/jp_latex_pandoc/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>Learning Git🐙</title>
+      <link>https://mazmr.com/posts/learn_git/</link>
+      <description>&lt;h1 id=&#34;when-your-contributes-are-not-counted-on-github&#34;&gt;When your contributes are not counted on GitHub&lt;/h1&gt;
+&lt;p&gt;Set Email Address for the git on your machine, using the command below:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git config --global user.email &amp;quot;youremail@yourdomain.com&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Match the email address to the one used on GitHub!&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/learn_git/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>Libreoffice日本語</title>
+      <link>https://mazmr.com/posts/myarchwiki/libreoffice_japanese/</link>
+      <description>&lt;h1 id=&#34;libreoffice-japanese-setting&#34;&gt;Libreoffice Japanese setting&lt;/h1&gt;
+&lt;p&gt;kanji may be shown in simplified chinese form.
+In order to change that and default to japanese kanji, you have to follow the instruction below:
+Tools -&amp;gt; Options -&amp;gt; Language -&amp;gt; Tick &amp;lsquo;Asian&amp;rsquo; box and select Japanese from pull down menu.&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/myarchwiki/libreoffice_japanese/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>Shell Technique</title>
+      <link>https://mazmr.com/posts/myarchwiki/shell_techniques/</link>
+      <description>&lt;h1 id=&#34;shell-techniques&#34;&gt;Shell techniques&lt;/h1&gt;
+&lt;h1 id=&#34;counting-up-to-n&#34;&gt;Counting up to n&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;1..600&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#111&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;$i&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;combining-videos-into-1&#34;&gt;Combining videos into 1&lt;/h1&gt;
+&lt;p&gt;use something like this&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;1..660&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#111&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;file seg-&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;$i&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;-f3-v1-a1.ts&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; mylist.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/myarchwiki/shell_techniques/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>When Pacman is Slow</title>
+      <link>https://mazmr.com/posts/myarchwiki/whenpacmanslow/</link>
+      <description>&lt;h1 id=&#34;set-fast-reflectors-using-reflector&#34;&gt;Set fast reflectors using &lt;code&gt;reflector&lt;/code&gt;&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;sudo pacman -S reflector&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;sudo systemctl enable reflector&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2.1 &lt;code&gt;sudo systemctl start reflector&lt;/code&gt; to use reflector for current login session optionally.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/myarchwiki/whenpacmanslow/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>日本語入力Mozc&#43;Fcitx</title>
+      <link>https://mazmr.com/posts/myarchwiki/jp_input_method/</link>
+      <description>&lt;h1 id=&#34;linux-japanese-input-method-guide&#34;&gt;Linux Japanese Input Method Guide&lt;/h1&gt;
+&lt;h2 id=&#34;just-doesnt-work-in-certain-application&#34;&gt;Just doesn&amp;rsquo;t work in certain application.&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Run &lt;code&gt;fcitx5-diagnose&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Spot some errors (in red characters) about environment variables.&lt;/li&gt;
+&lt;li&gt;Set them in a file
+e.g. Add these lines below to &lt;code&gt;~/.xinitrc&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;QT_IM_MODULE&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;GTK_IM_MODULE&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;XMODIFIERS&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;@im&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fcitx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;libreoffice-japanese-setting&#34;&gt;Libreoffice Japanese setting&lt;/h2&gt;
+&lt;p&gt;kanji may be shown in simplified chinese form.
+In order to change that and default to japanese kanji, you have to follow the instruction below:
+Tools -&amp;gt; Options -&amp;gt; Language -&amp;gt; Tick &amp;lsquo;Asian&amp;rsquo; box and select Japanese from pull down menu.&lt;/p&gt;
+&lt;h2 id=&#34;user-dictionary-setting-fcitx5&#34;&gt;User dictionary setting (fcitx5)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Launch &lt;code&gt;fcitx5-configtool&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Open &amp;lsquo;Addons&amp;rsquo; tab&lt;/li&gt;
+&lt;li&gt;You can spot &amp;lsquo;Mozc&amp;rsquo; under &amp;lsquo;Input Method&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Click &amp;lsquo;Configure&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Spot &amp;lsquo;Dictionary Tool&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Click &amp;lsquo;Confugure&amp;rsquo;
+There you have it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;miscellaneous-configurations&#34;&gt;Miscellaneous configurations&lt;/h2&gt;
+&lt;p&gt;Some fcitx5 settings can be accessed in plain text format in
+&lt;code&gt;~/.config/fcitx5/config&lt;/code&gt;
+How amazing is that&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/myarchwiki/jp_input_method/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>🥂</title>
+      <link>https://mazmr.com/posts/sk/</link>
+      <description>&lt;p style=&#34;text-align: center; font-family: &#39;Tsukushi A Round Gothic&#39;;&#34;&gt;いつも俺のことを大切にしてくれてありがとう&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/sk/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
   </channel>
