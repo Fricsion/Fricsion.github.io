@@ -1,0 +1,34 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Taiki M.",
+  "home_page_url": "https://mazmr.com/",
+  "feed_url": "https://mazmr.com/feed.json",
+  "description": "A minimal hugo theme focus on content",
+  "favicon": "https://mazmr.com//assets/favicon.ico",
+  "expired": false,
+  "author": {
+    "name": "Calvin Tran",
+    "url": "https://mazmr.com/"
+  },
+  "items": [
+    
+    
+
+    
+    {
+      "id": "d254e3a79322118b5aa39c2b76eebd6fad275ca6",
+      "title": "Firstpost",
+      "summary": "",
+      "content_text": "hello world can you see me?\n",
+      "content_html": "\u003ch1 id=\"hello-world\"\u003ehello world\u003c/h1\u003e\n\u003cp\u003ecan you see me?\u003c/p\u003e\n",
+      "url": "https://mazmr.com/posts/firstpost/",
+      "date_published": "15026-15-09T20:1515:00+09:00",
+      "date_modified": "15026-15-09T20:1515:00+09:00",
+      "author": {
+        "name": "Calvin Tran",
+        "url": "https://mazmr.com/"
+      }
+    }
+    
+  ]
+}

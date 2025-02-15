@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>Taiki M.</title>
+    <description>A minimal hugo theme focus on content</description>
+    <link>https://mazmr.com/</link>
+    
+    <language>en</language>
+    <copyright>Copyright 2025, Calvin Tran</copyright>
+    <lastBuildDate>Sat, 15 Feb 2025 23:00:21 +0900</lastBuildDate>
+    <generator>Hugo - gohugo.io</generator>
+    <docs>http://cyber.harvard.edu/rss/rss.html</docs>
+    <atom:link href="https://mazmr.com//atom.xml" rel="self" type="application/atom+xml"/>
+    
+    
+    <item>
+      <title>Firstpost</title>
+      <link>https://mazmr.com/posts/firstpost/</link>
+      <description>&lt;h1 id=&#34;hello-world&#34;&gt;hello world&lt;/h1&gt;
+&lt;p&gt;can you see me?&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/firstpost/</guid>
+      <pubDate>Sat, 15 Feb 2025 23:00:21 +0900</pubDate>
+    </item>
+    
+  </channel>
+</rss>
