@@ -537,11 +537,9 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
     <item>
       <title>About Me</title>
       <link>https://mazmr.com/posts/index_en/</link>
-      <description>&lt;p&gt;&lt;a href=&#34;../index.html&#34;&gt;🌐日本語&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;../about&#34;&gt;🌐日本語&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note that this page does not include all the information present in the Japanese version.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;tiz. Taiki Matsumura. 松村 太貴&lt;/p&gt;
-&lt;img src=&#34;../img/me.jpg&#34; alt=&#34;A picture of myself&#34; title=&#34;my pic&#34; height=&#34;100&#34;/&gt;
-&lt;h3 id=&#34;mmeber-of&#34;&gt;Mmeber of&lt;/h3&gt;
+&lt;h3 id=&#34;affiliation&#34;&gt;Affiliation&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Keio Faculty of Environment and Information
 &lt;ul&gt;
@@ -554,7 +552,7 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;i-research&#34;&gt;I research&lt;/h3&gt;
+&lt;h3 id=&#34;research&#34;&gt;Research&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Online Privacy
 &lt;ul&gt;
@@ -569,7 +567,7 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;i-love&#34;&gt;I love&lt;/h3&gt;
+&lt;h3 id=&#34;loves&#34;&gt;Loves&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;English 🇬🇧&lt;/li&gt;
 &lt;li&gt;Sleeping 🛌&lt;/li&gt;
@@ -577,22 +575,6 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
 &lt;li&gt;GNU/Linux 🐧&lt;/li&gt;
 &lt;li&gt;Selfhosting/HomeLab 🏠&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;i-respect&#34;&gt;I respect&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Mom and Dad&lt;/li&gt;
-&lt;li&gt;Linus Torvalds&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;sk.html&#34;&gt;My lover&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;my-gpg&#34;&gt;My GPG&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;../files/tiz.gpg&#34;&gt;&lt;code&gt;$ gpg --import 🔑🔒&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;my-contacts&#34;&gt;My Contacts&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;tizberius⇓keio.jp&amp;gt;&lt;/li&gt;
-&lt;li&gt;&amp;lt;tiz⇓sfc.wide.ad.jp&amp;gt; / Murai Lab. WIDE&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;my-crypto-wallet&#34;&gt;My Crypto Wallet&lt;/h3&gt;
-&lt;h4 id=&#34;monero&#34;&gt;Monero&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;89gyF7jkXek6uzRnkzXz7AW5mAEWz2MiNWyycpjm2MRyPQ7TznqFFQGXm1a3wKQaYMNYyz1m7JDa43R6CWXwx4f9FsLhVSe&lt;/code&gt;&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
       <guid>https://mazmr.com/posts/index_en/</guid>
