@@ -591,7 +591,7 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
     <item>
       <title>About Me</title>
       <link>https://mazmr.com/posts/index_en/</link>
-      <description>&lt;p&gt;&lt;a href=&#34;../about&#34;&gt;🌐日本語&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://mazmr.com/../about&#34;&gt;🌐日本語&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note that this page does not include all the information present in the Japanese version.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;affiliation&#34;&gt;Affiliation&lt;/h3&gt;
 &lt;ul&gt;
