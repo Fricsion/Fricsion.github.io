@@ -19,6 +19,7 @@ evdev:atkbd:dmi:* KEYBOARD_KEY_2b=enter KEYBOARD_KEY_1c=backslash KEYBOARD_KEY_7
   <meta property="og:locale" content="ja">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2025-02-16T14:18:10+09:00">
     <meta property="article:tag" content="Linux">
 
     
@@ -29,6 +30,7 @@ show font priority (the higher the more top in the priority) fc-match
 changing built-in laptop keyboard layout (at kernel level) https://wiki.archlinux.org/title/Map_scancodes_to_keycodes
 create &amp; edit file /etc/udev/hwdb.d/whatever.hwdb to be like below
 evdev:atkbd:dmi:* KEYBOARD_KEY_2b=enter KEYBOARD_KEY_1c=backslash KEYBOARD_KEY_7d=backspace KEYBOARD_KEY_70=leftalt KEYBOARD_KEY_73=rightshift as you can see these lines will tell the kernel “when the key recognized as scancode(e.g. 0x2b, 0x1c…), it will send keycode of right side of =” Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_… Also, scancodes can be aquired by runing this command below in console not in GUI showkey --scancodes You have to use it without 0x (e.g. 0x2b -&gt; 2, 0x1c -&gt; 1c) it might output two or more codes for one key. You might just get the first one (maybe it’s the pressed down) and ignore the second one (maybe it’s the pressed up ig) and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones.">
+  <meta itemprop="dateModified" content="2025-02-16T14:18:10+09:00">
   <meta itemprop="wordCount" content="337">
   <meta itemprop="keywords" content="Linux">
     
@@ -78,7 +80,7 @@ evdev:atkbd:dmi:* KEYBOARD_KEY_2b=enter KEYBOARD_KEY_1c=backslash KEYBOARD_KEY_7
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2025-02-16T14:18:10.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Taiki M.",

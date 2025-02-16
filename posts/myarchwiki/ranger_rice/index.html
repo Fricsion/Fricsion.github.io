@@ -17,6 +17,7 @@ Showing borders search for set draw_borders none in rc.conf Set none to both or 
   <meta property="og:locale" content="ja">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
+    <meta property="article:modified_time" content="2025-02-16T14:18:10+09:00">
     <meta property="article:tag" content="Cli">
 
     
@@ -25,6 +26,7 @@ Showing borders search for set draw_borders none in rc.conf Set none to both or 
 ranger --copy-config=all
 Most of the configurations are done inside ~/config/ranger directory
 Showing borders search for set draw_borders none in rc.conf Set none to both or something like true Colorschemes search for set colorscheme default in rc.conf Change default to something like solarized Image preview Install ueberzug with yay -S ueberzug search for set preview_images false in rc conf change false to true scroll down and spot set preview_images_method w3m change w3m to ueberzug restart ranger and it should be working Video thumbnail preview (requires Image preview working) sudo pacman -S ffmpegthumbnailer search forset preview_script ~/.config/ranger/scope.sh in rc.conf which should be commented out remove the comment search for video in scope.sh 156 ## Video 157 video/*) 158 # Thumbnail 159 ffmpegthumbnailer -i &#34;${FILE_PATH}&#34; -o &#34;${IMAGE_CACHE_PATH}&#34; -s 0 &amp;&amp; exit 6 160 exit 1;; These lines should be commented out. So remove those comments restart ranger and done. PDF thumbnail preview (requires Image preview working) search forset preview_script ~/.config/ranger/scope.sh in rc.conf which should be commented out remove the comment search for application/pdf in scope.sh 162 ## PDF 163 application/pdf) 164 pdftoppm -f 1 -l 1 \ 165 -scale-to-x &#34;${DEFAULT_SIZE%x*}&#34; \ 166 -scale-to-y -1 \ 167 -singlefile \ 168 -jpeg -tiffcompression jpeg \ 169 -- &#34;${FILE_PATH}&#34; &#34;${IMAGE_CACHE_PATH%.*}&#34; \ 170 &amp;&amp; exit 6 || exit 1;; These lines should be commented out. So remove those comments restart ranger and done">
+  <meta itemprop="dateModified" content="2025-02-16T14:18:10+09:00">
   <meta itemprop="wordCount" content="228">
   <meta itemprop="keywords" content="Cli">
     
@@ -74,7 +76,7 @@ Showing borders search for set draw_borders none in rc.conf Set none to both or 
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2025-02-16T14:18:10.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Taiki M.",
