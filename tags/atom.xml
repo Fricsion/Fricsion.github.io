@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Taiki M.</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://mazmr.com/tags/</link>
     <description>Recent content in Tags on Taiki M.</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 16 Feb 2025 14:18:10 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mazmr.com/tags/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Retrospective</title>
-      <link>http://localhost:1313/tags/retrospective/</link>
+      <link>https://mazmr.com/tags/retrospective/</link>
       <pubDate>Sun, 16 Feb 2025 02:11:36 +0900</pubDate>
-      <guid>http://localhost:1313/tags/retrospective/</guid>
+      <guid>https://mazmr.com/tags/retrospective/</guid>
       <description></description>
     </item>
     <item>
       <title>Selfhosted</title>
-      <link>http://localhost:1313/tags/selfhosted/</link>
+      <link>https://mazmr.com/tags/selfhosted/</link>
       <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/selfhosted/</guid>
+      <guid>https://mazmr.com/tags/selfhosted/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://mazmr.com/tags/linux/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://mazmr.com/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Cli</title>
-      <link>http://localhost:1313/tags/cli/</link>
+      <link>https://mazmr.com/tags/cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cli/</guid>
+      <guid>https://mazmr.com/tags/cli/</guid>
       <description></description>
     </item>
     <item>
       <title>Latex</title>
-      <link>http://localhost:1313/tags/latex/</link>
+      <link>https://mazmr.com/tags/latex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/latex/</guid>
+      <guid>https://mazmr.com/tags/latex/</guid>
       <description></description>
     </item>
   </channel>

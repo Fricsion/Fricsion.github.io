@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latex on Taiki M.</title>
-    <link>http://localhost:1313/tags/latex/</link>
+    <link>https://mazmr.com/tags/latex/</link>
     <description>Recent content in Latex on Taiki M.</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <atom:link href="http://localhost:1313/tags/latex/atom.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mazmr.com/tags/latex/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LaTeX日本語</title>
-      <link>http://localhost:1313/posts/myarchwiki/jp_latex_pandoc/</link>
+      <link>https://mazmr.com/posts/myarchwiki/jp_latex_pandoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/myarchwiki/jp_latex_pandoc/</guid>
+      <guid>https://mazmr.com/posts/myarchwiki/jp_latex_pandoc/</guid>
       <description>&lt;h1 id=&#34;using-jp-characters-in-latex-or-pandoc&#34;&gt;Using JP characters in Latex or Pandoc&lt;/h1&gt;&#xA;&lt;h2 id=&#34;in-latex&#34;&gt;In Latex&lt;/h2&gt;&#xA;&lt;p&gt;Put this line&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;\usepackage&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;[whole]&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;bxcjkjatype&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;on top of anything else.&lt;/p&gt;&#xA;&lt;h2 id=&#34;in-pandoc-markdown&#34;&gt;In Pandoc (Markdown)&lt;/h2&gt;&#xA;&lt;p&gt;Put these lines&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;header-includes:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;-&lt;/span&gt; \usepackage[whole]{bxcjkjatype}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;on top of anything else.&#xA;the part between &lt;code&gt;---&lt;/code&gt; is meant to be the meta data.&lt;/p&gt;</description>
     </item>
   </channel>
