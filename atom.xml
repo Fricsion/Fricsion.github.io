@@ -3,19 +3,19 @@
     
     <title>Taiki M.</title>
     <description>A minimal hugo theme focus on content</description>
-    <link>https://mazmr.com/</link>
+    <link>http://localhost:1313/</link>
     
     <language>en</language>
     <copyright>Copyright 2025, Calvin Tran</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
-    <atom:link href="https://mazmr.com//atom.xml" rel="self" type="application/atom+xml"/>
+    <atom:link href="http://localhost:1313//atom.xml" rel="self" type="application/atom+xml"/>
     
     
     <item>
       <title>学部生研究生活を振り返る</title>
-      <link>https://mazmr.com/posts/undergrad/</link>
+      <link>http://localhost:1313/posts/undergrad/</link>
       <description>&lt;p&gt;入学当時から卒業完遂まで常に【データプライバシー】を日々考えて過ごしてきた。&lt;/p&gt;
 &lt;p&gt;4年間同じトピックを様々な視点から見つめる、面白い期間だった。&lt;/p&gt;
 &lt;p&gt;自分自身が成長した部分は大きくないと思う。ただ、その過程で触れてきたものは今後につながると考えている。&lt;/p&gt;
@@ -67,7 +67,7 @@
 製品がやる、と言っていること以外のことを無断でしている例&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;が自分の新規性だと考えていた。&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://mazmr.com/images/kenkyu-slide.png&#34;
+  src=&#34;http://localhost:1313/images/kenkyu-slide.png&#34;
   alt=&#34;当時のスライド画像&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -247,13 +247,13 @@ IIJ&lt;sup id=&#34;fnref3:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footno
 &lt;/div&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/undergrad/</guid>
+      <guid>http://localhost:1313/posts/undergrad/</guid>
       <pubDate>Sun, 16 Feb 2025 02:11:36 +0900</pubDate>
     </item>
     
     <item>
       <title>セルフホストしているサービス</title>
-      <link>https://mazmr.com/posts/selfhosted/</link>
+      <link>http://localhost:1313/posts/selfhosted/</link>
       <description>&lt;p&gt;あくまで、参考程度に参照していただきたい。
 そのため、ときとともに変わる傾向にあるURI等は記載しないので検索して情報収集していただきたい。&lt;/p&gt;
 &lt;h2 id=&#34;docker&#34;&gt;docker&lt;/h2&gt;
@@ -307,13 +307,13 @@ API関連が充実していて、ドキュメンテーションが割と組み�
 &lt;h2 id=&#34;proxmox&#34;&gt;Proxmox&lt;/h2&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/selfhosted/</guid>
+      <guid>http://localhost:1313/posts/selfhosted/</guid>
       <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>When Pacman is Slow</title>
-      <link>https://mazmr.com/posts/myarchwiki/whenpacmanslow/</link>
+      <link>http://localhost:1313/posts/myarchwiki/whenpacmanslow/</link>
       <description>&lt;h1 id=&#34;set-fast-reflectors-using-reflector&#34;&gt;Set fast reflectors using &lt;code&gt;reflector&lt;/code&gt;&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -352,13 +352,13 @@ API関連が充実していて、ドキュメンテーションが割と組み�
 &lt;p&gt;and done!&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/myarchwiki/whenpacmanslow/</guid>
+      <guid>http://localhost:1313/posts/myarchwiki/whenpacmanslow/</guid>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>メモアプリ困窮問題</title>
-      <link>https://mazmr.com/posts/note-taking-app/</link>
+      <link>http://localhost:1313/posts/note-taking-app/</link>
       <description>&lt;p&gt;2024年も終わりかけている。思っているように進歩しないのが、私のメモアプリ問題である。&lt;/p&gt;
 &lt;h2 id=&#34;事の発端&#34;&gt;事の発端&lt;/h2&gt;
 &lt;p&gt;昔から、いろいろなメモアプリを行ったり来たり適当に生きてきた私だった。
@@ -428,13 +428,13 @@ API関連が充実していて、ドキュメンテーションが割と組み�
 ただ、今回この記事を書いていて、意外とJoplinは愛すべき存在なのかもしれないと思い、今後の改善を説に望む一方だ。とにかく、クライアント群がもうちょっと良くなるだけでかなり変わるだろう。&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/note-taking-app/</guid>
+      <guid>http://localhost:1313/posts/note-taking-app/</guid>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>💻M1 MacBook Airを2023に手に入れた！</title>
-      <link>https://mazmr.com/posts/m1mba/</link>
+      <link>http://localhost:1313/posts/m1mba/</link>
       <description>&lt;p&gt;2023年になり、とっくにM2も出ていますが、M1のMacBook Airを買いました。&lt;/p&gt;
 &lt;p&gt;理由は&lt;/p&gt;
 &lt;ul&gt;
@@ -519,13 +519,13 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
 &lt;/ol&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/m1mba/</guid>
+      <guid>http://localhost:1313/posts/m1mba/</guid>
       <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>初めての一人暮らし備忘録</title>
-      <link>https://mazmr.com/posts/newhome/</link>
+      <link>http://localhost:1313/posts/newhome/</link>
       <description>&lt;h2 id=&#34;失敗たちこれからどうかえていくかを考察&#34;&gt;失敗たち（これからどうかえていくかを考察）&lt;/h2&gt;
 &lt;p&gt;二度同じ失敗を繰り返さないため、ここに何がどうだめでどう変えられるかを書いておく&lt;/p&gt;
 &lt;ul&gt;
@@ -584,14 +584,14 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
 &lt;/ul&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/newhome/</guid>
+      <guid>http://localhost:1313/posts/newhome/</guid>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://mazmr.com/posts/index_en/</link>
-      <description>&lt;p&gt;&lt;a href=&#34;https://mazmr.com/../about&#34;&gt;🌐日本語&lt;/a&gt;&lt;/p&gt;
+      <link>http://localhost:1313/posts/index_en/</link>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/../about&#34;&gt;🌐日本語&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note that this page does not include all the information present in the Japanese version.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;affiliation&#34;&gt;Affiliation&lt;/h3&gt;
 &lt;ul&gt;
@@ -631,13 +631,13 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
 &lt;/ul&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/index_en/</guid>
+      <guid>http://localhost:1313/posts/index_en/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>Arch Installation</title>
-      <link>https://mazmr.com/posts/myarchwiki/archlinuxinstallation/</link>
+      <link>http://localhost:1313/posts/myarchwiki/archlinuxinstallation/</link>
       <description>&lt;h1 id=&#34;during-installation&#34;&gt;During installation&lt;/h1&gt;
 &lt;h2 id=&#34;when-efi-directory-not-found-when-grub-install&#34;&gt;When EFI directory not found when grub-install,&lt;/h2&gt;
 &lt;p&gt;Inside chroot environment
@@ -747,13 +747,13 @@ change loader.conf content to&lt;/p&gt;
 &lt;p&gt;pacman -S nvidia&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/myarchwiki/archlinuxinstallation/</guid>
+      <guid>http://localhost:1313/posts/myarchwiki/archlinuxinstallation/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>Arch Settings</title>
-      <link>https://mazmr.com/posts/myarchwiki/arch_settings/</link>
+      <link>http://localhost:1313/posts/myarchwiki/arch_settings/</link>
       <description>&lt;h2 id=&#34;installing-fonts-using-otf-ttf&#34;&gt;installing fonts (using otf, ttf)&lt;/h2&gt;
 &lt;p&gt;just move those files to ~/.local/share/fonts/&lt;/p&gt;
 &lt;h2 id=&#34;listing-fonts&#34;&gt;listing fonts&lt;/h2&gt;
@@ -803,13 +803,13 @@ Reference: &lt;a href=&#34;https://help.ubuntu.com/community/AppleKeyboard&#34;&
 &lt;p&gt;&lt;code&gt;echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode&lt;/code&gt;&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/myarchwiki/arch_settings/</guid>
+      <guid>http://localhost:1313/posts/myarchwiki/arch_settings/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>Bring vertical tabs to Firefox &#43; Other useful stuff</title>
-      <link>https://mazmr.com/posts/myarchwiki/ff_vertical_tabs/</link>
+      <link>http://localhost:1313/posts/myarchwiki/ff_vertical_tabs/</link>
       <description>&lt;h1 id=&#34;procedure&#34;&gt;Procedure&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -909,13 +909,13 @@ Reference: &lt;a href=&#34;https://help.ubuntu.com/community/AppleKeyboard&#34;&
 &lt;/ol&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/myarchwiki/ff_vertical_tabs/</guid>
+      <guid>http://localhost:1313/posts/myarchwiki/ff_vertical_tabs/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>How to Rice Ranger</title>
-      <link>https://mazmr.com/posts/myarchwiki/ranger_rice/</link>
+      <link>http://localhost:1313/posts/myarchwiki/ranger_rice/</link>
       <description>&lt;h2 id=&#34;pre-requisite&#34;&gt;Pre-requisite&lt;/h2&gt;
 &lt;p&gt;Run&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ranger --copy-config=all&lt;/code&gt;&lt;/p&gt;
@@ -978,13 +978,13 @@ Reference: &lt;a href=&#34;https://help.ubuntu.com/community/AppleKeyboard&#34;&
 &lt;/ul&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/myarchwiki/ranger_rice/</guid>
+      <guid>http://localhost:1313/posts/myarchwiki/ranger_rice/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>LaTeX日本語</title>
-      <link>https://mazmr.com/posts/myarchwiki/jp_latex_pandoc/</link>
+      <link>http://localhost:1313/posts/myarchwiki/jp_latex_pandoc/</link>
       <description>&lt;h1 id=&#34;using-jp-characters-in-latex-or-pandoc&#34;&gt;Using JP characters in Latex or Pandoc&lt;/h1&gt;
 &lt;h2 id=&#34;in-latex&#34;&gt;In Latex&lt;/h2&gt;
 &lt;p&gt;Put this line&lt;/p&gt;
@@ -1000,39 +1000,39 @@ Reference: &lt;a href=&#34;https://help.ubuntu.com/community/AppleKeyboard&#34;&
 the part between &lt;code&gt;---&lt;/code&gt; is meant to be the meta data.&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/myarchwiki/jp_latex_pandoc/</guid>
+      <guid>http://localhost:1313/posts/myarchwiki/jp_latex_pandoc/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>Learning Git🐙</title>
-      <link>https://mazmr.com/posts/learn_git/</link>
+      <link>http://localhost:1313/posts/learn_git/</link>
       <description>&lt;h1 id=&#34;when-your-contributes-are-not-counted-on-github&#34;&gt;When your contributes are not counted on GitHub&lt;/h1&gt;
 &lt;p&gt;Set Email Address for the git on your machine, using the command below:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;git config --global user.email &amp;quot;youremail@yourdomain.com&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Match the email address to the one used on GitHub!&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/learn_git/</guid>
+      <guid>http://localhost:1313/posts/learn_git/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>Libreoffice日本語</title>
-      <link>https://mazmr.com/posts/myarchwiki/libreoffice_japanese/</link>
+      <link>http://localhost:1313/posts/myarchwiki/libreoffice_japanese/</link>
       <description>&lt;h1 id=&#34;libreoffice-japanese-setting&#34;&gt;Libreoffice Japanese setting&lt;/h1&gt;
 &lt;p&gt;kanji may be shown in simplified chinese form.
 In order to change that and default to japanese kanji, you have to follow the instruction below:
 Tools -&amp;gt; Options -&amp;gt; Language -&amp;gt; Tick &amp;lsquo;Asian&amp;rsquo; box and select Japanese from pull down menu.&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/myarchwiki/libreoffice_japanese/</guid>
+      <guid>http://localhost:1313/posts/myarchwiki/libreoffice_japanese/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>Shell Technique</title>
-      <link>https://mazmr.com/posts/myarchwiki/shell_techniques/</link>
+      <link>http://localhost:1313/posts/myarchwiki/shell_techniques/</link>
       <description>&lt;h1 id=&#34;shell-techniques&#34;&gt;Shell techniques&lt;/h1&gt;
 &lt;h1 id=&#34;counting-up-to-n&#34;&gt;Counting up to n&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;for&lt;/span&gt; i in &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;1..600&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
@@ -1047,13 +1047,13 @@ Tools -&amp;gt; Options -&amp;gt; Language -&amp;gt; Tick &amp;lsquo;Asian&amp;r
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/myarchwiki/shell_techniques/</guid>
+      <guid>http://localhost:1313/posts/myarchwiki/shell_techniques/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>日本語入力Mozc&#43;Fcitx</title>
-      <link>https://mazmr.com/posts/myarchwiki/jp_input_method/</link>
+      <link>http://localhost:1313/posts/myarchwiki/jp_input_method/</link>
       <description>&lt;h1 id=&#34;linux-japanese-input-method-guide&#34;&gt;Linux Japanese Input Method Guide&lt;/h1&gt;
 &lt;h2 id=&#34;just-doesnt-work-in-certain-application&#34;&gt;Just doesn&amp;rsquo;t work in certain application.&lt;/h2&gt;
 &lt;ol&gt;
@@ -1085,17 +1085,17 @@ There you have it.&lt;/li&gt;
 How amazing is that&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/myarchwiki/jp_input_method/</guid>
+      <guid>http://localhost:1313/posts/myarchwiki/jp_input_method/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>🥂</title>
-      <link>https://mazmr.com/posts/sk/</link>
+      <link>http://localhost:1313/posts/sk/</link>
       <description>&lt;p style=&#34;text-align: center; font-family: &#39;Tsukushi A Round Gothic&#39;;&#34;&gt;いつも俺のことを大切にしてくれてありがとう&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/sk/</guid>
+      <guid>http://localhost:1313/posts/sk/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     

@@ -2,82 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mazmr.com/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/tags/retrospective/</loc>
+    <loc>http://localhost:1313/tags/retrospective/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/undergrad/</loc>
+    <loc>http://localhost:1313/posts/undergrad/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-02-16T02:45:53+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/tags/selfhosted/</loc>
+    <loc>http://localhost:1313/tags/selfhosted/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/selfhosted/</loc>
+    <loc>http://localhost:1313/posts/selfhosted/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/tags/linux/</loc>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/myarchwiki/whenpacmanslow/</loc>
+    <loc>http://localhost:1313/posts/myarchwiki/whenpacmanslow/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/note-taking-app/</loc>
+    <loc>http://localhost:1313/posts/note-taking-app/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/m1mba/</loc>
+    <loc>http://localhost:1313/posts/m1mba/</loc>
     <lastmod>2025-02-16T02:45:53+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/newhome/</loc>
+    <loc>http://localhost:1313/posts/newhome/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-16T02:45:53+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/index_en/</loc>
+    <loc>http://localhost:1313/posts/index_en/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/myarchwiki/archlinuxinstallation/</loc>
+    <loc>http://localhost:1313/posts/myarchwiki/archlinuxinstallation/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/myarchwiki/arch_settings/</loc>
+    <loc>http://localhost:1313/posts/myarchwiki/arch_settings/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/myarchwiki/ff_vertical_tabs/</loc>
+    <loc>http://localhost:1313/posts/myarchwiki/ff_vertical_tabs/</loc>
     <lastmod>2025-02-16T02:45:53+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/tags/cli/</loc>
+    <loc>http://localhost:1313/tags/cli/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/myarchwiki/ranger_rice/</loc>
+    <loc>http://localhost:1313/posts/myarchwiki/ranger_rice/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/tags/latex/</loc>
+    <loc>http://localhost:1313/tags/latex/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/myarchwiki/jp_latex_pandoc/</loc>
+    <loc>http://localhost:1313/posts/myarchwiki/jp_latex_pandoc/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/learn_git/</loc>
+    <loc>http://localhost:1313/posts/learn_git/</loc>
     <lastmod>2025-02-16T02:45:53+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/myarchwiki/libreoffice_japanese/</loc>
+    <loc>http://localhost:1313/posts/myarchwiki/libreoffice_japanese/</loc>
     <lastmod>2025-02-16T02:45:53+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/myarchwiki/shell_techniques/</loc>
+    <loc>http://localhost:1313/posts/myarchwiki/shell_techniques/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/myarchwiki/jp_input_method/</loc>
+    <loc>http://localhost:1313/posts/myarchwiki/jp_input_method/</loc>
     <lastmod>2025-02-16T14:18:10+09:00</lastmod>
   </url><url>
-    <loc>https://mazmr.com/posts/sk/</loc>
+    <loc>http://localhost:1313/posts/sk/</loc>
     <lastmod>2025-02-16T02:45:53+09:00</lastmod>
   </url>
 </urlset>
