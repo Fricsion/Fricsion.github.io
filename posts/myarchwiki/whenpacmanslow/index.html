@@ -12,17 +12,35 @@
   <meta property="og:title" content="When Pacman is Slow">
   <meta property="og:description" content="Set fast reflectors using reflector sudo pacman -S reflector
 sudo systemctl enable reflector
-2.1 sudo systemctl start reflector to use reflector for current login session optionally.">
+2.1 sudo systemctl start reflector to use reflector for current login session optionally.
+If it’s slow even with reflector Just stop using reflector altogether lol
+and actually pick some near servers from here: https://archlinux.org/mirrors/status/
+and append $repo/os/$arch at the end of each line.
+maybe with a help from https://archlinux.org/mirrorlist/
+you can get something like this:
+## ## Arch Linux repository mirrorlist ## Filtered by mirror score from mirror status page ## Generated on 2024-11-01 ## ## Japan #Server = https://repo.jing.rocks/archlinux/$repo/os/$arch ## Japan #Server = https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch ## Japan #Server = https://www.miraa.jp/archlinux/$repo/os/$arch ## Japan #Server = https://mirrors.cat.net/archlinux/$repo/os/$arch ## Japan #Server = https://jp.mirrors.cicku.me/archlinux/$repo/os/$arch now copy &amp; paste this into /etc/pacman.d/mirrorlist">
   <meta property="og:locale" content="ja">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-18T00:00:00+00:00">
+    <meta property="article:tag" content="Linux">
 
     
   <meta itemprop="name" content="When Pacman is Slow">
   <meta itemprop="description" content="Set fast reflectors using reflector sudo pacman -S reflector
 sudo systemctl enable reflector
-2.1 sudo systemctl start reflector to use reflector for current login session optionally.">
-  <meta itemprop="wordCount" content="26">
+2.1 sudo systemctl start reflector to use reflector for current login session optionally.
+If it’s slow even with reflector Just stop using reflector altogether lol
+and actually pick some near servers from here: https://archlinux.org/mirrors/status/
+and append $repo/os/$arch at the end of each line.
+maybe with a help from https://archlinux.org/mirrorlist/
+you can get something like this:
+## ## Arch Linux repository mirrorlist ## Filtered by mirror score from mirror status page ## Generated on 2024-11-01 ## ## Japan #Server = https://repo.jing.rocks/archlinux/$repo/os/$arch ## Japan #Server = https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch ## Japan #Server = https://www.miraa.jp/archlinux/$repo/os/$arch ## Japan #Server = https://mirrors.cat.net/archlinux/$repo/os/$arch ## Japan #Server = https://jp.mirrors.cicku.me/archlinux/$repo/os/$arch now copy &amp; paste this into /etc/pacman.d/mirrorlist">
+  <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
+  <meta itemprop="wordCount" content="122">
+  <meta itemprop="keywords" content="Linux">
     
     <link rel="canonical" href="https://mazmr.com/posts/myarchwiki/whenpacmanslow/">
     <link rel="icon" href="https://mazmr.com//assets/favicon.ico">
@@ -47,7 +65,7 @@ sudo systemctl enable reflector
       "name": "When Pacman is Slow",
       "headline": "When Pacman is Slow",
       "alternativeHeadline": "",
-      "description": "\u003ch1 id=\u0022set-fast-reflectors-using-reflector\u0022\u003eSet fast reflectors using \u003ccode\u003ereflector\u003c\/code\u003e\u003c\/h1\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003esudo pacman -S reflector\u003c\/code\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003esudo systemctl enable reflector\u003c\/code\u003e\u003c\/p\u003e\n\u003cp\u003e2.1 \u003ccode\u003esudo systemctl start reflector\u003c\/code\u003e to use reflector for current login session optionally.\u003c\/p\u003e\n\u003c\/li\u003e\n\u003c\/ol\u003e",
+      "description": "\u003ch1 id=\u0022set-fast-reflectors-using-reflector\u0022\u003eSet fast reflectors using \u003ccode\u003ereflector\u003c\/code\u003e\u003c\/h1\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003esudo pacman -S reflector\u003c\/code\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003esudo systemctl enable reflector\u003c\/code\u003e\u003c\/p\u003e\n\u003cp\u003e2.1 \u003ccode\u003esudo systemctl start reflector\u003c\/code\u003e to use reflector for current login session optionally.\u003c\/p\u003e\n\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003ch1 id=\u0022if-its-slow-even-with-reflector\u0022\u003eIf it\u0026rsquo;s slow even with reflector\u003c\/h1\u003e\n\u003cp\u003eJust stop using \u003ccode\u003ereflector\u003c\/code\u003e altogether lol\u003c\/p\u003e\n\u003cp\u003eand actually pick some near servers from here:\n\u003ca href=\u0022https:\/\/archlinux.org\/mirrors\/status\/\u0022\u003ehttps:\/\/archlinux.org\/mirrors\/status\/\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003eand append \u003ccode\u003e$repo\/os\/$arch\u003c\/code\u003e at the end of each line.\u003c\/p\u003e\n\u003chr\u003e\n\u003cp\u003emaybe with a help from \u003ca href=\u0022https:\/\/archlinux.org\/mirrorlist\/\u0022\u003ehttps:\/\/archlinux.org\/mirrorlist\/\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003eyou can get something like this:\u003c\/p\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003e##\n## Arch Linux repository mirrorlist\n## Filtered by mirror score from mirror status page\n## Generated on 2024-11-01\n##\n\n## Japan\n#Server = https:\/\/repo.jing.rocks\/archlinux\/$repo\/os\/$arch\n## Japan\n#Server = https:\/\/ftp.jaist.ac.jp\/pub\/Linux\/ArchLinux\/$repo\/os\/$arch\n## Japan\n#Server = https:\/\/www.miraa.jp\/archlinux\/$repo\/os\/$arch\n## Japan\n#Server = https:\/\/mirrors.cat.net\/archlinux\/$repo\/os\/$arch\n## Japan\n#Server = https:\/\/jp.mirrors.cicku.me\/archlinux\/$repo\/os\/$arch\n\u003c\/code\u003e\u003c\/pre\u003e\u003cp\u003enow copy \u0026amp; paste this into \u003ccode\u003e\/etc\/pacman.d\/mirrorlist\u003c\/code\u003e\u003c\/p\u003e",
       "inLanguage": "ja",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -67,10 +85,10 @@ sudo systemctl enable reflector
           "name": ""
       },
       "copyrightHolder" : "Taiki M.",
-      "copyrightYear" : "0001",
-      "dateCreated": "0001-01-01T00:00:00.00Z",
-      "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "0001-01-01T00:00:00.00Z",
+      "copyrightYear" : "2024",
+      "dateCreated": "2024-12-18T00:00:00.00Z",
+      "datePublished": "2024-12-18T00:00:00.00Z",
+      "dateModified": "2024-12-18T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Taiki M.",
@@ -84,9 +102,9 @@ sudo systemctl enable reflector
       },
       "image": "https://mazmr.com/assets/favicon.ico",
       "url" : "https:\/\/mazmr.com\/posts\/myarchwiki\/whenpacmanslow\/",
-      "wordCount" : "26",
-      "genre" : [ ],
-      "keywords" : [ ]
+      "wordCount" : "122",
+      "genre" : [ "linux" ],
+      "keywords" : [ "linux" ]
   }
   </script>
   
@@ -129,11 +147,38 @@ sudo systemctl enable reflector
 <p>2.1 <code>sudo systemctl start reflector</code> to use reflector for current login session optionally.</p>
 </li>
 </ol>
+<h1 id="if-its-slow-even-with-reflector">If it&rsquo;s slow even with reflector</h1>
+<p>Just stop using <code>reflector</code> altogether lol</p>
+<p>and actually pick some near servers from here:
+<a href="https://archlinux.org/mirrors/status/">https://archlinux.org/mirrors/status/</a></p>
+<p>and append <code>$repo/os/$arch</code> at the end of each line.</p>
+<hr>
+<p>maybe with a help from <a href="https://archlinux.org/mirrorlist/">https://archlinux.org/mirrorlist/</a></p>
+<p>you can get something like this:</p>
+<pre tabindex="0"><code>##
+## Arch Linux repository mirrorlist
+## Filtered by mirror score from mirror status page
+## Generated on 2024-11-01
+##
+
+## Japan
+#Server = https://repo.jing.rocks/archlinux/$repo/os/$arch
+## Japan
+#Server = https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch
+## Japan
+#Server = https://www.miraa.jp/archlinux/$repo/os/$arch
+## Japan
+#Server = https://mirrors.cat.net/archlinux/$repo/os/$arch
+## Japan
+#Server = https://jp.mirrors.cicku.me/archlinux/$repo/os/$arch
+</code></pre><p>now copy &amp; paste this into <code>/etc/pacman.d/mirrorlist</code></p>
+<p>and done!</p>
 
       
       <div class="post-date">
-        <span class="g time">January 1, 0001 </span> &#8729;
+        <span class="g time">December 18, 2024 </span> &#8729;
          
+         <a href="https://mazmr.com/tags/linux/">linux</a>
       </div>
       
     </section>

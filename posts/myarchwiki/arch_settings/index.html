@@ -19,6 +19,7 @@ evdev:atkbd:dmi:* KEYBOARD_KEY_2b=enter KEYBOARD_KEY_1c=backslash KEYBOARD_KEY_7
   <meta property="og:locale" content="ja">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
+    <meta property="article:tag" content="Linux">
 
     
   <meta itemprop="name" content="Arch Settings">
@@ -29,6 +30,7 @@ changing built-in laptop keyboard layout (at kernel level) https://wiki.archlinu
 create &amp; edit file /etc/udev/hwdb.d/whatever.hwdb to be like below
 evdev:atkbd:dmi:* KEYBOARD_KEY_2b=enter KEYBOARD_KEY_1c=backslash KEYBOARD_KEY_7d=backspace KEYBOARD_KEY_70=leftalt KEYBOARD_KEY_73=rightshift as you can see these lines will tell the kernel “when the key recognized as scancode(e.g. 0x2b, 0x1c…), it will send keycode of right side of =” Be aware that if you leave out a space (no more than 1 space) in the line where it contains KEYBOARD_KEY_… Also, scancodes can be aquired by runing this command below in console not in GUI showkey --scancodes You have to use it without 0x (e.g. 0x2b -&gt; 2, 0x1c -&gt; 1c) it might output two or more codes for one key. You might just get the first one (maybe it’s the pressed down) and ignore the second one (maybe it’s the pressed up ig) and about modifier keys, they will likely output 4 codes. So use the most unique one compared to other ones.">
   <meta itemprop="wordCount" content="337">
+  <meta itemprop="keywords" content="Linux">
     
     <link rel="canonical" href="https://mazmr.com/posts/myarchwiki/arch_settings/">
     <link rel="icon" href="https://mazmr.com//assets/favicon.ico">
@@ -91,8 +93,8 @@ evdev:atkbd:dmi:* KEYBOARD_KEY_2b=enter KEYBOARD_KEY_1c=backslash KEYBOARD_KEY_7
       "image": "https://mazmr.com/assets/favicon.ico",
       "url" : "https:\/\/mazmr.com\/posts\/myarchwiki\/arch_settings\/",
       "wordCount" : "337",
-      "genre" : [ ],
-      "keywords" : [ ]
+      "genre" : [ "linux" ],
+      "keywords" : [ "linux" ]
   }
   </script>
   
@@ -177,6 +179,7 @@ Reference: <a href="https://help.ubuntu.com/community/AppleKeyboard">https://hel
       <div class="post-date">
         <span class="g time">January 1, 0001 </span> &#8729;
          
+         <a href="https://mazmr.com/tags/linux/">linux</a>
       </div>
       
     </section>

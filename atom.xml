@@ -312,6 +312,51 @@ API関連が充実していて、ドキュメンテーションが割と組み�
     </item>
     
     <item>
+      <title>When Pacman is Slow</title>
+      <link>https://mazmr.com/posts/myarchwiki/whenpacmanslow/</link>
+      <description>&lt;h1 id=&#34;set-fast-reflectors-using-reflector&#34;&gt;Set fast reflectors using &lt;code&gt;reflector&lt;/code&gt;&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;sudo pacman -S reflector&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;sudo systemctl enable reflector&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2.1 &lt;code&gt;sudo systemctl start reflector&lt;/code&gt; to use reflector for current login session optionally.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;if-its-slow-even-with-reflector&#34;&gt;If it&amp;rsquo;s slow even with reflector&lt;/h1&gt;
+&lt;p&gt;Just stop using &lt;code&gt;reflector&lt;/code&gt; altogether lol&lt;/p&gt;
+&lt;p&gt;and actually pick some near servers from here:
+&lt;a href=&#34;https://archlinux.org/mirrors/status/&#34;&gt;https://archlinux.org/mirrors/status/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;and append &lt;code&gt;$repo/os/$arch&lt;/code&gt; at the end of each line.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;maybe with a help from &lt;a href=&#34;https://archlinux.org/mirrorlist/&#34;&gt;https://archlinux.org/mirrorlist/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;you can get something like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##
+## Arch Linux repository mirrorlist
+## Filtered by mirror score from mirror status page
+## Generated on 2024-11-01
+##
+
+## Japan
+#Server = https://repo.jing.rocks/archlinux/$repo/os/$arch
+## Japan
+#Server = https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch
+## Japan
+#Server = https://www.miraa.jp/archlinux/$repo/os/$arch
+## Japan
+#Server = https://mirrors.cat.net/archlinux/$repo/os/$arch
+## Japan
+#Server = https://jp.mirrors.cicku.me/archlinux/$repo/os/$arch
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;now copy &amp;amp; paste this into &lt;code&gt;/etc/pacman.d/mirrorlist&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and done!&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://mazmr.com/posts/myarchwiki/whenpacmanslow/</guid>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
       <title>メモアプリ困窮問題</title>
       <link>https://mazmr.com/posts/note-taking-app/</link>
       <description>&lt;p&gt;2024年も終わりかけている。思っているように進歩しないのが、私のメモアプリ問題である。&lt;/p&gt;
@@ -1003,25 +1048,6 @@ Tools -&amp;gt; Options -&amp;gt; Language -&amp;gt; Tick &amp;lsquo;Asian&amp;r
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       <author>Calvin Tran</author>
       <guid>https://mazmr.com/posts/myarchwiki/shell_techniques/</guid>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-    </item>
-    
-    <item>
-      <title>When Pacman is Slow</title>
-      <link>https://mazmr.com/posts/myarchwiki/whenpacmanslow/</link>
-      <description>&lt;h1 id=&#34;set-fast-reflectors-using-reflector&#34;&gt;Set fast reflectors using &lt;code&gt;reflector&lt;/code&gt;&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;sudo pacman -S reflector&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;sudo systemctl enable reflector&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;2.1 &lt;code&gt;sudo systemctl start reflector&lt;/code&gt; to use reflector for current login session optionally.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-      <author>Calvin Tran</author>
-      <guid>https://mazmr.com/posts/myarchwiki/whenpacmanslow/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
