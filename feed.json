@@ -3,11 +3,11 @@
   "title": "Taiki M.",
   "home_page_url": "https://mazmr.com/",
   "feed_url": "https://mazmr.com/feed.json",
-  "description": "A minimal hugo theme focus on content",
+  "description": "Taiki's Retrospective",
   "favicon": "https://mazmr.com//assets/favicon.ico",
   "expired": false,
   "author": {
-    "name": "Calvin Tran",
+    "name": "Taiki Matsumura",
     "url": "https://mazmr.com/"
   },
   "items": [
@@ -25,7 +25,7 @@
       "date_published": "16026-16-09T211:1616:00+09:00",
       "date_modified": "16026-16-09T211:1616:00+09:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -40,7 +40,7 @@
       "date_published": "28126-28-09T120:2828:00+00:00",
       "date_modified": "28126-28-09T120:2828:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -55,7 +55,7 @@
       "date_published": "18126-18-09T120:1818:00+00:00",
       "date_modified": "18126-18-09T120:1818:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -70,7 +70,7 @@
       "date_published": "18126-18-09T120:1818:00+00:00",
       "date_modified": "18126-18-09T120:1818:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -85,7 +85,7 @@
       "date_published": "22106-22-09T100:2222:00+00:00",
       "date_modified": "22106-22-09T100:2222:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -100,7 +100,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -115,7 +115,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -130,7 +130,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -145,7 +145,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -160,7 +160,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -175,7 +175,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -190,7 +190,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -205,7 +205,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -220,7 +220,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -235,7 +235,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -250,7 +250,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     },
@@ -265,7 +265,7 @@
       "date_published": "1016-01-09T10:11:00+00:00",
       "date_modified": "1016-01-09T10:11:00+00:00",
       "author": {
-        "name": "Calvin Tran",
+        "name": "Taiki Matsumura",
         "url": "https://mazmr.com/"
       }
     }

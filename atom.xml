@@ -2,7 +2,7 @@
   <channel>
     
     <title>Taiki M.</title>
-    <description>A minimal hugo theme focus on content</description>
+    <description>Taiki&#39;s Retrospective</description>
     <link>https://mazmr.com/</link>
     
     <language>en</language>
@@ -246,7 +246,7 @@ IIJ&lt;sup id=&#34;fnref3:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footno
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/undergrad/</guid>
       <pubDate>Sun, 16 Feb 2025 02:11:36 +0900</pubDate>
     </item>
@@ -306,7 +306,7 @@ API関連が充実していて、ドキュメンテーションが割と組み�
 &lt;p&gt;使う頻度: 最近はほとんど使っていない&lt;/p&gt;
 &lt;h2 id=&#34;proxmox&#34;&gt;Proxmox&lt;/h2&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/selfhosted/</guid>
       <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
     </item>
@@ -351,7 +351,7 @@ API関連が充実していて、ドキュメンテーションが割と組み�
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;now copy &amp;amp; paste this into &lt;code&gt;/etc/pacman.d/mirrorlist&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;and done!&lt;/p&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/myarchwiki/whenpacmanslow/</guid>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
     </item>
@@ -427,7 +427,7 @@ API関連が充実していて、ドキュメンテーションが割と組み�
 正直、人それぞれ求めているものや思想が違うので、既存のアプリと考え方が合致しないとナレッジベースを育てていくのは苦しい時代だ。
 ただ、今回この記事を書いていて、意外とJoplinは愛すべき存在なのかもしれないと思い、今後の改善を説に望む一方だ。とにかく、クライアント群がもうちょっと良くなるだけでかなり変わるだろう。&lt;/p&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/note-taking-app/</guid>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
     </item>
@@ -518,7 +518,7 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/m1mba/</guid>
       <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
     </item>
@@ -583,7 +583,7 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/newhome/</guid>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
     </item>
@@ -630,7 +630,7 @@ So whenever you commit to GitHub, they will count as your contributes.&lt;/p&gt;
 &lt;li&gt;Selfhosting/HomeLab 🏠&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/index_en/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
@@ -746,7 +746,7 @@ change loader.conf content to&lt;/p&gt;
 &lt;h1 id=&#34;for-nvidia-video-cards&#34;&gt;For nVidia video cards&lt;/h1&gt;
 &lt;p&gt;pacman -S nvidia&lt;/p&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/myarchwiki/archlinuxinstallation/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
@@ -802,7 +802,7 @@ Reference: &lt;a href=&#34;https://help.ubuntu.com/community/AppleKeyboard&#34;&
 &lt;p&gt;example:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode&lt;/code&gt;&lt;/p&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/myarchwiki/arch_settings/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
@@ -908,7 +908,7 @@ Reference: &lt;a href=&#34;https://help.ubuntu.com/community/AppleKeyboard&#34;&
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/myarchwiki/ff_vertical_tabs/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
@@ -977,7 +977,7 @@ Reference: &lt;a href=&#34;https://help.ubuntu.com/community/AppleKeyboard&#34;&
 &lt;li&gt;restart ranger and done&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/myarchwiki/ranger_rice/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
@@ -999,7 +999,7 @@ Reference: &lt;a href=&#34;https://help.ubuntu.com/community/AppleKeyboard&#34;&
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;on top of anything else.
 the part between &lt;code&gt;---&lt;/code&gt; is meant to be the meta data.&lt;/p&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/myarchwiki/jp_latex_pandoc/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
@@ -1012,7 +1012,7 @@ the part between &lt;code&gt;---&lt;/code&gt; is meant to be the meta data.&lt;/
 &lt;p&gt;&lt;code&gt;git config --global user.email &amp;quot;youremail@yourdomain.com&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Match the email address to the one used on GitHub!&lt;/p&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/learn_git/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
@@ -1025,7 +1025,7 @@ the part between &lt;code&gt;---&lt;/code&gt; is meant to be the meta data.&lt;/
 In order to change that and default to japanese kanji, you have to follow the instruction below:
 Tools -&amp;gt; Options -&amp;gt; Language -&amp;gt; Tick &amp;lsquo;Asian&amp;rsquo; box and select Japanese from pull down menu.&lt;/p&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/myarchwiki/libreoffice_japanese/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
@@ -1046,7 +1046,7 @@ Tools -&amp;gt; Options -&amp;gt; Language -&amp;gt; Tick &amp;lsquo;Asian&amp;r
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;file seg-&lt;/span&gt;$i&lt;span style=&#34;color:#e6db74&#34;&gt;-f3-v1-a1.ts&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; mylist.txt
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/myarchwiki/shell_techniques/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
@@ -1084,7 +1084,7 @@ There you have it.&lt;/li&gt;
 &lt;code&gt;~/.config/fcitx5/config&lt;/code&gt;
 How amazing is that&lt;/p&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/myarchwiki/jp_input_method/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
@@ -1094,7 +1094,7 @@ How amazing is that&lt;/p&gt;
       <link>https://mazmr.com/posts/sk/</link>
       <description>&lt;p style=&#34;text-align: center; font-family: &#39;Tsukushi A Round Gothic&#39;;&#34;&gt;いつも俺のことを大切にしてくれてありがとう&lt;/p&gt;
 </description>
-      <author>Calvin Tran</author>
+      <author>Taiki Matsumura</author>
       <guid>https://mazmr.com/posts/sk/</guid>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
