@@ -65,7 +65,7 @@ you can get something like this:
       "name": "When Pacman is Slow",
       "headline": "When Pacman is Slow",
       "alternativeHeadline": "",
-      "description": "\u003ch1 id=\u0022set-fast-reflectors-using-reflector\u0022\u003eSet fast reflectors using \u003ccode\u003ereflector\u003c\/code\u003e\u003c\/h1\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003esudo pacman -S reflector\u003c\/code\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003esudo systemctl enable reflector\u003c\/code\u003e\u003c\/p\u003e\n\u003cp\u003e2.1 \u003ccode\u003esudo systemctl start reflector\u003c\/code\u003e to use reflector for current login session optionally.\u003c\/p\u003e\n\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003ch1 id=\u0022if-its-slow-even-with-reflector\u0022\u003eIf it\u0026rsquo;s slow even with reflector\u003c\/h1\u003e\n\u003cp\u003eJust stop using \u003ccode\u003ereflector\u003c\/code\u003e altogether lol\u003c\/p\u003e\n\u003cp\u003eand actually pick some near servers from here:\n\u003ca href=\u0022https:\/\/archlinux.org\/mirrors\/status\/\u0022\u003ehttps:\/\/archlinux.org\/mirrors\/status\/\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003eand append \u003ccode\u003e$repo\/os\/$arch\u003c\/code\u003e at the end of each line.\u003c\/p\u003e\n\u003chr\u003e\n\u003cp\u003emaybe with a help from \u003ca href=\u0022https:\/\/archlinux.org\/mirrorlist\/\u0022\u003ehttps:\/\/archlinux.org\/mirrorlist\/\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003eyou can get something like this:\u003c\/p\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003e##\n## Arch Linux repository mirrorlist\n## Filtered by mirror score from mirror status page\n## Generated on 2024-11-01\n##\n\n## Japan\n#Server = https:\/\/repo.jing.rocks\/archlinux\/$repo\/os\/$arch\n## Japan\n#Server = https:\/\/ftp.jaist.ac.jp\/pub\/Linux\/ArchLinux\/$repo\/os\/$arch\n## Japan\n#Server = https:\/\/www.miraa.jp\/archlinux\/$repo\/os\/$arch\n## Japan\n#Server = https:\/\/mirrors.cat.net\/archlinux\/$repo\/os\/$arch\n## Japan\n#Server = https:\/\/jp.mirrors.cicku.me\/archlinux\/$repo\/os\/$arch\n\u003c\/code\u003e\u003c\/pre\u003e\u003cp\u003enow copy \u0026amp; paste this into \u003ccode\u003e\/etc\/pacman.d\/mirrorlist\u003c\/code\u003e\u003c\/p\u003e",
+      "description": "\u003ch1 id=\u0022set-fast-reflectors-using-reflector\u0022\u003eSet fast reflectors using \u003ccode\u003ereflector\u003c\/code\u003e\u003c\/h1\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003esudo pacman -S reflector\u003c\/code\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003esudo systemctl enable reflector\u003c\/code\u003e\u003c\/p\u003e\n\u003cp\u003e2.1 \u003ccode\u003esudo systemctl start reflector\u003c\/code\u003e to use reflector for current login session optionally.\u003c\/p\u003e\n\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003ch1 id=\u0022if-its-slow-even-with-reflector\u0022\u003eIf it\u0026rsquo;s slow even with reflector\u003c\/h1\u003e\n\u003cp\u003eJust stop using \u003ccode\u003ereflector\u003c\/code\u003e altogether lol\u003c\/p\u003e\n\u003cp\u003eand actually pick some near servers from here:\n\u003ca href=\u0022https:\/\/archlinux.org\/mirrors\/status\/\u0022\u003ehttps:\/\/archlinux.org\/mirrors\/status\/\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003eand append \u003ccode\u003e$repo\/os\/$arch\u003c\/code\u003e at the end of each line.\u003c\/p\u003e\n\u003chr\u003e\n\u003cp\u003emaybe with a help from \u003ca href=\u0022https:\/\/archlinux.org\/mirrorlist\/\u0022\u003ehttps:\/\/archlinux.org\/mirrorlist\/\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003eyou can get something like this:\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-plain\u0022 data-lang=\u0022plain\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e##\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e## Arch Linux repository mirrorlist\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e## Filtered by mirror score from mirror status page\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e## Generated on 2024-11-01\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e##\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e## Japan\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e#Server = https:\/\/repo.jing.rocks\/archlinux\/$repo\/os\/$arch\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e## Japan\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e#Server = https:\/\/ftp.jaist.ac.jp\/pub\/Linux\/ArchLinux\/$repo\/os\/$arch\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e## Japan\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e#Server = https:\/\/www.miraa.jp\/archlinux\/$repo\/os\/$arch\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e## Japan\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e#Server = https:\/\/mirrors.cat.net\/archlinux\/$repo\/os\/$arch\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e## Japan\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e#Server = https:\/\/jp.mirrors.cicku.me\/archlinux\/$repo\/os\/$arch\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003enow copy \u0026amp; paste this into \u003ccode\u003e\/etc\/pacman.d\/mirrorlist\u003c\/code\u003e\u003c\/p\u003e",
       "inLanguage": "ja",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -155,23 +155,23 @@ you can get something like this:
 <hr>
 <p>maybe with a help from <a href="https://archlinux.org/mirrorlist/">https://archlinux.org/mirrorlist/</a></p>
 <p>you can get something like this:</p>
-<pre tabindex="0"><code>##
-## Arch Linux repository mirrorlist
-## Filtered by mirror score from mirror status page
-## Generated on 2024-11-01
-##
-
-## Japan
-#Server = https://repo.jing.rocks/archlinux/$repo/os/$arch
-## Japan
-#Server = https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch
-## Japan
-#Server = https://www.miraa.jp/archlinux/$repo/os/$arch
-## Japan
-#Server = https://mirrors.cat.net/archlinux/$repo/os/$arch
-## Japan
-#Server = https://jp.mirrors.cicku.me/archlinux/$repo/os/$arch
-</code></pre><p>now copy &amp; paste this into <code>/etc/pacman.d/mirrorlist</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>##
+</span></span><span style="display:flex;"><span>## Arch Linux repository mirrorlist
+</span></span><span style="display:flex;"><span>## Filtered by mirror score from mirror status page
+</span></span><span style="display:flex;"><span>## Generated on 2024-11-01
+</span></span><span style="display:flex;"><span>##
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>## Japan
+</span></span><span style="display:flex;"><span>#Server = https://repo.jing.rocks/archlinux/$repo/os/$arch
+</span></span><span style="display:flex;"><span>## Japan
+</span></span><span style="display:flex;"><span>#Server = https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch
+</span></span><span style="display:flex;"><span>## Japan
+</span></span><span style="display:flex;"><span>#Server = https://www.miraa.jp/archlinux/$repo/os/$arch
+</span></span><span style="display:flex;"><span>## Japan
+</span></span><span style="display:flex;"><span>#Server = https://mirrors.cat.net/archlinux/$repo/os/$arch
+</span></span><span style="display:flex;"><span>## Japan
+</span></span><span style="display:flex;"><span>#Server = https://jp.mirrors.cicku.me/archlinux/$repo/os/$arch
+</span></span></code></pre></div><p>now copy &amp; paste this into <code>/etc/pacman.d/mirrorlist</code></p>
 <p>and done!</p>
 
       
