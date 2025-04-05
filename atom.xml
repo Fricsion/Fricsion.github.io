@@ -14,6 +14,45 @@
     
     
     <item>
+      <title>まぎらわしいE2EEという言葉とその意味・価値</title>
+      <link>https://mazmr.com/posts/confusing-e2ee/</link>
+      <description>&lt;h2 id=&#34;主題&#34;&gt;主題&lt;/h2&gt;
+&lt;p&gt;昨今、よく耳にする・目にするE2EE(エンドツーエンド・エンクリプション)という言葉だが、私は、その言葉の用法や、E2EE自体が提供する価値(安全性)に対して懐疑的である。&lt;/p&gt;
+&lt;p&gt;よく見かけた(最近は逆に見ないかも)WebのEコマースサイトのカード情報入力画面の文言は以下のようなものである:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、安全に送信されます。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;この記事では、まず以上の文言に注目し、解説をする。
+そしてその後、発展的に、私が問題視するものを論じる。&lt;/p&gt;
+&lt;h3 id=&#34;安全&#34;&gt;&amp;ldquo;安全&amp;rdquo;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、&lt;strong&gt;安全に&lt;/strong&gt;送信されます。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;まずは、先ほどの主張の中で利用者に伝えたいであろう、「このサイトにカード情報を入力しても安全だよ」の、安全とは何なのか？&lt;/p&gt;
+&lt;p&gt;この文脈での安全の構成要素は大きく2つだろう。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;カード情報が暗号化されて、通信経路上で第3者に覗き見られないこと&lt;/li&gt;
+&lt;li&gt;暗号化されたカード情報を復号して読めるのは、利用するサービスの運営者であり、第3者ではないこと&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;1つ目から確認する。
+カード情報が通信経路上で第3者に覗き見られないようにするために使うのが、件の「E2EE」の役割と言えるだろう&lt;/p&gt;
+&lt;p&gt;そして、通信経路を守れても、その到達する先が全然知らない誰かだったらいけない。
+それを、確実に目的にサービス運営者に届くようにしてあげられるのが、SSL/TLSの役割だろう。&lt;/p&gt;
+&lt;p&gt;さて、これらを満たした今、渡したカード情報は本当に安全なのだろうか。
+サービス提供側にも一度考えてみてほしいが、これで顧客の情報は安全に守られるのだろうか。&lt;/p&gt;
+&lt;p&gt;サービス提供者がうっかり顧客情報をUSBドライブに移して紛失した場合は、明らかにカード情報が&amp;quot;安全&amp;quot;とは言えない。
+そのため、実際には、カード情報をサービス提供者がどう管理するかが、最終的に課題になるだろう。&lt;/p&gt;
+&lt;p&gt;この点においては、件の文言は一切間違っていない。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、&lt;strong&gt;安全に送信&lt;/strong&gt;されます。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;これは「送信」段階の安全の話だからだ。&lt;/p&gt;
+&lt;h3 id=&#34;発展&#34;&gt;発展&lt;/h3&gt;
+&lt;p&gt;しかし、私が問題視する現状は以下がある。&lt;/p&gt;
+</description>
+      <author>Taiki Matsumura</author>
+      <guid>https://mazmr.com/posts/confusing-e2ee/</guid>
+      <pubDate>Sat, 22 Feb 2025 12:45:26 +0900</pubDate>
+    </item>
+    
+    <item>
       <title>なぜヘッドレスサーバー管理者がキャプチャーカードを買うべきか</title>
       <link>https://mazmr.com/posts/capture-card/</link>
       <description>&lt;h3 id=&#34;ラップトップを小型ディスプレイ化&#34;&gt;ラップトップを小型ディスプレイ化！&lt;/h3&gt;
@@ -64,32 +103,33 @@
 けれど、クラス全体での講義は対面であった。
 そのため、思ったよりも学校に行く機会はあった。&lt;/p&gt;
 &lt;p&gt;途中、コロナがまた流行しだして、体育がオンラインになるなんてこともあった。&lt;/p&gt;
+&lt;p&gt;※さて、これ以降少し私に関する前知識として人によっては大量の意味不明な文字列を羅列してしまうので、しんどくなったら、大学2年生のセクションまで飛ばしてください。&lt;/p&gt;
 &lt;h3 id=&#34;色濃くなるfoss信仰&#34;&gt;色濃くなるFOSS信仰&lt;/h3&gt;
 &lt;p&gt;中高生時代をApple信者として生きていた私だったが、
 大学生活を始めるタイミングから、私のLinuxの導入はとどまりを見せなかった。
 主な理由はやはりデータプライバシーである。
 この決断がそれ以降の自由(Freedom)への思想意識の開花につながることになる。
-ただ、この時点では、Manjaro→ Arch Linuxへとスキルが身についていく感覚が楽しかった覚えがある。
+ただ、この時点では、Manjaro&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;→ Arch Linux&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;へとスキルが身についていく感覚が楽しかった覚えがある。
 特にオンラインで講義があり、家から出なくて良いという点が、Linuxの学習の時間に貢献されていた気がする。&lt;/p&gt;
 &lt;p&gt;割とMental Outlaw氏とLuke Smith氏の影響は強かったと考える。&lt;/p&gt;
 &lt;p&gt;CLIへの異様な執着も生まれていた。
-軽量なWM&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; にも憧れ、dwm&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; というなかなかに硬派なWMにも手を出していた。
+軽量なWM&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; にも憧れ、dwm&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; というなかなかに硬派なWMにも手を出していた。
 今考えると、現代の8GB以上のRAMリソースがあるなかで、軽量なWMを動かすメリットというのは雀の涙ではあったかもしれない。
 ただ、当時使っていたラップトップはMacBook 2017という貧弱なハードだったのも起因するかもしれない。&lt;/p&gt;
 &lt;p&gt;これらの激動に準じて、私のBig Techなどに対する反発心は良くも悪くも育まれていった。&lt;/p&gt;
-&lt;h3 id=&#34;デジタルトラストへの入団kg&#34;&gt;デジタルトラストへの入団&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;デジタルトラストへの入団&#34;&gt;デジタルトラストへの入団&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
 &lt;p&gt;秋学期前に、友人たちと入る研究会の話が出たときに、デジタルトラストに参加する人がいた。
 そこから、デジタルトラストを調べると、データのトラストという観点で、プライバシーとも通ずるところがあると考えた。
 そして私はデジタルトラストに参加することを決めた。&lt;/p&gt;
 &lt;p&gt;中高とは違い、大きなスキルギャップを感じる人達と初めて目の当たりにするタイミングだった。&lt;/p&gt;
 &lt;h2 id=&#34;大学2年生-過剰な自分の信念との戦い&#34;&gt;大学2年生: 過剰な自分の信念との戦い&lt;/h2&gt;
-&lt;h3 id=&#34;zkpzkp-との出会い&#34;&gt;ZKP&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; との出会い&lt;/h3&gt;
-&lt;p&gt;データプライバシーに関わる研究をしたいと、研究会で相談したところ、先輩からPETs&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; の存在を教えてもらった。&lt;/p&gt;
+&lt;h3 id=&#34;zkp-との出会い&#34;&gt;ZKP&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt; との出会い&lt;/h3&gt;
+&lt;p&gt;データプライバシーに関わる研究をしたいと、研究会で相談したところ、先輩からPETs&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt; の存在を教えてもらった。&lt;/p&gt;
 &lt;p&gt;当時、私の頭の中で、フワッと存在していた「あるソフトウェアが悪いことをしていないとソフトウェア開発者が利用者に対して証明する」ことを可能にする、というものがあった。&lt;/p&gt;
-&lt;p&gt;このゴールに最も関わりが強そうなものがPETsの中にあった。ZKPである。&lt;/p&gt;
-&lt;h4 id=&#34;zkpに関する同人誌プロジェクトを発案するも消滅&#34;&gt;ZKPに関する同人誌プロジェクトを発案するも消滅&lt;/h4&gt;
+&lt;p&gt;このゴールに最も関わりが強そうなものがPETs&lt;sup id=&#34;fnref1:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;の中にあった。ZKP&lt;sup id=&#34;fnref1:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;である。&lt;/p&gt;
+&lt;h4 id=&#34;zkpに関する同人誌プロジェクトを発案するも消滅&#34;&gt;ZKP&lt;sup id=&#34;fnref2:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;に関する同人誌プロジェクトを発案するも消滅&lt;/h4&gt;
 &lt;p&gt;先輩から、技術書典という同人誌イベントの存在を聞いた。
-自分なりのZKPへの勉強や理解をうっすい本の形にしようというプロジェクトを提案された。
+自分なりのZKP&lt;sup id=&#34;fnref3:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;への勉強や理解をうっすい本の形にしようというプロジェクトを提案された。
 断る理由もなかったため、私は早速取り組んだ。
 ただ、既存の本の二番煎じになるだけのような感覚が邪魔をして、なかなか進まず結果的に自然消滅となってしまった。なんだか残念だ。&lt;/p&gt;
 &lt;h3 id=&#34;やりたいことの明確化ができたとできないのジレンマ&#34;&gt;やりたいことの明確化ができた！と、できない…のジレンマ&lt;/h3&gt;
@@ -100,7 +140,7 @@
 しかし、「どのような内容が送信されているか」を利用者に明らかにすることを第三者ソフトウェアの存在で強制することができるのはnice to have である&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;特に&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;SBOM&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;で解決しない（ソフトウェアサプライチェーンによる脆弱性発生ではない）
+&lt;p&gt;SBOM&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;で解決しない（ソフトウェアサプライチェーンによる脆弱性発生ではない）
 製品がやる、と言っていること以外のことを無断でしている例&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;が自分の新規性だと考えていた。&lt;/p&gt;
 &lt;p&gt;&lt;img
@@ -128,7 +168,7 @@ OSSの誰もがAudit可能な特性を、ランタイム上に適応できない
 そのため、他人がAuditした内容が自分の環境に適用される限りではない。&lt;/p&gt;
 &lt;p&gt;この指摘が研究の根幹を揺るがすきっかけとなった。&lt;/p&gt;
 &lt;h3 id=&#34;当時の研究に対して思うこと&#34;&gt;当時の研究に対して思うこと&lt;/h3&gt;
-&lt;p&gt;eCapture(旁观者) &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;
+&lt;p&gt;eCapture(旁观者) &lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;
 みたいな技術の存在に気づいていたら、もうちょっと発展の領域があったかもしれない。&lt;/p&gt;
 &lt;h3 id=&#34;情報法への興味が出てくる&#34;&gt;情報法への興味が出てくる&lt;/h3&gt;
 &lt;p&gt;自分の研究の実現可能性は、ソフトウェアの開発者にも大きく依存するということが判明していった。
@@ -187,7 +227,16 @@ OSSの誰もがAudit可能な特性を、ランタイム上に適応できない
 &lt;p&gt;三年生の秋。
 良くも悪くも、卒論のテーマを決めなければいけない段階になってきた。&lt;/p&gt;
 &lt;p&gt;結論から言うと、「設定」に注目した。&lt;/p&gt;
-&lt;p&gt;当時なぜ、この着想を得たかは明確な記憶がない。ただ、設定行為でミスったら、サービス提供側がどんなにプライバシーに配慮した設計をしても意味がない。それに、家族があまりにもデータプライバシーの設定項目に無関心であった。この2つは間違いなくモチベーションになっている。&lt;/p&gt;
+&lt;p&gt;当時なぜ、この着想を得たかは明確な記憶がない。ただ、設定行為でミスったら、サービス提供側がどんなにプライバシーに配慮した設計をしても意味がない。それに、家族があまりにもデータプライバシーの設定項目に無関心であった。この2つは間違いなくモチベーションになっている。
+&lt;img
+  src=&#34;https://mazmr.com/images/kenkyu-slide2.png&#34;
+  alt=&#34;当時のスライド画像 - TERMより&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
 &lt;p&gt;夏休み中に、「Automating Privacy Decisions - Where to draw line」というサーベイ論文を見つけてオモシロイと思ったため、それを研究のベースとして進めていった。特にこの夏はIEEEの存在を初めて知り(遅すぎるだろ！と今の私は怒っているぞ！)、その参考文献群を頼りに、結構な量の論文を漁った気がする。これを大学1年生の頃にやれていたら・・・と今でも後悔するばかりだ。周りのみんなは一体どこで先行研究を見つけてくるんだろう・・・と本当にその時まで不思議だった。前から周辺分野のリサーチは行っていたはずなのに、意外と研究というのは私の人生で初めてのことだったから、こういう当たり前に気付けないことが恐ろしい。&lt;/p&gt;
 &lt;p&gt;その中で登場する機械学習によって、ユーザーのスマートフォンの許可設定を自動的に決定する技術に、コレだ！と感じた。&lt;/p&gt;
 &lt;h4 id=&#34;生成ai大爆発&#34;&gt;生成AI大爆発&lt;/h4&gt;
@@ -195,9 +244,18 @@ OSSの誰もがAudit可能な特性を、ランタイム上に適応できない
 正直、私を含めて割とみんな、これは何でもできるじゃないか、と感動していた頃だと思う。
 そして、先行研究との新規性差分を作るために、機械学習モデルを利用するのではなくLLMを利用しようという安直な発想に至った。&lt;/p&gt;
 &lt;p&gt;卒論テーマ発表の三年末にかけては、これを主に取り扱うことになる。&lt;/p&gt;
-&lt;p&gt;Androidを対象にアプリ毎のプライバシー関連の権限設定をLLM&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;に自動でいじらせることができるか？というのも題材に発表を行うべく、準備に取り掛かった。、発表前なんかはこたつに籠もってすごい遅くの時間までファカルティの方と相談させていただくようなこともあった。今思うと、信じられないくらい親身な人達だったんだと実感している。
+&lt;p&gt;Androidを対象にアプリ毎のプライバシー関連の権限設定をLLM&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;に自動でいじらせることができるか？というのも題材に発表を行うべく、準備に取り掛かった。、発表前なんかはこたつに籠もってすごい遅くの時間までファカルティの方と相談させていただくようなこともあった。今思うと、信じられないくらい親身な人達だったんだと実感している。
 ただ、身内でも色々なことが起こっていたこともあり。実装は困難をきたした。
-まともな評価値もとれず、案の定発表では刺されまくり、その指摘も自分も同じ考えを持っていたため、少し諦めようかという気分になってしまった。&lt;/p&gt;
+まともな評価値もとれず、案の定発表では刺されまくり、その指摘も自分も同じ考えを持っていたため、少し諦めようかという気分になってしまった。
+&lt;img
+  src=&#34;https://mazmr.com/images/kenkyu-slide3.png&#34;
+  alt=&#34;当時のスライド画像 - TERMより&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
 &lt;h4 id=&#34;余談-ntt-社会情報研究所との出会い&#34;&gt;余談: NTT 社会情報研究所との出会い&lt;/h4&gt;
 &lt;p&gt;新保研で出張講義に来てくださった、NTTの社会情報研究所の藤村あきこさんのお話は、大学生活の中でもすごく印象に残っている。&lt;/p&gt;
 &lt;p&gt;一言でいうと、私と大学生活から課題模索の背景が本当に似ていたからだ。といっても私はペーペーで、彼女は社会的意義のある活動をされている素晴らしい方であるため、比べるのもおこがましいが・・・
@@ -221,15 +279,15 @@ OSSの誰もがAudit可能な特性を、ランタイム上に適応できない
 データセキュリティやプライバシーは利益を生み出す部分ではなく、損失のリスクを下げる部分だからだ。&lt;/p&gt;
 &lt;p&gt;研究職はやめておきたい、とは考えていた。
 実世界の業務上の課題を直視してみたいという欲求があった。&lt;/p&gt;
-&lt;p&gt;正直、自分の_市場価値_を見限っていて大人しくデータセキュリティの職につこうと、考えていた矢先に、新保研の就職案内でIIJ&lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;の方がいらした。
-IIJ&lt;sup id=&#34;fnref1:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;の存在は知っていたが、インターネットのパイオニアのイメージが強く、プライバシー重視の私の思想とは合わないと考えていて、最初は話半分に聞いていた。
+&lt;p&gt;正直、自分の_市場価値_を見限っていて大人しくデータセキュリティの職につこうと、考えていた矢先に、新保研の就職案内でIIJ&lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;の方がいらした。
+IIJ&lt;sup id=&#34;fnref1:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;の存在は知っていたが、インターネットのパイオニアのイメージが強く、プライバシー重視の私の思想とは合わないと考えていて、最初は話半分に聞いていた。
 しかし、パンフレットをめくっていると、ある項目が目に入ったのだ。
 そこには「プライバシー保護対応」とあった。
 実際の業務と差異があるかもしれないので詳しくは書かないが、そこから、就職先にすることを本気で検討した。
-その後も、面接などの前に改めてIIJ&lt;sup id=&#34;fnref2:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;を知る機会を作ってくださった人事の田中さんにはとても感謝している。&lt;/p&gt;
+その後も、面接などの前に改めてIIJ&lt;sup id=&#34;fnref2:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;を知る機会を作ってくださった人事の田中さんにはとても感謝している。&lt;/p&gt;
 &lt;h4 id=&#34;熱意は伝わる&#34;&gt;熱意は伝わる&lt;/h4&gt;
 &lt;p&gt;就活ですごく感じたのは、熱意は伝わる、ということだ。
-IIJ&lt;sup id=&#34;fnref3:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;以外にも、サイバーセキュリティ関連の職に選考をしたこともあったのだが、どうしても無理やり私がデータプライバシーの話からサイバーセキュリティに寄せているような気がしてたまらなかった。そして、そういう場所は往々にしてうまくいっていない。
+IIJ&lt;sup id=&#34;fnref3:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;以外にも、サイバーセキュリティ関連の職に選考をしたこともあったのだが、どうしても無理やり私がデータプライバシーの話からサイバーセキュリティに寄せているような気がしてたまらなかった。そして、そういう場所は往々にしてうまくいっていない。
 一方で、データプライバシーという自分路線を選考期間中貫くことができる会社に対しては、すごく自分をだせて楽しい時間だった。&lt;/p&gt;
 &lt;p&gt;やはり、やりたいと思っていることには熱意を持って将来像を語れるし、シンプルにここだ、御社の事業のここをやりたいんだよ！と言えばダイレクトに伝わる。
 就活について、小手先の技術を調べていた私だったが、そんなのは、はなの役にもたたない愚策だった。賢い逆質問を1週間で10個考えるより、何年もかけて醸成された1個の熱意で、自分は売り出せる。そういう話だ。&lt;/p&gt;
@@ -237,7 +295,7 @@ IIJ&lt;sup id=&#34;fnref3:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footno
 &lt;h3 id=&#34;卒論そして締めくくり&#34;&gt;卒論、そして締めくくり&lt;/h3&gt;
 &lt;p&gt;卒論に本格着手できたのは、11月とかなり遅かった。&lt;/p&gt;
 &lt;p&gt;成果物に妥協してもいいから、自分の成長機会として活かそうと思いながら、作業していた。
-前は卒論だから堅実にやろうと思っていた。そこを逆に新しい挑戦を織り交ぜながら、取り組む(Typst&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;を初めての突貫で使ってみようとか、英語で書いちまおうとか)。
+前は卒論だから堅実にやろうと思っていた。そこを逆に新しい挑戦を織り交ぜながら、取り組む(Typst&lt;sup id=&#34;fnref:12&#34;&gt;&lt;a href=&#34;#fn:12&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;12&lt;/a&gt;&lt;/sup&gt;を初めての突貫で使ってみようとか、英語で書いちまおうとか)。
 正直、卒論は恥ずかしくって絶対に誰にも見せたくないレベルだが、この取り組み過程だったら、普通だったらこうやらないだろうみたいな工夫をたくさん織り交ぜながら、成長の機会にさせてもらった。
 執筆が遅くなろうが、関係ない。1回取りあえずなにか完成させなきゃいけない、というのを口実に、いろんな部分を冒険させてもらった。&lt;/p&gt;
 &lt;h2 id=&#34;さいごに&#34;&gt;さいごに&lt;/h2&gt;
@@ -250,35 +308,41 @@ IIJ&lt;sup id=&#34;fnref3:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footno
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;Window Manager&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ManjaroはLinuxに入門する人にたびたびオススメされるOS&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34;&gt;
-&lt;p&gt;sucklessの作るWM&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ArchLinuxはLinuxの中身を理解するのに非常に適した自分好みのシステムを構築できるOS。その自由度ゆえに、玄人向けと称される。&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34;&gt;
-&lt;p&gt;ちなみに、KGは研究グループの頭文字という派閥が多いが、実際には研究軍団の略らしい。そのため、入団という表現が適切である(適当)&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Window Manager&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34;&gt;
-&lt;p&gt;Zero Knowledge Proof ゼロ知識証明&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;sucklessの作るWM&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:5&#34;&gt;
-&lt;p&gt;Privacy Enhancing Technologies プライバシー強化技術&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちなみに、KGは研究グループの頭文字という派閥が多いが、実際には研究軍団の略らしい。そのため、入団という表現が適切である(適当)&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:6&#34;&gt;
-&lt;p&gt;Software Bill Of Materials 端的に言えば、ソフトウェアの成分表示をすること&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Zero Knowledge Proof ゼロ知識証明&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref2:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref3:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:7&#34;&gt;
-&lt;p&gt;capture SSL/TLS text content without a CA certificate using eBPF.
-&lt;a href=&#34;https://github.com/gojue/ecapture&#34;&gt;https://github.com/gojue/ecapture&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Privacy Enhancing Technologies プライバシー強化技術&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:8&#34;&gt;
-&lt;p&gt;LLM(大規模言語モデル)は生成AIのような言語パターンを利用し、確率的な予測を立てることを可能にする機械学習モデル。&amp;#160;&lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Software Bill Of Materials 端的に言えば、ソフトウェアの成分表示をすること&amp;#160;&lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:9&#34;&gt;
-&lt;p&gt;Internet Initiative Japan インターネットイニシアチブは創業に村井純も関わる日本の大手インターネット屋さん&amp;#160;&lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref2:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref3:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;capture SSL/TLS text content without a CA certificate using eBPF.
+&lt;a href=&#34;https://github.com/gojue/ecapture&#34;&gt;https://github.com/gojue/ecapture&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:10&#34;&gt;
-&lt;p&gt;Typstは文書作成に用いることができるプログラミング言語。Tyspt自体は割とマイナーな上、現在も開発途上であり、論文に用いる例は少ない。でも、大手ジャーナルと違って卒論みたいに、レイアウトやらがゆるく設定されている場では、いかようにもできると思い、実験的に取り入れてみたところ、すごく便利で個人的におすすめなツールの一つになった。&amp;#160;&lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;LLM(大規模言語モデル)は生成AIのような言語パターンを利用し、確率的な予測を立てることを可能にする機械学習モデル。&amp;#160;&lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:11&#34;&gt;
+&lt;p&gt;Internet Initiative Japan インターネットイニシアチブは創業に村井純も関わる日本の大手インターネット屋さん&amp;#160;&lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref2:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref3:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:12&#34;&gt;
+&lt;p&gt;Typstは文書作成に用いることができるプログラミング言語。Tyspt自体は割とマイナーな上、現在も開発途上であり、論文に用いる例は少ない。でも、大手ジャーナルと違って卒論みたいに、レイアウトやらがゆるく設定されている場では、いかようにもできると思い、実験的に取り入れてみたところ、すごく便利で個人的におすすめなツールの一つになった。&amp;#160;&lt;a href=&#34;#fnref:12&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;

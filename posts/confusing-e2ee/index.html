@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://mazmr.com/">
+    <title>まぎらわしいE2EEという言葉とその意味・価値 | Taiki M.</title>
+    <meta name="description" content="Taiki&#39;s Retrospective">
+    <meta property="og:url" content="https://mazmr.com/posts/confusing-e2ee/">
+  <meta property="og:site_name" content="Taiki M.">
+  <meta property="og:title" content="まぎらわしいE2EEという言葉とその意味・価値">
+  <meta property="og:description" content="主題 昨今、よく耳にする・目にするE2EE(エンドツーエンド・エンクリプション)という言葉だが、私は、その言葉の用法や、E2EE自体が提供する価値(安全性)に対して懐疑的である。
+よく見かけた(最近は逆に見ないかも)WebのEコマースサイトのカード情報入力画面の文言は以下のようなものである:
+入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、安全に送信されます。
+この記事では、まず以上の文言に注目し、解説をする。 そしてその後、発展的に、私が問題視するものを論じる。
+“安全” 入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、安全に送信されます。
+まずは、先ほどの主張の中で利用者に伝えたいであろう、「このサイトにカード情報を入力しても安全だよ」の、安全とは何なのか？
+この文脈での安全の構成要素は大きく2つだろう。
+カード情報が暗号化されて、通信経路上で第3者に覗き見られないこと 暗号化されたカード情報を復号して読めるのは、利用するサービスの運営者であり、第3者ではないこと 1つ目から確認する。 カード情報が通信経路上で第3者に覗き見られないようにするために使うのが、件の「E2EE」の役割と言えるだろう
+そして、通信経路を守れても、その到達する先が全然知らない誰かだったらいけない。 それを、確実に目的にサービス運営者に届くようにしてあげられるのが、SSL/TLSの役割だろう。
+さて、これらを満たした今、渡したカード情報は本当に安全なのだろうか。 サービス提供側にも一度考えてみてほしいが、これで顧客の情報は安全に守られるのだろうか。
+サービス提供者がうっかり顧客情報をUSBドライブに移して紛失した場合は、明らかにカード情報が&#34;安全&#34;とは言えない。 そのため、実際には、カード情報をサービス提供者がどう管理するかが、最終的に課題になるだろう。
+この点においては、件の文言は一切間違っていない。
+入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、安全に送信されます。
+これは「送信」段階の安全の話だからだ。
+発展 しかし、私が問題視する現状は以下がある。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-22T12:45:26+09:00">
+    <meta property="article:modified_time" content="2025-02-22T12:45:26+09:00">
+
+    
+  <meta itemprop="name" content="まぎらわしいE2EEという言葉とその意味・価値">
+  <meta itemprop="description" content="主題 昨今、よく耳にする・目にするE2EE(エンドツーエンド・エンクリプション)という言葉だが、私は、その言葉の用法や、E2EE自体が提供する価値(安全性)に対して懐疑的である。
+よく見かけた(最近は逆に見ないかも)WebのEコマースサイトのカード情報入力画面の文言は以下のようなものである:
+入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、安全に送信されます。
+この記事では、まず以上の文言に注目し、解説をする。 そしてその後、発展的に、私が問題視するものを論じる。
+“安全” 入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、安全に送信されます。
+まずは、先ほどの主張の中で利用者に伝えたいであろう、「このサイトにカード情報を入力しても安全だよ」の、安全とは何なのか？
+この文脈での安全の構成要素は大きく2つだろう。
+カード情報が暗号化されて、通信経路上で第3者に覗き見られないこと 暗号化されたカード情報を復号して読めるのは、利用するサービスの運営者であり、第3者ではないこと 1つ目から確認する。 カード情報が通信経路上で第3者に覗き見られないようにするために使うのが、件の「E2EE」の役割と言えるだろう
+そして、通信経路を守れても、その到達する先が全然知らない誰かだったらいけない。 それを、確実に目的にサービス運営者に届くようにしてあげられるのが、SSL/TLSの役割だろう。
+さて、これらを満たした今、渡したカード情報は本当に安全なのだろうか。 サービス提供側にも一度考えてみてほしいが、これで顧客の情報は安全に守られるのだろうか。
+サービス提供者がうっかり顧客情報をUSBドライブに移して紛失した場合は、明らかにカード情報が&#34;安全&#34;とは言えない。 そのため、実際には、カード情報をサービス提供者がどう管理するかが、最終的に課題になるだろう。
+この点においては、件の文言は一切間違っていない。
+入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、安全に送信されます。
+これは「送信」段階の安全の話だからだ。
+発展 しかし、私が問題視する現状は以下がある。">
+  <meta itemprop="datePublished" content="2025-02-22T12:45:26+09:00">
+  <meta itemprop="dateModified" content="2025-02-22T12:45:26+09:00">
+  <meta itemprop="wordCount" content="25">
+    
+    <link rel="canonical" href="https://mazmr.com/posts/confusing-e2ee/">
+    <link rel="icon" href="https://mazmr.com//assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="Taiki M." href="https://mazmr.com//atom.xml" />
+    <link rel="alternate" type="application/json" title="Taiki M." href="https://mazmr.com//feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#fffdfa;color:#000}@media(prefers-color-scheme:dark){body{background-color:#1b1b1b;color:#fff}}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a{overflow-wrap:break-word}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small}code{margin:.1rem;border:none;overflow-wrap:anywhere;background:#eee}@media(prefers-color-scheme:dark){code{background-color:#000;color:#d3d3d3}}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2} </style>
+  
+    
+  
+  
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "articleSection": "posts",
+      "name": "まぎらわしいE2EEという言葉とその意味・価値",
+      "headline": "まぎらわしいE2EEという言葉とその意味・価値",
+      "alternativeHeadline": "",
+      "description": "\u003ch2 id=\u0022主題\u0022\u003e主題\u003c\/h2\u003e\n\u003cp\u003e昨今、よく耳にする・目にするE2EE(エンドツーエンド・エンクリプション)という言葉だが、私は、その言葉の用法や、E2EE自体が提供する価値(安全性)に対して懐疑的である。\u003c\/p\u003e\n\u003cp\u003eよく見かけた(最近は逆に見ないかも)WebのEコマースサイトのカード情報入力画面の文言は以下のようなものである:\u003c\/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e入力されたカード情報はSSL\/TLSを用いてE2EEで暗号化され、安全に送信されます。\u003c\/p\u003e\u003c\/blockquote\u003e\n\u003cp\u003eこの記事では、まず以上の文言に注目し、解説をする。\nそしてその後、発展的に、私が問題視するものを論じる。\u003c\/p\u003e\n\u003ch3 id=\u0022安全\u0022\u003e\u0026ldquo;安全\u0026rdquo;\u003c\/h3\u003e\n\u003cblockquote\u003e\n\u003cp\u003e入力されたカード情報はSSL\/TLSを用いてE2EEで暗号化され、\u003cstrong\u003e安全に\u003c\/strong\u003e送信されます。\u003c\/p\u003e\u003c\/blockquote\u003e\n\u003cp\u003eまずは、先ほどの主張の中で利用者に伝えたいであろう、「このサイトにカード情報を入力しても安全だよ」の、安全とは何なのか？\u003c\/p\u003e\n\u003cp\u003eこの文脈での安全の構成要素は大きく2つだろう。\u003c\/p\u003e\n\u003col\u003e\n\u003cli\u003eカード情報が暗号化されて、通信経路上で第3者に覗き見られないこと\u003c\/li\u003e\n\u003cli\u003e暗号化されたカード情報を復号して読めるのは、利用するサービスの運営者であり、第3者ではないこと\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e1つ目から確認する。\nカード情報が通信経路上で第3者に覗き見られないようにするために使うのが、件の「E2EE」の役割と言えるだろう\u003c\/p\u003e\n\u003cp\u003eそして、通信経路を守れても、その到達する先が全然知らない誰かだったらいけない。\nそれを、確実に目的にサービス運営者に届くようにしてあげられるのが、SSL\/TLSの役割だろう。\u003c\/p\u003e\n\u003cp\u003eさて、これらを満たした今、渡したカード情報は本当に安全なのだろうか。\nサービス提供側にも一度考えてみてほしいが、これで顧客の情報は安全に守られるのだろうか。\u003c\/p\u003e\n\u003cp\u003eサービス提供者がうっかり顧客情報をUSBドライブに移して紛失した場合は、明らかにカード情報が\u0026quot;安全\u0026quot;とは言えない。\nそのため、実際には、カード情報をサービス提供者がどう管理するかが、最終的に課題になるだろう。\u003c\/p\u003e\n\u003cp\u003eこの点においては、件の文言は一切間違っていない。\u003c\/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e入力されたカード情報はSSL\/TLSを用いてE2EEで暗号化され、\u003cstrong\u003e安全に送信\u003c\/strong\u003eされます。\u003c\/p\u003e\u003c\/blockquote\u003e\n\u003cp\u003eこれは「送信」段階の安全の話だからだ。\u003c\/p\u003e\n\u003ch3 id=\u0022発展\u0022\u003e発展\u003c\/h3\u003e\n\u003cp\u003eしかし、私が問題視する現状は以下がある。\u003c\/p\u003e",
+      "inLanguage": "ja",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https:\/\/mazmr.com\/posts\/confusing-e2ee\/"
+      },
+      "author" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "creator" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "accountablePerson" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "copyrightHolder" : "Taiki M.",
+      "copyrightYear" : "2025",
+      "dateCreated": "2025-02-22T12:45:26.00Z",
+      "datePublished": "2025-02-22T12:45:26.00Z",
+      "dateModified": "2025-02-22T12:45:26.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Taiki M.",
+          "url": "https://mazmr.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https:\/\/mazmr.com\/assets\/favicon.ico",
+              "width":"32",
+              "height":"32"
+          }
+      },
+      "image": "https://mazmr.com/assets/favicon.ico",
+      "url" : "https:\/\/mazmr.com\/posts\/confusing-e2ee\/",
+      "wordCount" : "25",
+      "genre" : [ ],
+      "keywords" : [ ]
+  }
+  </script>
+  
+  
+  </head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;">
+  <a href="https://mazmr.com/">
+    <b>Taiki M.</b>
+    <span class="text-stone-500 animate-blink">▮</span>
+  </a>
+</p>
+<ul style="padding: 0;margin: 0;">
+  
+  
+  <li class="">
+    <a href="/posts/"><span>Post</span></a>
+    
+  <li class="">
+    <a href="/about/"><span>About</span></a>
+    
+  </li>
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+    <section>
+      <h2 class="post">まぎらわしいE2EEという言葉とその意味・価値</h2>
+      <h2 id="主題">主題</h2>
+<p>昨今、よく耳にする・目にするE2EE(エンドツーエンド・エンクリプション)という言葉だが、私は、その言葉の用法や、E2EE自体が提供する価値(安全性)に対して懐疑的である。</p>
+<p>よく見かけた(最近は逆に見ないかも)WebのEコマースサイトのカード情報入力画面の文言は以下のようなものである:</p>
+<blockquote>
+<p>入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、安全に送信されます。</p></blockquote>
+<p>この記事では、まず以上の文言に注目し、解説をする。
+そしてその後、発展的に、私が問題視するものを論じる。</p>
+<h3 id="安全">&ldquo;安全&rdquo;</h3>
+<blockquote>
+<p>入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、<strong>安全に</strong>送信されます。</p></blockquote>
+<p>まずは、先ほどの主張の中で利用者に伝えたいであろう、「このサイトにカード情報を入力しても安全だよ」の、安全とは何なのか？</p>
+<p>この文脈での安全の構成要素は大きく2つだろう。</p>
+<ol>
+<li>カード情報が暗号化されて、通信経路上で第3者に覗き見られないこと</li>
+<li>暗号化されたカード情報を復号して読めるのは、利用するサービスの運営者であり、第3者ではないこと</li>
+</ol>
+<p>1つ目から確認する。
+カード情報が通信経路上で第3者に覗き見られないようにするために使うのが、件の「E2EE」の役割と言えるだろう</p>
+<p>そして、通信経路を守れても、その到達する先が全然知らない誰かだったらいけない。
+それを、確実に目的にサービス運営者に届くようにしてあげられるのが、SSL/TLSの役割だろう。</p>
+<p>さて、これらを満たした今、渡したカード情報は本当に安全なのだろうか。
+サービス提供側にも一度考えてみてほしいが、これで顧客の情報は安全に守られるのだろうか。</p>
+<p>サービス提供者がうっかり顧客情報をUSBドライブに移して紛失した場合は、明らかにカード情報が&quot;安全&quot;とは言えない。
+そのため、実際には、カード情報をサービス提供者がどう管理するかが、最終的に課題になるだろう。</p>
+<p>この点においては、件の文言は一切間違っていない。</p>
+<blockquote>
+<p>入力されたカード情報はSSL/TLSを用いてE2EEで暗号化され、<strong>安全に送信</strong>されます。</p></blockquote>
+<p>これは「送信」段階の安全の話だからだ。</p>
+<h3 id="発展">発展</h3>
+<p>しかし、私が問題視する現状は以下がある。</p>
+
+      
+      <div class="post-date">
+        <span class="g time">🎂 2025-02-22 </span> &#8729;
+        <span class="g time">↻ 2025-02-22 </span> &#8729;
+         
+      </div>
+      
+    </section>
+    
+    
+    <div id="comments">
+      
+<script src="https://utteranc.es/client.js"
+    repo=Fricsion/Fricsion.github.io
+    issue-term="pathname"
+    theme=github-dark
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+    </div>
+    
+    
+  </div>
+</main>
+</body>
+</html>
