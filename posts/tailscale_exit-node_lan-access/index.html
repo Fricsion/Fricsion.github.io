@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://mazmr.com/">
+    <title>Setting up an exit node for LAN resource access with Docker compose | Taiki M.</title>
+    <meta name="description" content="Taiki&#39;s Retrospective">
+    <meta property="og:url" content="https://mazmr.com/posts/tailscale_exit-node_lan-access/">
+  <meta property="og:site_name" content="Taiki M.">
+  <meta property="og:title" content="Setting up an exit node for LAN resource access with Docker compose">
+  <meta property="og:description" content="wrote this docker compose services: tailscale: image: tailscale/tailscale:latest hostname: chibi-exitnode environment: - TS_AUTHKEY=tskey-auth-redacted - TS_EXTRA_ARGS=--advertise-exit-node --advertise-routes=10.7.22.0/24 - TS_STATE_DIR=/var/lib/tailscale - TS_USERSPACE=false volumes: - ./tailscale-client/state:/var/lib/tailscale devices: - /dev/net/tun:/dev/net/tun cap_add: - net_admin restart: unless-stopped sysctls: - net.ipv4.ip_forward=1 hostname: your-hostname-for-exitnode can be anything TS_AUTHKEY= put your tailscale auth key here TS_EXTRA_ARGS=--advertise-exit-node --advertise-routes=192.168.1.0/24 you need to use your own subnet instead of mine (192.168.1.0/24) docker compose up -d head to the tailscale web UI (login.tailscale.com) in ‘Machines’ section, look for ‘chibi-exitnode’ and click it Under ‘Routing Settings’ section, you’ll see ‘Exit node’. Click edit and ‘Allow’ and make sure ‘Use as exit node’ checkbox is ticked. Under ‘Subnets’ section, you’ll see awaiting approval. so click edit and ‘Approve’ On your phone’s tailscale client, you see ‘EXIT NODE None’ on the top. Tap it and select ‘chibi-exitnode’">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-20T20:24:47+09:00">
+    <meta property="article:modified_time" content="2025-04-20T20:24:47+09:00">
+
+    
+  <meta itemprop="name" content="Setting up an exit node for LAN resource access with Docker compose">
+  <meta itemprop="description" content="wrote this docker compose services: tailscale: image: tailscale/tailscale:latest hostname: chibi-exitnode environment: - TS_AUTHKEY=tskey-auth-redacted - TS_EXTRA_ARGS=--advertise-exit-node --advertise-routes=10.7.22.0/24 - TS_STATE_DIR=/var/lib/tailscale - TS_USERSPACE=false volumes: - ./tailscale-client/state:/var/lib/tailscale devices: - /dev/net/tun:/dev/net/tun cap_add: - net_admin restart: unless-stopped sysctls: - net.ipv4.ip_forward=1 hostname: your-hostname-for-exitnode can be anything TS_AUTHKEY= put your tailscale auth key here TS_EXTRA_ARGS=--advertise-exit-node --advertise-routes=192.168.1.0/24 you need to use your own subnet instead of mine (192.168.1.0/24) docker compose up -d head to the tailscale web UI (login.tailscale.com) in ‘Machines’ section, look for ‘chibi-exitnode’ and click it Under ‘Routing Settings’ section, you’ll see ‘Exit node’. Click edit and ‘Allow’ and make sure ‘Use as exit node’ checkbox is ticked. Under ‘Subnets’ section, you’ll see awaiting approval. so click edit and ‘Approve’ On your phone’s tailscale client, you see ‘EXIT NODE None’ on the top. Tap it and select ‘chibi-exitnode’">
+  <meta itemprop="datePublished" content="2025-04-20T20:24:47+09:00">
+  <meta itemprop="dateModified" content="2025-04-20T20:24:47+09:00">
+  <meta itemprop="wordCount" content="131">
+    
+    <link rel="canonical" href="https://mazmr.com/posts/tailscale_exit-node_lan-access/">
+    <link rel="icon" href="https://mazmr.com//assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="Taiki M." href="https://mazmr.com//atom.xml" />
+    <link rel="alternate" type="application/json" title="Taiki M." href="https://mazmr.com//feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#fffdfa;color:#000}@media(prefers-color-scheme:dark){body{background-color:#1b1b1b;color:#fff}}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a{overflow-wrap:break-word}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small}code{margin:.1rem;border:none;overflow-wrap:anywhere;background:#eee}@media(prefers-color-scheme:dark){code{background-color:#000;color:#d3d3d3}}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2} </style>
+  
+    
+  
+  
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "articleSection": "posts",
+      "name": "Setting up an exit node for LAN resource access with Docker compose",
+      "headline": "Setting up an exit node for LAN resource access with Docker compose",
+      "alternativeHeadline": "",
+      "description": "\u003col\u003e\n\u003cli\u003ewrote this docker compose\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-yaml\u0022 data-lang=\u0022yaml\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#f92672\u0022\u003eservices\u003c\/span\u003e:\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e  \u003cspan style=\u0022color:#f92672\u0022\u003etailscale\u003c\/span\u003e:\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e    \u003cspan style=\u0022color:#f92672\u0022\u003eimage\u003c\/span\u003e: \u003cspan style=\u0022color:#ae81ff\u0022\u003etailscale\/tailscale:latest\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e    \u003cspan style=\u0022color:#f92672\u0022\u003ehostname\u003c\/span\u003e: \u003cspan style=\u0022color:#ae81ff\u0022\u003echibi-exitnode\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e    \u003cspan style=\u0022color:#f92672\u0022\u003eenvironment\u003c\/span\u003e:\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e      - \u003cspan style=\u0022color:#ae81ff\u0022\u003eTS_AUTHKEY=tskey-auth-redacted\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e      - \u003cspan style=\u0022color:#ae81ff\u0022\u003eTS_EXTRA_ARGS=--advertise-exit-node --advertise-routes=10.7.22.0\/24 \u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e      - \u003cspan style=\u0022color:#ae81ff\u0022\u003eTS_STATE_DIR=\/var\/lib\/tailscale\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e      - \u003cspan style=\u0022color:#ae81ff\u0022\u003eTS_USERSPACE=false\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e    \u003cspan style=\u0022color:#f92672\u0022\u003evolumes\u003c\/span\u003e:\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e        - \u003cspan style=\u0022color:#ae81ff\u0022\u003e.\/tailscale-client\/state:\/var\/lib\/tailscale\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e    \u003cspan style=\u0022color:#f92672\u0022\u003edevices\u003c\/span\u003e:\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e      - \u003cspan style=\u0022color:#ae81ff\u0022\u003e\/dev\/net\/tun:\/dev\/net\/tun\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e    \u003cspan style=\u0022color:#f92672\u0022\u003ecap_add\u003c\/span\u003e:\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e      - \u003cspan style=\u0022color:#ae81ff\u0022\u003enet_admin\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e    \u003cspan style=\u0022color:#f92672\u0022\u003erestart\u003c\/span\u003e: \u003cspan style=\u0022color:#ae81ff\u0022\u003eunless-stopped\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e    \u003cspan style=\u0022color:#f92672\u0022\u003esysctls\u003c\/span\u003e:\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e      - \u003cspan style=\u0022color:#ae81ff\u0022\u003enet.ipv4.ip_forward=1\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cul\u003e\n\u003cli\u003e\u003ccode\u003ehostname: your-hostname-for-exitnode\u003c\/code\u003e\n\u003cul\u003e\n\u003cli\u003ecan be anything\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\u003ccode\u003eTS_AUTHKEY=\u003c\/code\u003e\n\u003cul\u003e\n\u003cli\u003eput your tailscale auth key here\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\u003ccode\u003eTS_EXTRA_ARGS=--advertise-exit-node --advertise-routes=192.168.1.0\/24\u003c\/code\u003e\n\u003cul\u003e\n\u003cli\u003eyou need to use your own subnet instead of mine (192.168.1.0\/24)\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\u003ccode\u003edocker compose up -d\u003c\/code\u003e\u003c\/li\u003e\n\u003cli\u003ehead to the tailscale web UI (\u003ca href=\u0022https:\/\/login.tailscale.com\u0022\u003elogin.tailscale.com\u003c\/a\u003e)\u003c\/li\u003e\n\u003cli\u003ein \u0026lsquo;Machines\u0026rsquo; section, look for \u0026lsquo;chibi-exitnode\u0026rsquo; and click it\u003c\/li\u003e\n\u003cli\u003eUnder \u0026lsquo;Routing Settings\u0026rsquo; section, you\u0026rsquo;ll see \u0026lsquo;Exit node\u0026rsquo;. Click edit and \u0026lsquo;Allow\u0026rsquo; and make sure \u0026lsquo;Use as exit node\u0026rsquo; checkbox is ticked.\u003c\/li\u003e\n\u003cli\u003eUnder \u0026lsquo;Subnets\u0026rsquo; section, you\u0026rsquo;ll see awaiting approval.  so click edit and \u0026lsquo;Approve\u0026rsquo;\u003c\/li\u003e\n\u003cli\u003eOn your phone\u0026rsquo;s tailscale client, you see \u0026lsquo;EXIT NODE None\u0026rsquo; on the top. Tap it and select \u0026lsquo;chibi-exitnode\u0026rsquo;\u003c\/li\u003e\n\u003c\/ol\u003e",
+      "inLanguage": "ja",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https:\/\/mazmr.com\/posts\/tailscale_exit-node_lan-access\/"
+      },
+      "author" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "creator" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "accountablePerson" : {
+          "@type": "Person",
+          "name": ""
+      },
+      "copyrightHolder" : "Taiki M.",
+      "copyrightYear" : "2025",
+      "dateCreated": "2025-04-20T20:24:47.00Z",
+      "datePublished": "2025-04-20T20:24:47.00Z",
+      "dateModified": "2025-04-20T20:24:47.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Taiki M.",
+          "url": "https://mazmr.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https:\/\/mazmr.com\/assets\/favicon.ico",
+              "width":"32",
+              "height":"32"
+          }
+      },
+      "image": "https://mazmr.com/assets/favicon.ico",
+      "url" : "https:\/\/mazmr.com\/posts\/tailscale_exit-node_lan-access\/",
+      "wordCount" : "131",
+      "genre" : [ ],
+      "keywords" : [ ]
+  }
+  </script>
+  
+  
+  </head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;">
+  <a href="https://mazmr.com/">
+    <b>Taiki M.</b>
+    <span class="text-stone-500 animate-blink">▮</span>
+  </a>
+</p>
+<ul style="padding: 0;margin: 0;">
+  
+  
+  <li class="">
+    <a href="/posts/"><span>Post</span></a>
+    
+  <li class="">
+    <a href="/about/"><span>About</span></a>
+    
+  </li>
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+    <section>
+      <h2 class="post">Setting up an exit node for LAN resource access with Docker compose</h2>
+      <ol>
+<li>wrote this docker compose
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tailscale</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">tailscale/tailscale:latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">hostname</span>: <span style="color:#ae81ff">chibi-exitnode</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">TS_AUTHKEY=tskey-auth-redacted</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">TS_EXTRA_ARGS=--advertise-exit-node --advertise-routes=10.7.22.0/24 </span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">TS_STATE_DIR=/var/lib/tailscale</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">TS_USERSPACE=false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">./tailscale-client/state:/var/lib/tailscale</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">devices</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/dev/net/tun:/dev/net/tun</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">cap_add</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">net_admin</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">sysctls</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">net.ipv4.ip_forward=1</span>
+</span></span></code></pre></div><ul>
+<li><code>hostname: your-hostname-for-exitnode</code>
+<ul>
+<li>can be anything</li>
+</ul>
+</li>
+<li><code>TS_AUTHKEY=</code>
+<ul>
+<li>put your tailscale auth key here</li>
+</ul>
+</li>
+<li><code>TS_EXTRA_ARGS=--advertise-exit-node --advertise-routes=192.168.1.0/24</code>
+<ul>
+<li>you need to use your own subnet instead of mine (192.168.1.0/24)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>docker compose up -d</code></li>
+<li>head to the tailscale web UI (<a href="https://login.tailscale.com">login.tailscale.com</a>)</li>
+<li>in &lsquo;Machines&rsquo; section, look for &lsquo;chibi-exitnode&rsquo; and click it</li>
+<li>Under &lsquo;Routing Settings&rsquo; section, you&rsquo;ll see &lsquo;Exit node&rsquo;. Click edit and &lsquo;Allow&rsquo; and make sure &lsquo;Use as exit node&rsquo; checkbox is ticked.</li>
+<li>Under &lsquo;Subnets&rsquo; section, you&rsquo;ll see awaiting approval.  so click edit and &lsquo;Approve&rsquo;</li>
+<li>On your phone&rsquo;s tailscale client, you see &lsquo;EXIT NODE None&rsquo; on the top. Tap it and select &lsquo;chibi-exitnode&rsquo;</li>
+</ol>
+
+      
+      <div class="post-date">
+        <span class="g time">🎂 2025-04-20 </span> &#8729;
+        <span class="g time">↻ 2025-04-20 </span> &#8729;
+         
+      </div>
+      
+    </section>
+    
+    
+    <div id="comments">
+      
+<script src="https://utteranc.es/client.js"
+    repo=Fricsion/Fricsion.github.io
+    issue-term="pathname"
+    theme=github-dark
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+    </div>
+    
+    
+  </div>
+</main>
+</body>
+</html>
